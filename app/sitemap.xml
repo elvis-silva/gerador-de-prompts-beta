@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- HOME -->
+  <url>
+    <loc>https://www.ai2you.online/pt</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.ai2you.online/pt" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- SOBRE -->
+  <url>
+    <loc>https://www.ai2you.online/pt/sobre</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/sobre" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/about" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- SERVIÇOS -->
+  <url>
+    <loc>https://www.ai2you.online/pt/servicos</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/servicos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/services" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- CONTATO -->
+  <url>
+    <loc>https://www.ai2you.online/pt/contato</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/contato" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/contact" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- POLÍTICA DE PRIVACIDADE -->
+  <url>
+    <loc>https://www.ai2you.online/pt/politica-de-privacidade</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/politica-de-privacidade" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/privacy-policy" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- TERMOS DE USO -->
+  <url>
+    <loc>https://www.ai2you.online/pt/termos-de-uso</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/termos-de-uso" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/terms-of-use" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/ai-prompt-generate/digital-marketing</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/ai-prompt-generate/digital-marketing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generate/digital-marketing" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/ai-prompt-generate/software-development</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/ai-prompt-generate/software-development" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generate/software-development" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/ai-prompt-generate/sales-expert</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/ai-prompt-generate/sales-expert" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generate/sales-expert" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/ai-prompt-generate/content-creator</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/ai-prompt-generate/content-creator" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generate/content-creator" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/ai-prompt-generate/legal-assistant</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/ai-prompt-generate/legal-assistant" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generate/legal-assistant" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/ai-prompt-generate/human-resources</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/ai-prompt-generate/human-resources" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generate/human-resources" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/ai-prompt-generate/education-tutor</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/ai-prompt-generate/education-tutor" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generate/education-tutor" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/ai-prompt-generate/medical-health</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/ai-prompt-generate/medical-health" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generate/medical-health" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/ai-prompt-generate/real-estate</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/ai-prompt-generate/real-estate" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generate/real-estate" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/ai-prompt-generate/finances</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/ai-prompt-generate/finances" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generate/finances" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>
