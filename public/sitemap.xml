@@ -3,7 +3,6 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- HOME -->
   <url>
     <loc>https://www.ai2you.online/pt</loc>
     <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt" />
@@ -13,47 +12,58 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- SOBRE -->
   <url>
     <loc>https://www.ai2you.online/pt/sobre</loc>
     <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/sobre" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/sobre" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- SERVIÇOS -->
   <url>
-    <loc>https://www.ai2you.online/pt/servicos</loc>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/servicos" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/services" />
+    <loc>https://www.ai2you.online/pt/lgpd</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/lgpd" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/lgpd" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
-  <!-- CONTATO -->
   <url>
-    <loc>https://www.ai2you.online/pt/contato</loc>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/contato" />
+    <loc>https://www.ai2you.online/pt/mission</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/mission" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/mission" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/cookies</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/cookies" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/cookies" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/contact</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/contact" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/contact" />
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- POLÍTICA DE PRIVACIDADE -->
   <url>
-    <loc>https://www.ai2you.online/pt/politica-de-privacidade</loc>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/politica-de-privacidade" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/privacy-policy" />
+    <loc>https://www.ai2you.online/pt/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/privacy" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/privacy" />
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
 
-  <!-- TERMOS DE USO -->
   <url>
-    <loc>https://www.ai2you.online/pt/termos-de-uso</loc>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/termos-de-uso" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/terms-of-use" />
+    <loc>https://www.ai2you.online/pt/terms</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/terms" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/terms" />
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
