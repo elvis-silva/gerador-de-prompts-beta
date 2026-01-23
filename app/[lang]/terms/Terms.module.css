@@ -1,0 +1,82 @@
+.main {
+  min-height: 100vh;
+  background-color: #020617; /* Slate-950 */
+  padding: 6rem 1.5rem;
+  background-image: radial-gradient(circle at 100% 100%, #1e293b 0%, transparent 40%);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/* Tipografia Sistêmica */
+.textTitle { color: #ffffff; font-weight: 900; font-size: clamp(2.5rem, 5vw, 3.5rem); letter-spacing: -0.04em; margin-bottom: 1rem; }
+.textSubtitle { color: #94a3b8; font-size: 1.125rem; max-width: 650px; margin: 0 auto; line-height: 1.6; }
+.textHighlight { color: #3b82f6; font-weight: 600; }
+.textOverline { color: #3b82f6; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 0.5rem; }
+.textCardTitle { color: #ffffff; font-weight: 700; font-size: 1.25rem; margin-bottom: 1rem; }
+.textBody { color: #cbd5e1; line-height: 1.7; font-size: 1rem; }
+.textSmall { color: #64748b; font-size: 0.875rem; margin-top: 2rem; display: block; }
+
+/* Estruturas Visuais */
+.glassCard {
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 3.5rem;
+  border-radius: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.pillCard {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.pillCard:hover {
+  border-color: #3b82f6;
+  transform: translateY(-8px);
+}
+
+/* Ícones */
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 14px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.iconPrimary {
+  width: 26px;
+  height: 26px;
+  color: #3b82f6;
+  filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.4));
+}
+
+.termosFooter {
+  text-align: center;
+  border-top: 1px solid #1e293b;
+  padding-top: 4rem;
+}

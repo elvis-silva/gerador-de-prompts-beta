@@ -1,0 +1,67 @@
+{
+  "common": {
+    "home": "Home",
+    "about": "About",
+    "privacy": "Privacy",
+    "copy": "Copy Prompt",
+    "copied": "Successfully copied!",
+    "generate": "Generate Magic Prompt"
+  },
+  "form": {
+    "role": "AI Role or Persona",
+    "context": "Project Context",
+    "tone": "Tone of Voice",
+    "responsibilities": "Responsibilities & Tasks",
+    "grammar": "Grammar Style",
+    "strategy": "Strategy Type",
+    "userInfo": "User Background Information",
+    "format": "Expected Output Format",
+    "placeholders": {
+      "role": "e.g. Senior SEO Expert",
+      "context": "e.g. Launching a Python course",
+      "format": "e.g. Comparative table or Markdown"
+    }
+  },
+  "niche": {
+    "digital-marketing": {
+      "title": "Digital Marketing",
+      "description": "Create high-converting traffic strategies and copy."
+    },
+    "software-development": {
+      "title": "Software Development",
+      "description": "Prompts for refactoring, architecture, and code debugging."
+    },
+    "content-creation": {
+      "title": "Content Creation",
+      "description": "Ideas for videos, posts, and viral scripts."
+    },
+    "legal-assistant": {
+      "title": "Legal Assistant",
+      "description": "Contract analysis and drafting legal petitions."
+    },
+    "human-resources": {
+      "title": "Human Resources",
+      "description": "Talent screening and job description creation."
+    },
+    "sales-expert": {
+      "title": "Sales Expert",
+      "description": "Sales scripts and overcoming objections."
+    },
+    "education-tutor": {
+      "title": "Education & Tutoring",
+      "description": "Lesson plans and simplified complex explanations."
+    },
+    "medical-health": {
+      "title": "Health & Wellness",
+      "description": "Assistance in informative reports and workout routines."
+    },
+    "real-estate": {
+      "title": "Real Estate",
+      "description": "Luxury property descriptions and market analysis."
+    },
+    "finances": {
+      "title": "Finance & Investment",
+      "description": "Portfolio analysis and financial market reports."
+    }
+  }
+}

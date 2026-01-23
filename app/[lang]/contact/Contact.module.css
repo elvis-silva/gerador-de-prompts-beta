@@ -1,0 +1,92 @@
+.main {
+  min-height: 100vh;
+  background-color: #020617; /* Slate-950 padronizado */
+  padding: 6rem 1.5rem;
+  background-image: radial-gradient(circle at 100% 0%, #1e293b 0%, transparent 40%);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/* Tipografia Padronizada */
+.textTitle { color: #ffffff; font-weight: 900; font-size: clamp(2.5rem, 6vw, 4rem); letter-spacing: -0.04em; margin-bottom: 1.5rem; }
+.textSubtitle { color: #94a3b8; font-size: 1.25rem; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+.textHighlight { color: #3b82f6; font-weight: 600; }
+.textOverline { color: #3b82f6; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 0.5rem; }
+.textCardTitle { color: #ffffff; font-weight: 700; font-size: 1.25rem; margin-bottom: 0.5rem; }
+.textBody { color: #cbd5e1; line-height: 1.7; font-size: 1rem; }
+
+/* Layout Grid */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 992px) {
+  .grid { grid-template-columns: 1.2fr 1fr; }
+}
+
+/* Glassmorphism e Cards */
+.glassCard {
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 3rem;
+  border-radius: 2rem;
+  height: 100%;
+}
+
+.pillCard {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.pillCard:hover {
+  border-color: #3b82f6;
+  transform: translateX(10px);
+}
+
+.iconWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 52px;
+  height: 52px;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.iconPrimary { width: 26px; height: 26px; color: #3b82f6; }
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  font-size: 0.9375rem;
+}
+
+.listIcon { width: 18px; height: 18px; color: #3b82f6; }

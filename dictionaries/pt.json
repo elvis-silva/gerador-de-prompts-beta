@@ -1,0 +1,67 @@
+{
+  "common": {
+    "home": "Início",
+    "about": "Sobre Nós",
+    "privacy": "Privacidade",
+    "copy": "Copiar Prompt",
+    "copied": "Copiado com sucesso!",
+    "generate": "Gerar Prompt Mágico"
+  },
+  "form": {
+    "role": "Cargo ou Atuação da IA",
+    "context": "Contexto do Projeto",
+    "tone": "Tom de Voz",
+    "responsibilities": "Responsabilidades e Tarefas",
+    "grammar": "Estilo Gramatical",
+    "strategy": "Tipo de Estratégia",
+    "userInfo": "Público alvo",
+    "format": "Formato da Resposta Esperada",
+    "placeholders": {
+      "role": "Ex: Especialista em SEO Sênior",
+      "context": "Ex: Lançamento de um curso de Python",
+      "format": "Ex: Tabela comparativa ou Markdown"
+    }
+  },
+  "niche": {
+    "digital-marketing": {
+      "title": "Marketing Digital",
+      "description": "Crie estratégias de tráfego e copy de alta conversão."
+    },
+    "software-development": {
+      "title": "Desenvolvimento de Software",
+      "description": "Prompts para refatoração, arquitetura e debug de código."
+    },
+    "content-creation": {
+      "title": "Criação de Conteúdo",
+      "description": "Ideias para vídeos, posts e roteiros virais."
+    },
+    "legal-assistant": {
+      "title": "Assistente Jurídico",
+      "description": "Análise de contratos e redação de petições iniciais."
+    },
+    "human-resources": {
+      "title": "Recursos Humanos",
+      "description": "Triagem de talentos e criação de descrições de cargos."
+    },
+    "sales-expert": {
+      "title": "Especialista em Vendas",
+      "description": "Scripts de vendas e quebra de objeções."
+    },
+    "education-tutor": {
+      "title": "Educação e Tutoria",
+      "description": "Planos de aula e explicações complexas simplificadas."
+    },
+    "medical-health": {
+      "title": "Saúde e Bem-estar",
+      "description": "Auxílio em laudos informativos e rotinas de treinos."
+    },
+    "real-estate": {
+      "title": "Mercado Imobiliário",
+      "description": "Descrições de imóveis de luxo e análise de mercado."
+    },
+    "finances": {
+      "title": "Finanças e Investimentos",
+      "description": "Análise de portfólio e relatórios de mercado financeiro."
+    }
+  }
+}
