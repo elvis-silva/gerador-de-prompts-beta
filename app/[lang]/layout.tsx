@@ -4,6 +4,7 @@ import '@/styles/globals.css';
 import Footer from '@/components/footer/Footer';
 import { Navbar } from '@/components/navbar/Navbar';
 import { PageTransition } from '@/components/PageTransition';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
   title: {
@@ -67,6 +68,7 @@ export default async function RootLayout({
           </ConfigProvider>
         </StyledComponentsRegistry>
       </body>
+      <GoogleAnalytics gaId="G-8TMK294LL0" />
     </html>
   );
 }
