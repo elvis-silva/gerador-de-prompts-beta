@@ -42,6 +42,10 @@ export default async function RootLayout({
 
   return (
     <html lang={lang || 'pt'}>
+      <head>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4768510961285493"
+     crossOrigin="anonymous"></script>
+      </head>
       <body className="antialiased text-slate-200">
         <Navbar />
         <StyledComponentsRegistry>
