@@ -5,6 +5,8 @@ import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import { RocketLaunchIcon } from '@heroicons/react/24/outline';
 import styles from "./navbar.module.css";
+import Image from "next/image";
+import logo from '@/public/logo.svg';
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,10 +25,7 @@ export function Navbar() {
       <div className={styles.container}>
         {/* Logo com Identidade Visual */}
         <Link href="/" className={styles.logo}>
-          <div className={styles.logoIcon}>AI</div>
-          <span className={styles.logoText}>
-            AI2You
-          </span>
+          <img src="/logo.svg" alt="AI2You" className={styles.logo} />
         </Link>
 
         {/* Navegação Desktop */}
