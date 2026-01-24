@@ -5,6 +5,7 @@ import Footer from '@/components/footer/Footer';
 import { Navbar } from '@/components/navbar/Navbar';
 import { PageTransition } from '@/components/PageTransition';
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { Analytics } from '@vercel/analytics/next'
 
 export const metadata = {
   title: {
@@ -71,6 +72,7 @@ export default async function RootLayout({
             </PageTransition>
           </ConfigProvider>
         </StyledComponentsRegistry>
+        <Analytics />
       </body>
       <GoogleAnalytics gaId="G-8TMK294LL0" />
     </html>
