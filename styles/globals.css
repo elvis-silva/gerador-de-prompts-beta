@@ -1,235 +1,195 @@
-@import 'antd/dist/reset.css';
-
-/* =========================
-   Design Tokens (UI System)
-   ========================= */
-:root {
-  --primary-gradient: linear-gradient(135deg, #1677ff 0%, #6f42c1 100%);
-  --primary-color: #1677ff;
-
-  --bg-main: #dfe1e8;
-  --bg-surface: rgba(255, 255, 255, 0.04);
-  --bg-surface-hover: rgba(255, 255, 255, 0.07);
-
-  --border-soft: rgba(255, 255, 255, 0.08);
-  --border-strong: rgba(255, 255, 255, 0.15);
-
-  --text-primary: #e5e7eb;
-  --text-secondary: #9ca3af;
-
-  --radius-md: 14px;
-  --radius-lg: 18px;
-
-  --transition-base: all 0.25s ease;
-
-   /* Spacing scale (8px system) */
-  --space-xs: 8px;
-  --space-sm: 12px;
-  --space-md: 16px;
-  --space-lg: 24px;
-  --space-xl: 32px;
-  --space-2xl: 48px;
+/* ===============================
+   Base / Container
+================================ */
+.container {
+  background-color: #0f172a;
+  min-height: 100vh;
+  padding-bottom: 4rem;
+  overflow-x: hidden;
+  color: #f8fafc;
 }
 
-/* =========================
-   Base
-   ========================= */
-body {
-  background: radial-gradient(
-      1200px 600px at 20% -10%,
-      rgba(22, 119, 255, 0.15),
-      transparent
-    ),
-    var(--bg-main);
-
-  color: var(--text-primary);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, sans-serif;
-
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-
-  padding-left: var(--space-md);
-  padding-right: var(--space-md);
-}
-
-main {
-  max-width: 1200px;
+.pageWrapper {
+  max-width: 80rem;
   margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.hero-section {
-  padding: var(--space-2xl) var(--space-md);
+/* ===============================
+   Hero Section (Mobile First)
+================================ */
+.hero {
+  position: relative;
+  padding: 4rem 1.25rem 3rem;
   text-align: center;
+  z-index: 1;
 }
 
-.hero-title {
-  font-size: 2.2rem !important;
-  font-weight: 800 !important;
+.heroBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.heroGradient {
+  position: absolute;
+  inset: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 160%;
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(37, 99, 235, 0.18),
+    rgba(15, 23, 42, 0) 70%
+  );
+  z-index: -1;
+  pointer-events: none;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1rem;
+  border-radius: 9999px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(8px);
+}
+
+.badgeText {
+  color: #60a5fa;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.textTitle {
+  font-size: clamp(2rem, 7vw, 3.5rem);
   line-height: 1.15;
-  margin-bottom: var(--space-md) !important;
-  letter-spacing: -0.03em;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.035em;
 }
 
-.hero-highlight {
-  color: var(--primary-color);
+.textHighlight {
+  background: linear-gradient(135deg, #60a5fa, #a5b4fc);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.hero-subtitle {
-  font-size: 1rem !important;
-  color: var(--text-secondary);
-  max-width: 520px;
-  margin: 0 auto var(--space-xl) auto !important;
+.textSubtitle {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 36rem;
+  margin: 0 auto 2.5rem;
 }
 
-.niche-grid {
-  margin-top: var(--space-lg);
+/* ===============================
+   Info Section / Glass Card
+================================ */
+.infoSection {
+  max-width: 72rem;
+  margin: 0 auto 4rem;
+  padding: 0 1.25rem;
 }
 
-.niche-icon {
-  font-size: 40px;
-  padding: var(--space-lg);
+.infoGlassCard {
+  background: rgba(30, 41, 59, 0.45);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 2rem;
+  padding: 2.5rem 1.75rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+}
+
+.stepIcon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.35);
 }
 
-
-/* =========================
-   Texto com Gradiente
-   ========================= */
-.gradient-text {
-  background: var(--primary-gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  font-weight: 700;
-  letter-spacing: -0.02em;
+/* ===============================
+   Feature / Niche Cards
+================================ */
+.featureCard,
+.nicheCard {
+  background: rgba(15, 23, 42, 0.45) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 1.75rem !important;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  height: 100%;
 }
 
-/* =========================
-   Card Glassmorphism Premium
-   ========================= */
-.shadow-lg {
-  padding: var(--space-lg);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.06),
-    rgba(255, 255, 255, 0.02)
-  );
-
-  border: 1px solid var(--border-soft);
-  border-radius: var(--radius-lg);
-
-  box-shadow:
-    0 10px 40px rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
-
-  backdrop-filter: blur(14px) saturate(140%);
-  -webkit-backdrop-filter: blur(14px) saturate(140%);
+.featureCard:hover,
+.nicheCard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(96, 165, 250, 0.45) !important;
+  background: rgba(30, 41, 59, 0.7) !important;
+  box-shadow: 0 18px 36px rgba(59, 130, 246, 0.18);
 }
 
-section {
-  margin-bottom: var(--space-xl);
+.iconWrapper {
+  background: #1e293b;
+  padding: 1rem;
+  border-radius: 1.25rem;
+  display: inline-flex;
+  margin-bottom: 0.75rem;
+  transition: transform 0.3s ease;
 }
 
-/* =========================
-   Niche Card (Interativo)
-   ========================= */
-.niche-card {
-  padding: var(--space-md);
-  position: relative;
-  overflow: hidden;
-  border-radius: var(--radius-md);
-
-  transition: var(--transition-base);
-  background-color: var(--bg-surface);
-  border: 1px solid var(--border-soft);
+.nicheCard:hover .iconWrapper {
+  transform: scale(1.08) rotate(4deg);
 }
 
-/* Linha de destaque animada */
-.niche-card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    120deg,
-    transparent,
-    rgba(22, 119, 255, 0.35),
-    transparent
-  );
+.ctaText {
+  margin-top: 0.5rem;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #64748b;
   opacity: 0;
-  transition: var(--transition-base);
+  transform: translateY(8px);
+  transition: all 0.3s ease;
 }
 
-.niche-card:hover {
-  transform: translateY(-6px) scale(1.01);
-  background-color: var(--bg-surface-hover);
-  border-color: var(--border-strong);
-
-  box-shadow:
-    0 20px 50px rgba(0, 0, 0, 0.55),
-    0 0 0 1px rgba(22, 119, 255, 0.25);
-}
-
-.niche-card:hover::before {
+.nicheCard:hover .ctaText {
   opacity: 1;
-}
-
-/* =========================
-   Botão Primário (AntD)
-   ========================= */
-.ant-btn, .ant-btn-primary {
-  background: var(--primary-gradient) !important;
-  border: none !important;
-
-  font-weight: 600 !important;
-  letter-spacing: 0.3px;
-
-  box-shadow:
-    0 8px 25px rgba(22, 119, 255, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.25);
-
-  transition: var(--transition-base) !important;
-  padding: 0 var(--space-lg) !important;
-}
-
-.ant-btn-primary:hover {
-  transform: translateY(-1px);
-  box-shadow:
-    0 12px 35px rgba(22, 119, 255, 0.45),
-    inset 0 1px 0 rgba(255, 255, 255, 0.3);
-}
-
-.ant-btn-primary:active {
   transform: translateY(0);
-  box-shadow:
-    0 6px 18px rgba(22, 119, 255, 0.3);
+  color: #60a5fa;
 }
 
-/* =========================
-   Mobile First Base
-   ========================= */
-body {
-  font-size: 15px;
-  line-height: 1.6;
+/* ===============================
+   Footer
+================================ */
+.footerText {
+  color: #64748b !important;
+  font-size: 0.6rem !important;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-/* Cards ocupam melhor o espaço no mobile */
-.niche-card {
-  padding: 16px;
-  margin-bottom: 16px;
-}
-
-/* Botões mais confortáveis ao toque */
-.ant-btn-primary {
-  height: 44px !important;
-  padding: 0 20px !important;
-  border-radius: 10px !important;
-}
-
-@keyframes fadeUp {
+/* ===============================
+   Animations
+================================ */
+@keyframes fadeIn {
   from {
     opacity: 0;
     transform: translateY(12px);
@@ -240,154 +200,77 @@ body {
   }
 }
 
-/* Aplicação padrão */
-.niche-card,
-.shadow-lg {
-  animation: fadeUp 0.5s ease-out both;
+.animateFadeIn {
+  animation: fadeIn 0.6s ease-out both;
 }
 
-@keyframes softGlow {
-  0% {
-    box-shadow: 0 0 0 rgba(22, 119, 255, 0);
-  }
-  50% {
-    box-shadow: 0 0 18px rgba(22, 119, 255, 0.25);
-  }
-  100% {
-    box-shadow: 0 0 0 rgba(22, 119, 255, 0);
-  }
-}
-
-/* Apenas em cards destacados */
-.niche-card:hover {
-  animation: softGlow 1.6s ease-in-out infinite;
-}
-
-@keyframes tapScale {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.97);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* Mobile tap */
-.niche-card:active,
-.ant-btn-primary:active {
-  animation: tapScale 0.2s ease-out;
-}
-
-@media (min-width: 768px) {
-  body {
-    padding-left: var(--space-lg);
-    padding-right: var(--space-lg);
-    font-size: 16px;
-  }
-  
-  .shadow-lg {
-    padding: var(--space-xl);
+/* ===============================
+   Breakpoints (Progressive)
+================================ */
+@media (min-width: 640px) {
+  .hero {
+    padding: 5rem 2rem 4rem;
   }
 
-  .niche-card {
-    padding: var(--space-lg);
-  }
-
-  .hero-section {
-    padding: 72px var(--space-xl);
-  }
-
-  .hero-title {
-    font-size: 3rem !important;
-  }
-
-  .hero-subtitle {
-    font-size: 1.1rem !important;
+  .infoGlassCard {
+    padding: 3rem 2.5rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .niche-card:hover {
-    transform: translateY(-6px) scale(1.02);
-    padding-left: var(--space-2xl);
-    padding-right: var(--space-2xl);
+  .hero {
+    padding: 6rem 2.5rem 5rem;
   }
 
-  section {
-    margin-bottom: var(--space-2xl);
+  .textSubtitle {
+    font-size: 1.05rem;
   }
 
-  .hero-title {
-    font-size: 3.5rem !important;
-  }
-
-  .hero-section {
-    padding: 96px var(--space-2xl);
+  .infoSection {
+    margin-bottom: 6rem;
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation: none !important;
-    transition: none !important;
-  }
+.iconAccent {
+  width: 1.25rem;   /* h-5 / w-5 */
+  height: 1.25rem;
+  color: #60a5fa;   /* text-blue-400 */
+  flex-shrink: 0;
 }
 
-/* Custom Styles para AI2You */
-
-.page-container {
-  /* O padrão de grid que definimos no tailwind config */
-  background-image: radial-gradient(circle, #e2e8f0 1px, transparent 1px);
-  background-size: 30px 30px;
-}
-
-.hero-title {
-  font-size: clamp(2.5rem, 5vw, 4rem) !important;
-  letter-spacing: -0.02em;
-  line-height: 1.1 !important;
-}
-
-.niche-card {
-  border: 1px solid #e2e8f0 !important;
-  border-radius: 1.5rem !important;
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.sectionHeader {
   text-align: center;
+  margin-bottom: 3rem; /* equivalente ao mb-12 */
+  padding: 0 1rem;     /* conforto no mobile */
 }
 
-.niche-card:hover {
-  border-color: #3b82f6 !important;
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1) !important;
-  transform: translateY(-5px);
+@media (min-width: 640px) {
+  .sectionHeader {
+    padding: 0 1.5rem;
+  }
 }
 
-.icon-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 64px;
-  width: 64px;
-  background-color: #f8fafc;
-  border-radius: 1rem;
+@media (min-width: 1024px) {
+  .sectionHeader {
+    padding: 0;
+  }
+}
+
+.centeredContainer {
+  max-width: 80rem; /* equivalente ao max-w-7xl */
   margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem; /* conforto mobile */
 }
 
-.ant-card-body {
-  padding: 1.5rem !important;
+@media (min-width: 640px) {
+  .centeredContainer {
+    padding: 0 1.5rem;
+  }
 }
 
-/* Ajuste para o grid de 5 colunas em telas grandes (xl) */
-@media (min-width: 1200px) {
-  .ant-col-xl-4-8 {
-    display: block;
-    flex: 0 0 20%;
-    max-width: 20%;
+@media (min-width: 1024px) {
+  .centeredContainer {
+    padding: 0 2rem;
   }
 }
