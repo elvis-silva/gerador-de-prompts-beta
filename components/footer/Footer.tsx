@@ -33,7 +33,7 @@ export default function Footer() {
             <h3 className="columnTitle">Institucional</h3>
             <ul className="linkList">
               <li><Link href="/pt/sobre" className="navLink">Sobre</Link></li>
-              <li><Link href="/pt/privacidade" className="navLink">Política de Privacidade</Link></li>
+              <li><Link href="/pt/privacy" className="navLink">Política de Privacidade</Link></li>
               <li><Link href="/pt/lgpd" className="navLink">LGPD</Link></li>
             </ul>
           </div>
@@ -42,9 +42,9 @@ export default function Footer() {
           <div className='footerColumn'>
             <h3 className="columnTitle">A Empresa</h3>
             <ul className="linkList">
-              <li><Link href="/missao" className="navLink">Missão</Link></li>
-              <li><Link href="/termos" className="navLink">Termos de Uso</Link></li>
-              <li><Link href="/cookies" className="navLink">Cookies</Link></li>
+              <li><Link href="/pt/mission" className="navLink">Missão</Link></li>
+              <li><Link href="/pt/terms" className="navLink">Termos de Uso</Link></li>
+              <li><Link href="/pt/cookies" className="navLink">Cookies</Link></li>
             </ul>
           </div>
 
