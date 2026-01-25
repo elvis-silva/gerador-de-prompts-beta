@@ -12,7 +12,7 @@ export const metadata = {
     template: '%s | AI2You'
   },
   description: 'A plataforma definitiva para engenharia de prompt. Gere comandos estruturados para marketing, programação e negócios com privacidade absoluta.',
-  keywords: ['IA', 'Prompts', 'Engenharia de Prompt', 'ChatGPT', 'Produtividade', 'LGPD'],
+  keywords: ['IA', 'Prompts', 'Engenharia de Prompt', 'ChatGPT', 'Produtividade', 'LGPD', 'Gerador de Prompt', 'Prompts para IA', 'AI Prompt Generator'],
   authors: [{ name: 'AI2You Team' }],
   creator: 'AI2You',
   openGraph: {
@@ -27,7 +27,7 @@ export const metadata = {
   robots: {
     index: true,
     follow: true,
-  },
+  }
 };
 
 export default async function RootLayout({ 

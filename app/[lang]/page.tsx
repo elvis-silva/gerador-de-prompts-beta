@@ -151,7 +151,6 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
 
             <div className={styles.ctaText}>
               Gerar Engenharia
-              <ArrowRightIcon className={styles.ctaIcon} />
             </div>
           </div>
         </Card>

@@ -51,7 +51,7 @@ export default function Footer() {
           {/* Coluna 3: Conecte-se */}
           <div className="footerColumn">
             <h3 className="columnTitle">Conecte-se</h3>
-            <div className="footerColumn footerColumn__social sm:justify-start space-x-6 mb-6">
+            <div className="footerColumn footerColumn__social sm:justify-center space-x-6 mb-6">
               {/* Ícone Facebook atualizado */}
               <a href="https://www.facebook.com/ai2you.online" className="socialIcon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                 <Facebook size={24} />

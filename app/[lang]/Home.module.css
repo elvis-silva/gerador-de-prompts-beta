@@ -404,8 +404,8 @@
 }
 
 .nicheIcon {
-  width: 2rem;   /* h-8 w-8 */
-  height: 2rem;
+  width: 6rem;   /* h-8 w-8 */
+  height: 6rem;
   color: #60a5fa;
 }
 
@@ -462,4 +462,8 @@
 
 .nicheTitle {
   color: #f8fafc;
+}
+
+.ctaIcon2 {
+  height: 0.5rem;
 }
