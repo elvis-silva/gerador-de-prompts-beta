@@ -148,4 +148,11 @@
     <priority>0.4</priority>
   </url>
 
+  <url>
+    <loc>https://ai2you.online/pt/entendendo-ia-engenharia-prompt</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://ai2you.online/pt/entendendo-ia-engenharia-prompt" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
 </urlset>
