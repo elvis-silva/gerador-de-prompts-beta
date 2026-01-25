@@ -139,21 +139,23 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
         return (
           <Col xs={24} sm={12} md={8} lg={6} key={niche.slug}>
             <Link href={`/${lang}/ai-prompt-generate/${niche.slug}`}>
-              <Card hoverable variant="borderless" className={styles.nicheCard}>
-                <div className={styles.nicheContent}>
-                  <div className={`${styles.iconWrapper} ${styles[niche.color]}`}>
-                    <Icon className={styles.nicheIcon} />
-                  </div>
+              <div className={styles.marginBottom2Rem}>
+                <div className={styles.featureCard}>
+                  <div className={styles.nicheContent}>
+                    <div className={`${styles.iconWrapper} ${styles[niche.color]}`}>
+                      <Icon className={styles.nicheIcon} />
+                    </div>
 
-                  <h3 className={styles.nicheTitle}>
-                    {niche.title}
-                  </h3>
+                    <h3 className={styles.nicheTitle}>
+                      {niche.title}
+                    </h3>
 
-                  <div className={styles.ctaText}>
-                    Gerar Engenharia
+                    <div className={styles.ctaText}>
+                      Gerar Engenharia
+                    </div>
                   </div>
                 </div>
-              </Card>
+              </div>
             </Link>
           </Col>
         );

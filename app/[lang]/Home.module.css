@@ -18,6 +18,7 @@
   gap: 2rem;
 }
 
+
 /* ===============================
    Hero Section (Mobile First)
 ================================ */
@@ -76,7 +77,7 @@
   font-weight: 800;
   margin-bottom: 1.25rem;
   letter-spacing: -0.035em;
-  color: #f8fafc
+  color: #f8fafc;
 }
 
 .textHighlight {
@@ -131,19 +132,20 @@
 ================================ */
 .featureCard,
 .nicheCard {
-  background: rgba(15, 23, 42, 0.45) !important;
-  border: 1px solid rgba(255, 255, 255, 0.06) !important;
-  border-radius: 1.75rem !important;
-  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
-  height: 100%;
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1.75rem;
   color: #f8fafc;
 
   display: flex;
   flex-direction: column;
-  align-items: center;     /* eixo horizontal */
-  justify-content: center; /* eixo vertical */
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 0.75rem;
+
+  padding: 1rem;
+  height: 100%;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
 
 .featureCard:hover,
@@ -154,11 +156,21 @@
   box-shadow: 0 18px 36px rgba(59, 130, 246, 0.18);
 }
 
+@media (hover: hover) {
+  .featureCard:hover,
+  .nicheCard:hover {
+    transform: translateY(-6px);
+    border-color: rgba(96, 165, 250, 0.45);
+    background: rgba(30, 41, 59, 0.7);
+    box-shadow: 0 18px 36px rgba(59, 130, 246, 0.18);
+  }
+}
+
 .iconWrapper {
   background: #1e293b;
   padding: 1rem;
   border-radius: 1.25rem;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 0.75rem;
@@ -169,16 +181,19 @@
   transform: scale(1.08) rotate(4deg);
 }
 
+@media (hover: hover) {
+  .nicheCard:hover .iconWrapper {
+    transform: scale(1.08) rotate(4deg);
+  }
+}
+
 .ctaText {
   margin-top: 0.5rem;
   font-size: 0.6rem;
   font-weight: 800;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #64748b;
-  opacity: 0;
-  transform: translateY(8px);
-  transition: all 0.3s ease;
+  color: #60a5fa;
 }
 
 .nicheCard:hover .ctaText {
@@ -493,6 +508,10 @@
   background: rgba(30, 58, 138, 0.95);
 }
 
+.shareButton:focus-visible {
+  outline: 2px solid #93c5fd;
+}
+
 .shareIcon {
   width: 1.25rem;
   height: 1.25rem;
@@ -536,4 +555,15 @@
   width: 1rem;
   height: 1rem;
   color: #93c5fd;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #60a5fa;
+  outline-offset: 3px;
+  border-radius: 0.5rem;
+}
+
+.marginBottom075 {
+  margin-bottom: 0.75rem;
 }
