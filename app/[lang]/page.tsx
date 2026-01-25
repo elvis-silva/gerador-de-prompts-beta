@@ -18,9 +18,7 @@ import {
   CommandLineIcon,
   CpuChipIcon,
   CheckBadgeIcon,
-  ArrowRightIcon
 } from '@heroicons/react/24/outline';
-import { ShareButton } from './ShareButton';
 import styles from './Home.module.css';
 import { ShareMenu } from './ShareMenu';
 

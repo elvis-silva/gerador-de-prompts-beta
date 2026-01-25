@@ -57,15 +57,16 @@ export default function PromptForm({ dict }: { dict: any }) {
     <div className={styles.container}>
       {/* Templates Quick-Action */}
       <section className={styles.templateSection}>
-        <div className="flex items-center gap-2 mb-6">
-          <Lightbulb className="text-amber-500 w-5 h-5" />
-          <Text strong className="text-slate-500 uppercase tracking-widest text-xs">Exemplos de Especialistas</Text>
+        <div className={styles.sectionHeader}>
+          <Lightbulb className={styles.sectionIcon} />
+          <p className={styles.sectionLabel}>Exemplos de Especialistas</p>
+
         </div>
         <div className={styles.templateGrid}>
           {Object.keys(tNiche).map((key) => (
             <Tooltip key={key} title={tNiche[key].description}>
               <button onClick={() => applyTemplate(key)} className={styles.templateButton}>
-                <span className="text-blue-600">{nicheIcons[key] || <Sparkles size={16} />}</span>
+                <span className={styles.textPrimary}>{nicheIcons[key] || <Sparkles size={16} />}</span>
                 {tNiche[key].title}
               </button>
             </Tooltip>
@@ -77,16 +78,16 @@ export default function PromptForm({ dict }: { dict: any }) {
         {/* Formulário de Configuração */}
         <div className={styles.formWrapper}>
           <div className={styles.glassCard}>
-            <Space align="center" className="mb-8">
-              <Sparkles className="text-blue-600 w-6 h-6" />
-              <Title level={4} className="!m-0 !text-slate-800">Configurar Engenharia</Title>
+            <Space align="center" className={styles.formHeader}>
+              <Sparkles className={styles.formHeaderIcon} />
+              <h1 className={styles.sectionTitle}>Configurar Engenharia</h1>
             </Space>
 
             <Form form={form} layout="vertical" onFinish={onFinish} requiredMark={false}>
               <Row gutter={16}>
                 <Col xs={24} md={12}>
                   <Form.Item name="role" label="Persona/Cargo" rules={[{ required: true }]}>
-                    <Input prefix={<UserCircle size={16} className="text-slate-400" />} className={styles.customInput} />
+                    <Input prefix={<UserCircle size={16} className={styles.inputPrefixIcon} />} className={styles.customInput} />
                   </Form.Item>
                 </Col>
                 <Col xs={24} md={12}>
@@ -138,9 +139,9 @@ export default function PromptForm({ dict }: { dict: any }) {
         {/* Output Sticky */}
         <div className={styles.outputWrapper}>
           <div className={`${styles.glassCard} ${styles.stickyCard}`}>
-            <Title level={5} className="flex items-center gap-2 !mb-6">
-              <FileText size={18} className="text-blue-600" /> Resultado Final
-            </Title>
+            <h1 className={styles.sectionTitle}>
+              <FileText size={18} className={styles.formHeaderIcon} /> Resultado Final
+            </h1>
             <textarea
               value={generatedPrompt}
               readOnly

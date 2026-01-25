@@ -1,11 +1,29 @@
+/* =========================
+   Container e Layout
+========================= */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1.25rem;
 }
 
+.mainLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 1024px) {
+  .mainLayout {
+    grid-template-columns: 1.35fr 1fr;
+  }
+}
+
+/* =========================
+   Seção de Templates (Especialistas)
+========================= */
 .templateSection {
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 
 .templateGrid {
@@ -18,95 +36,161 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.5rem 1.25rem;
-  background: white;
-  border: 1px solid #e2e8f0;
+  padding: 0.55rem 1.25rem;
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 9999px;
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #475569;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #cbd5f5;
   cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  transition: all 0.25s ease;
+  backdrop-filter: blur(10px);
 }
 
 .templateButton:hover {
   border-color: #3b82f6;
-  color: #1e40af;
-  background: #eff6ff;
-  transform: translateY(-1px);
+  background: rgba(30, 58, 138, 0.35);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.25);
 }
 
-.mainLayout {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-}
-
-@media (min-width: 1024px) {
-  .mainLayout {
-    grid-template-columns: 1.4fr 1fr;
-  }
-}
-
+/* =========================
+   Cartões Glassmorphism
+========================= */
 .glassCard {
-  background: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(226, 232, 240, 0.8);
-  border-radius: 1.5rem;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1.75rem;
   padding: 2rem;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.45);
 }
 
 .stickyCard {
   position: sticky;
-  top: 2rem;
+  top: 1.5rem;
   border-top: 4px solid #3b82f6;
 }
 
-.customInput, .customSelect :global(.ant-select-selector) {
-  border-radius: 0.75rem !important;
-  border: 1px solid #e2e8f0 !important;
-  padding: 0.5rem 1rem !important;
+/* =========================
+   Cabeçalhos e Ícones
+========================= */
+.sectionHeader, .sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
-.submitBtn {
-  height: 3.5rem !important;
-  background-color: #2563eb !important;
-  border-radius: 0.75rem !important;
-  font-weight: 700 !important;
-  margin-top: 1rem;
-  box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.39) !important;
+.sectionTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.3;
 }
 
+.sectionIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #f59e0b;
+}
+
+.sectionLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #64748b;
+}
+
+.formHeader {
+  margin-bottom: 2rem;
+}
+
+.formHeaderIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #3b82f6;
+}
+
+.textPrimary {
+  color: #3b82f6;
+}
+
+/* =========================
+   Inputs e Customização Ant Design
+========================= */
+.customInput,
+.customSelect :global(.ant-select-selector),
+:global(.ant-input),
+:global(.ant-input-affix-wrapper) {
+  border-radius: 0.75rem !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background: rgba(2, 6, 23, 0.6) !important;
+  color: #e5e7eb !important;
+}
+
+.inputPrefixIcon {
+  color: #94a3b8;
+  margin-right: 4px;
+}
+
+/* =========================
+   Área de Resultado (Textarea)
+========================= */
 .promptTextarea {
   width: 100%;
-  height: 350px;
-  background: #f8fafc;
-  border: none;
-  border-radius: 1rem;
+  height: 340px;
+  background: rgba(2, 6, 23, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 1.25rem;
   padding: 1.5rem;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.875rem;
-  color: #1e293b;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  color: #e5e7eb;
   resize: none;
   outline: none;
+  line-height: 1.6;
+}
+
+/* =========================
+   Botões de Ação
+========================= */
+.submitBtn {
+  height: 3.5rem !important;
+  background: linear-gradient(90deg, #2563eb, #3b82f6) !important;
+  border-radius: 0.9rem !important;
+  font-weight: 800 !important;
+  margin-top: 1.25rem;
+  box-shadow: 0 18px 45px rgba(37, 99, 235, 0.45) !important;
+  border: none !important;
+  transition: all 0.3s ease !important;
+}
+
+.submitBtn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
 }
 
 .copyBtn {
-  margin-top: 1.5rem;
+  margin-top: 1.75rem;
   width: 100%;
   height: 3.5rem !important;
-  border-radius: 0.75rem !important;
+  border-radius: 0.9rem !important;
   border: 2px solid #3b82f6 !important;
-  color: #3b82f6 !important;
-  font-weight: 700 !important;
+  background: transparent !important;
+  color: #60a5fa !important;
+  font-weight: 800 !important;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  transition: all 0.25s ease !important;
 }
 
-.copyBtn:hover {
-  background: #eff6ff !important;
+.copyBtn:hover:not(:disabled) {
+  background: rgba(59, 130, 246, 0.15) !important;
+  transform: translateY(-1px);
 }
