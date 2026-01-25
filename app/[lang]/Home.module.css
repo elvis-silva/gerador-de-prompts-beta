@@ -467,3 +467,73 @@
 .ctaIcon2 {
   height: 0.5rem;
 }
+
+.shareContainer {
+  position: fixed;
+  bottom: 1.25rem;
+  right: 1.25rem;
+  z-index: 100;
+}
+
+.shareButton {
+  background: rgba(15, 23, 42, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.shareButton:hover {
+  transform: scale(1.08);
+  background: rgba(30, 58, 138, 0.95);
+}
+
+.shareIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #60a5fa;
+}
+
+.shareMenu {
+  position: absolute;
+  bottom: 3.5rem;
+  right: 0;
+  background: rgba(2, 6, 23, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  min-width: 190px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.shareMenu button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  border: none;
+  color: #e5e7eb;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background 0.2s ease;
+}
+
+.shareMenu button:hover {
+  background: rgba(30, 58, 138, 0.35);
+}
+
+.shareMenu svg {
+  width: 1rem;
+  height: 1rem;
+  color: #93c5fd;
+}

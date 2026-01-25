@@ -20,7 +20,9 @@ import {
   CheckBadgeIcon,
   ArrowRightIcon
 } from '@heroicons/react/24/outline';
+import { ShareButton } from './ShareButton';
 import styles from './Home.module.css';
+import { ShareMenu } from './ShareMenu';
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -133,31 +135,31 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
     </div>
 
     <Row gutter={[24, 24]}>
-     {niches.map((niche) => {
-  const Icon = niche.icon;
+      {niches.map((niche) => {
+        const Icon = niche.icon;
 
-  return (
-    <Col xs={24} sm={12} md={8} lg={6} key={niche.slug}>
-      <Link href={`/${lang}/ai-prompt-generate/${niche.slug}`}>
-        <Card hoverable variant="borderless" className={styles.nicheCard}>
-          <div className={styles.nicheContent}>
-            <div className={`${styles.iconWrapper} ${styles[niche.color]}`}>
-              <Icon className={styles.nicheIcon} />
-            </div>
+        return (
+          <Col xs={24} sm={12} md={8} lg={6} key={niche.slug}>
+            <Link href={`/${lang}/ai-prompt-generate/${niche.slug}`}>
+              <Card hoverable variant="borderless" className={styles.nicheCard}>
+                <div className={styles.nicheContent}>
+                  <div className={`${styles.iconWrapper} ${styles[niche.color]}`}>
+                    <Icon className={styles.nicheIcon} />
+                  </div>
 
-            <h3 className={styles.nicheTitle}>
-              {niche.title}
-            </h3>
+                  <h3 className={styles.nicheTitle}>
+                    {niche.title}
+                  </h3>
 
-            <div className={styles.ctaText}>
-              Gerar Engenharia
-            </div>
-          </div>
-        </Card>
-      </Link>
-    </Col>
-  );
-})}
+                  <div className={styles.ctaText}>
+                    Gerar Engenharia
+                  </div>
+                </div>
+              </Card>
+            </Link>
+          </Col>
+        );
+      })}
     </Row>
   </section>
 
@@ -171,6 +173,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
       Otimizado para modelos LLM de alto desempenho (ChatGPT, Claude, Gemini Pro).
     </p>
   </footer>
+  <ShareMenu />
 </main>
   );
 }
