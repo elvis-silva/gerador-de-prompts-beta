@@ -14,6 +14,7 @@ export function Navbar() {
 
   const navLinks = [
     { name: "Home", href: "/" },
+    { name: "Blog", href: "/pt/entendendo-ia-engenharia-prompt"},
     { name: "Sobre", href: "/pt/sobre" },
     { name: "Missão", href: "/pt/mission" },
     { name: "Privacidade", href: "/pt/privacy" },
