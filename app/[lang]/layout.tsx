@@ -7,6 +7,10 @@ import { PageTransition } from '@/components/PageTransition';
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata = {
+  metadataBase: new URL('https://ai2you.online'),
+  alternates: {
+    canonical: '/', 
+  },
   title: {
     default: 'AI2You | Engenharia de Prompt de Elite',
     template: '%s | AI2You'
