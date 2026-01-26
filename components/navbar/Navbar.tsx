@@ -26,7 +26,7 @@ export function Navbar() {
       <div className={styles.container}>
         {/* Logo com Identidade Visual */}
         <Link href="/" className={styles.logo}>
-          <img src="/logo.svg" alt="AI2You" className={styles.logo} />
+          <img src="/logo.svg" alt="AI2You"  className={styles.logo}/>
         </Link>
 
         {/* Navegação Desktop */}

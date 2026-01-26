@@ -1,12 +1,27 @@
+html,
+body {
+  height: 100%;
+  
+  background: radial-gradient(
+    circle at 50% 0%,
+    rgba(37, 99, 235, 0.18),
+    rgba(15, 23, 42, 0) 70%
+  );
+  background-color: #0f172a;
+  overflow-x: hidden;
+
+  margin: -0.05rem;
+}
+
 /* ===============================
    Base / Container
 ================================ */
 .container {
   background-color: #0f172a;
-  min-height: 100vh;
-  padding-bottom: 4rem;
   overflow-x: hidden;
   color: #f8fafc;
+  min-height: 100vh;
+  min-width: 100vh;
 }
 
 .pageWrapper {
@@ -566,4 +581,30 @@ button:focus-visible {
 
 .marginBottom075 {
   margin-bottom: 0.75rem;
+}
+
+.appBody {
+  color: #e5e7eb; /* equivalente a text-slate-200 */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .appBody {
+    scroll-behavior: auto;
+  }
+}
+
+.pageLayout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageContent {
+  flex: 1 1 auto;
+  outline: none;
 }

@@ -86,12 +86,12 @@ export default function PromptForm({ dict }: { dict: any }) {
             <Form form={form} layout="vertical" onFinish={onFinish} requiredMark={false}>
               <Row gutter={16}>
                 <Col xs={24} md={12}>
-                  <Form.Item name="role" label="Persona/Cargo" rules={[{ required: true }]}>
+                  <Form.Item className={styles.formDark} name="role" label="Persona/Cargo" rules={[{ required: true }]}>
                     <Input prefix={<UserCircle size={16} className={styles.inputPrefixIcon} />} className={styles.customInput} />
                   </Form.Item>
                 </Col>
                 <Col xs={24} md={12}>
-                  <Form.Item name="tone" label="Tom de Voz">
+                  <Form.Item className={styles.formDark} name="tone" label="Tom de Voz">
                     <Select className={styles.customSelect}>
                       <Select.Option value="professional">Profissional</Select.Option>
                       <Select.Option value="creative">Criativo</Select.Option>
@@ -101,29 +101,29 @@ export default function PromptForm({ dict }: { dict: any }) {
                 </Col>
               </Row>
 
-              <Form.Item name="context" label="Contexto Estratégico">
+              <Form.Item className={styles.formDark} name="context" label="Contexto Estratégico">
                 <Input.TextArea rows={3} className={styles.customInput} />
               </Form.Item>
 
-               <Form.Item name="responsibilities" label={tForm.responsibilities}>
+               <Form.Item className={styles.formDark} name="responsibilities" label={tForm.responsibilities}>
                 <Input.TextArea rows={2} />
               </Form.Item>
 
               <Row gutter={16}>
                 <Col span={12}>
-                  <Form.Item name="strategy" label={tForm.strategy}><Input prefix={<Target size={16} />} /></Form.Item>
+                  <Form.Item className={styles.formDark} name="strategy" label={tForm.strategy}><Input prefix={<Target size={16} />} /></Form.Item>
                 </Col>
                 <Col span={12}>
-                  <Form.Item name="grammar" label={tForm.grammar}><Input prefix={<MessageSquare size={16} />} /></Form.Item>
+                  <Form.Item className={styles.formDark} name="grammar" label={tForm.grammar}><Input prefix={<MessageSquare size={16} />} /></Form.Item>
                 </Col>
               </Row>
 
               <Row gutter={16}>
                 <Col span={12}>
-                  <Form.Item name="userInfo" label={tForm.userInfo}><Input /></Form.Item>
+                  <Form.Item className={styles.formDark} name="userInfo" label={tForm.userInfo}><Input /></Form.Item>
                 </Col>
                 <Col span={12}>
-                  <Form.Item name="format" label={tForm.format} rules={[{ required: true }]}>
+                  <Form.Item className={styles.formDark} name="format" label={tForm.format} rules={[{ required: true }]}>
                     <Input prefix={<FileText size={16} />} placeholder={tForm.placeholders?.format} />
                   </Form.Item>
                 </Col>

@@ -1,10 +1,10 @@
 import { App, ConfigProvider, theme } from 'antd';
 import StyledComponentsRegistry from '@/lib/antd-registry';
-import '@/styles/globals.css';
 import Footer from '@/components/footer/Footer';
 import { Navbar } from '@/components/navbar/Navbar';
 import { PageTransition } from '@/components/PageTransition';
 import { GoogleAnalytics } from '@next/third-parties/google'
+import styles from './Home.module.css'
 
 export const metadata = {
   metadataBase: new URL('https://ai2you.online'),
@@ -50,7 +50,7 @@ export default async function RootLayout({
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4768510961285493"
      crossOrigin="anonymous"></script>
       </head>
-      <body className="antialiased text-slate-200">
+      <body className={styles.appBody}>
         <Navbar />
         <StyledComponentsRegistry>
           <ConfigProvider
@@ -65,8 +65,8 @@ export default async function RootLayout({
             >
             <PageTransition>
               <App>
-                <div className="min-h-screen flex flex-col">
-                  <div className="flex-grow">
+                <div className={styles.pageLayout}>
+                  <div className={styles.pageContent}>
                     {children}
                   </div>
                   <Footer />

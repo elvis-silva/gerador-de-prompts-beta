@@ -36,6 +36,8 @@
   gap: 0.5rem;
   text-decoration: none;
   min-width: 0;
+  max-height: 240%;
+  aspect-ratio: 1 / 1;
 }
 
 .logoIcon {
