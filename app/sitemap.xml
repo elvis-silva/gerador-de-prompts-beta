@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-  xmlns="http://sitemaps.org/schemas/sitemap/0.9"
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
@@ -151,6 +151,7 @@
   <url>
     <loc>https://www.ai2you.online/pt/entendendo-ia-engenharia-prompt</loc>
     <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/entendendo-ia-engenharia-prompt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/entendendo-ia-engenharia-prompt" />
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>

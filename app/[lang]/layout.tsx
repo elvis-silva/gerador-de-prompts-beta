@@ -76,7 +76,7 @@ export default async function RootLayout({
           </ConfigProvider>
         </StyledComponentsRegistry>
       </body>
-      <GoogleAnalytics gaId="G-8TMK294LL0" />
+      {/* <GoogleAnalytics gaId="G-8TMK294LL0" /> */}
     </html>
   );
 }
