@@ -1,15 +1,28 @@
-import React from 'react';
+"use client";
+
+import { useState } from "react";
 import Link from 'next/link';
 import { 
   Facebook, 
   Instagram, 
-  Mail, 
-  Globe
-} from 'lucide-react'; // Padronizado com o uso do PromptForm
+  Mail
+} from 'lucide-react'; 
 import '@/components/footer/footer.css';
+import { usePathname, useParams } from 'next/navigation';
+import pt from "@/i18n/pt.json";
+import en from "@/i18n/en.json";
+
+const dictionaries = { 'pt': pt, 'en': en };
+
+export function useFooterDicitionary() {
+  const { lang } = useParams();
+  return dictionaries[lang as keyof typeof dictionaries] ?? pt;
+}
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const pathname = usePathname();
+  const dict = useFooterDicitionary();
 
   return (
     <footer className="footerContainer">
@@ -18,10 +31,10 @@ export default function Footer() {
         {/* Banner de Destaque */}
         <div className="highlightBanner">
           <h2 className="text-blue-400 font-bold text-lg md:text-xl mb-2 text-center">
-            Criamos experiências digitais com propósito, clareza e excelência técnica.
+            {dict.footer.we_create_digital_experiences}
           </h2>
           <p className="text-slate-400 text-sm md:text-base text-center">
-            Tecnologia bem feita não é barulho, é impacto.
+            {dict.footer.well_made_technology}
           </p>
         </div>
 
@@ -30,38 +43,38 @@ export default function Footer() {
           
           {/* Coluna 1: Institucional */}
           <div className='footerColumn'>
-            <h3 className="columnTitle">Institucional</h3>
+            <h3 className="columnTitle">{dict.footer.institutional}</h3>
             <ul className="linkList">
-              <li><Link href="/pt/sobre" className="navLink">Sobre</Link></li>
-              <li><Link href="/pt/privacy" className="navLink">Política de Privacidade</Link></li>
-              <li><Link href="/pt/lgpd" className="navLink">LGPD</Link></li>
+              <li><Link href={dict.footer.about.href} className="navLink">{dict.footer.about.name}</Link></li>
+              <li><Link href={dict.footer.privacy.href} className="navLink">{dict.footer.privacy.name}</Link></li>
+              <li><Link href={dict.footer.lgpd.href} className="navLink">{dict.footer.lgpd.name}</Link></li>
             </ul>
           </div>
 
           {/* Coluna 2: A Empresa */}
           <div className='footerColumn'>
-            <h3 className="columnTitle">A Empresa</h3>
+            <h3 className="columnTitle">{dict.footer.the_company}</h3>
             <ul className="linkList">
-              <li><Link href="/pt/mission" className="navLink">Missão</Link></li>
-              <li><Link href="/pt/terms" className="navLink">Termos de Uso</Link></li>
-              <li><Link href="/pt/cookies" className="navLink">Cookies</Link></li>
+              <li><Link href={dict.footer.mission.href} className="navLink">{dict.footer.mission.name}</Link></li>
+              <li><Link href={dict.footer.terms.href} className="navLink">{dict.footer.terms.name}</Link></li>
+              <li><Link href={dict.footer.cookies.href} className="navLink">{dict.footer.cookies.name}</Link></li>
             </ul>
           </div>
 
           {/* Coluna 3: Conecte-se */}
           <div className="footerColumn">
-            <h3 className="columnTitle">Conecte-se</h3>
+            <h3 className="columnTitle">{dict.footer.connect}</h3>
             <div className="footerColumn footerColumn__social sm:justify-center space-x-6 mb-6">
               {/* Ícone Facebook atualizado */}
-              <a href="https://www.facebook.com/ai2you.online" className="socialIcon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <a href={dict.footer.facebook.href} className="socialIcon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                 <Facebook size={24} />
               </a>
               {/* Ícone Instagram atualizado */}
-              <a href="https://www.instagram.com/elvissilva.dev" className="socialIcon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <a href={dict.footer.instagram.href} className="socialIcon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                 <Instagram size={24} />
               </a>
               {/* Ícone Mail atualizado */}
-              <a href="mailto:ai2you.com.br" className="socialIcon" aria-label="Mail">
+              <a href={dict.footer.email.href} className="socialIcon" aria-label="Mail">
                 <Mail size={24} />
               </a>
             </div>
@@ -70,7 +83,7 @@ export default function Footer() {
 
         <div className="copywrite">              
           <p className="text-slate-500 text-xs text-center">
-            © {currentYear} AI2You. Todos os direitos reservados.
+            © {currentYear} {dict.footer.copywrite}
           </p>
         </div>
       </div>

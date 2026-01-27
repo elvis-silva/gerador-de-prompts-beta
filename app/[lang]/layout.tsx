@@ -45,10 +45,10 @@ export default async function RootLayout({
   const { lang } = await params;
 
   return (
-    <html lang={lang || 'pt'}>
+    <html lang={lang}>
       <head>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4768510961285493"
-     crossOrigin="anonymous"></script>
+        {/*<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4768510961285493"
+     crossOrigin="anonymous"></script>*/}
       </head>
       <body className={styles.appBody}>
         <Navbar />

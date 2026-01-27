@@ -1,26 +1,26 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import { usePathname } from 'next/navigation';
-import { RocketLaunchIcon } from '@heroicons/react/24/outline';
+import { usePathname, useParams } from 'next/navigation';
 import styles from "./navbar.module.css";
-import Image from "next/image";
-import logo from '@/public/logo.svg';
+import pt from "@/i18n/pt.json";
+import en from "@/i18n/en.json";
+
+const dictionaries = { 'pt': pt, 'en': en };
+
+export function useNavDictionary() {
+  const { lang } = useParams();
+  return dictionaries[lang as keyof typeof dictionaries] ?? pt;
+}
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const dict = useNavDictionary();
 
-  const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Blog", href: "/pt/entendendo-ia-engenharia-prompt"},
-    { name: "Sobre", href: "/pt/sobre" },
-    { name: "Missão", href: "/pt/mission" },
-    { name: "Privacidade", href: "/pt/privacy" },
-    { name: "Contato", href: "/pt/contact" },
-  ];
-
+  const navLinks = dict.navbar.nav_links;
+  
   return (
     <header className={styles.navbar}>
       <div className={styles.container}>

@@ -8,6 +8,17 @@ import {
   Users, Briefcase, GraduationCap, HeartPulse, Building2, Wallet 
 } from 'lucide-react';
 import styles from './PromptForm.module.css';
+import { useParams } from 'next/navigation';
+import pt from "@/i18n/pt.json";
+import en from "@/i18n/en.json";
+import '@/styles/globals.css'
+
+const dictionaries = { 'pt': pt, 'en': en };
+
+export function usePromptFormDictionary() {
+  const { lang } = useParams();
+  return dictionaries[lang as keyof typeof dictionaries] ?? pt;
+}
 
 const { Title, Text } = Typography;
 
@@ -33,23 +44,25 @@ export default function PromptForm({ dict }: { dict: any }) {
   const tCommon = dict?.common || {};
   const tNiche = dict?.niche || {};
 
+  const formDict = usePromptFormDictionary(); 
+
   const applyTemplate = (key: string) => {
     const niche = tNiche[key];
     form.setFieldsValue({
       role: niche.title,
       context: niche.description,
-      tone: 'professional',
+      tone: `${formDict.prompt.tone_text}`,
       format: 'Markdown',
-      responsibilities: 'Gerar um plano detalhado focado em resultados.',
-      strategy: 'Foco em conversão',
-      grammar: 'Clara e objetiva',
-      userInfo: 'Público geral interessado no tema'
+      responsibilities: `${formDict.prompt.responsibilities_text}`,
+      strategy: `${formDict.prompt.strategy_text}`,
+      grammar: `${formDict.prompt.grammar_text}`,
+      userInfo: `${formDict.prompt.target_audience_text}`
     });
-    message.success(`Template de ${niche.title} aplicado!`);
+    message.success(`${formDict.prompt.template} ${niche.title} ${formDict.prompt.applied}!`);
   };
 
   const onFinish = (values: any) => {
-    const prompt = `# ROLE\nAtue como ${values.role}.\n\n# CONTEXT\n${values.context}\n\n# RESPONSIBILITIES\n${values.responsibilities}\n\n# STRATEGY\n- Tom: ${values.tone}\n- Público: ${values.userInfo}\n- Formato: ${values.format}`;
+    const prompt = `# ${formDict.prompt.role}\n${formDict.prompt.act_as} ${values.role}.\n\n# ${formDict.prompt.context}\n${values.context}\n\n# ${formDict.prompt.responsibilities}\n${values.responsibilities}\n\n# ${formDict.prompt.strategy}\n- ${formDict.prompt.tone}: ${values.tone}\n- ${formDict.prompt.target_audience}: ${values.userInfo}\n- ${formDict.prompt.format}: ${values.format}\n- ${formDict.prompt.grammar}: ${values.grammar}\n- ${formDict.prompt.strategy}: ${values.strategy}`;
     setGeneratedPrompt(prompt);
   };
 
@@ -59,7 +72,7 @@ export default function PromptForm({ dict }: { dict: any }) {
       <section className={styles.templateSection}>
         <div className={styles.sectionHeader}>
           <Lightbulb className={styles.sectionIcon} />
-          <p className={styles.sectionLabel}>Exemplos de Especialistas</p>
+          <p className={styles.sectionLabel}>{formDict.prompt.expert_eg}</p>
 
         </div>
         <div className={styles.templateGrid}>
@@ -80,28 +93,28 @@ export default function PromptForm({ dict }: { dict: any }) {
           <div className={styles.glassCard}>
             <Space align="center" className={styles.formHeader}>
               <Sparkles className={styles.formHeaderIcon} />
-              <h1 className={styles.sectionTitle}>Configurar Engenharia</h1>
+              <h1 className={styles.sectionTitle}>{formDict.prompt.config_eng}</h1>
             </Space>
 
-            <Form form={form} layout="vertical" onFinish={onFinish} requiredMark={false}>
+            <Form className="formDark" form={form} layout="vertical" onFinish={onFinish} requiredMark={false}>
               <Row gutter={16}>
                 <Col xs={24} md={12}>
-                  <Form.Item className={styles.formDark} name="role" label="Persona/Cargo" rules={[{ required: true }]}>
+                  <Form.Item className={styles.formDark} name="role" label={`${formDict.prompt.role_label}`} rules={[{ required: true }]}>
                     <Input prefix={<UserCircle size={16} className={styles.inputPrefixIcon} />} className={styles.customInput} />
                   </Form.Item>
                 </Col>
                 <Col xs={24} md={12}>
-                  <Form.Item className={styles.formDark} name="tone" label="Tom de Voz">
+                  <Form.Item className={styles.formDark} name="tone" label={`${formDict.prompt.tone_label}`}>
                     <Select className={styles.customSelect}>
-                      <Select.Option value="professional">Profissional</Select.Option>
-                      <Select.Option value="creative">Criativo</Select.Option>
-                      <Select.Option value="formal">Formal</Select.Option>
+                      <Select.Option value="professional">{formDict.prompt.professional}</Select.Option>
+                      <Select.Option value="creative">{formDict.prompt.criative}</Select.Option>
+                      <Select.Option value="formal">{formDict.prompt.formal}</Select.Option>
                     </Select>
                   </Form.Item>
                 </Col>
               </Row>
 
-              <Form.Item className={styles.formDark} name="context" label="Contexto Estratégico">
+              <Form.Item className={styles.formDark} name="context" label={`${formDict.prompt.strategic_context}`}>
                 <Input.TextArea rows={3} className={styles.customInput} />
               </Form.Item>
 
@@ -130,7 +143,7 @@ export default function PromptForm({ dict }: { dict: any }) {
               </Row>
 
               <Button type="primary" htmlType="submit" block className={styles.submitBtn}>
-                Gerar Prompt Mágico
+                {formDict.prompt.generate_magic_prompt}
               </Button>
             </Form>
           </div>
@@ -140,13 +153,13 @@ export default function PromptForm({ dict }: { dict: any }) {
         <div className={styles.outputWrapper}>
           <div className={`${styles.glassCard} ${styles.stickyCard}`}>
             <h1 className={styles.sectionTitle}>
-              <FileText size={18} className={styles.formHeaderIcon} /> Resultado Final
+              <FileText size={18} className={styles.formHeaderIcon} /> {formDict.prompt.final_result}
             </h1>
             <textarea
               value={generatedPrompt}
               readOnly
               className={styles.promptTextarea}
-              placeholder="As instruções da IA aparecerão aqui..."
+              placeholder={formDict.prompt.final_instructions}
             />
             <Button 
               onClick={() => {
@@ -157,7 +170,7 @@ export default function PromptForm({ dict }: { dict: any }) {
               className={styles.copyBtn}
               icon={<Copy size={18} />}
             >
-              Copiar Prompt Especialista
+              {formDict.prompt.copy_prompt}
             </Button>
           </div>
         </div>

@@ -18,6 +18,14 @@
   gap: 2rem;
 }
 
+.formDark {
+  --form-bg: #020617;
+  --form-border: #1e293b;
+  --form-text: #f8fafc;
+  --form-placeholder: #94a3b8;
+  --form-accent: #3b82f6;
+}
+
 /* ===============================
    Hero Section (Mobile First)
 ================================ */

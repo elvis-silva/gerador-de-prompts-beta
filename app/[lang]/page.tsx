@@ -1,6 +1,5 @@
 "use client";
 
-import React from 'react';
 import { Typography, Row, Col, Card, Divider } from 'antd';
 import Link from 'next/link';
 import { 
@@ -21,6 +20,16 @@ import {
 } from '@heroicons/react/24/outline';
 import styles from './Home.module.css';
 import { ShareMenu } from './ShareMenu';
+import { useParams } from 'next/navigation';
+import pt from '@/i18n/pt.json';
+import en from '@/i18n/en.json';
+
+const dictionaries = { 'pt': pt, 'en': en };
+
+export function useHomeDictionary() {
+  const { lang } = useParams();
+  return dictionaries[lang as keyof typeof dictionaries] ?? pt;
+}
 
 const { Title, Text, Paragraph } = Typography;
 
@@ -39,7 +48,8 @@ const niches = [
 ];
 
 export default function HomePage({ params }: { params: Promise<{ lang: string }> }) {
-  const { lang } = React.use(params);
+  const { lang } = useParams();
+  const dict = useHomeDictionary();
 
   return (
    <main className={styles.container}>
@@ -51,16 +61,18 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
     <div className={styles.centeredContainer}>
       <div className={`${styles.badge} ${styles.animateFadeIn}`}>
         <SparklesIcon className={styles.iconAccent} />
-        <span className={styles.badgeText}>Engenharia de Prompt Avançada</span>
+        <span className={styles.badgeText}>{dict.home.badge}
+        </span>
       </div>
       
       <h1 className={styles.textTitle}>
-        Domine a IA com <br />
-        <span className={styles.textHighlight}>Prompts de Elite</span>
+        {dict.home.title}
+    <br />
+        <span className={styles.textHighlight}>{dict.home.highlight}</span>
       </h1>
 
       <p className={styles.textSubtitle}>
-        Pare de "tentar" e comece a <strong>executar</strong>. Transformamos a complexidade da IA em comandos estruturados para diversos nichos estratégicos.
+        {dict.home.stop_try_and_start}<strong>{dict.home.doing}</strong>{dict.home.we_transform_text}
       </p>
     </div>
   </section>
@@ -69,10 +81,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
   <section className={styles.infoSection}>
     <div className={styles.infoGlassCard}>
       <div className={styles.sectionHeader}>
-        <h1 className={styles.sectionTitle}>Como a AI2You potencializa seu trabalho?</h1>
-        <p className={styles.paragraphMutedLarge}>
-          Nossa plataforma atua como uma ponte técnica entre sua necessidade e a resposta da IA.
-        </p>
+        <h1 className={styles.sectionTitle}>{dict.home.how_does_ai2you_enhence_your_work}</h1>
+        <p className={styles.paragraphMutedLarge}>{dict.home.our_platform_acts}</p>
       </div>
 
       <Row gutter={[32, 32]}>
@@ -82,11 +92,9 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
             <div className={styles.iconWrapper}>
               <CommandLineIcon className={styles.iconLargeAccent} />
             </div>
-            <h1 className={styles.titleWhite}>Engenharia Reversa</h1>
-            <h2 className={styles.quoteText}>"O comando certo gera a solução exata."</h2>
-            <p className={styles.mutedText}>
-              Estruturamos roles, contextos e restrições para que a IA não sofra alucinações.
-            </p>
+            <h1 className={styles.titleWhite}>{dict.home.reverse_engineering}</h1>
+            <h2 className={styles.quoteText}>{dict.home.the_right_command}</h2>
+            <p className={styles.mutedText}>{dict.home.we_structured_roles}</p>
           </div>
         </Col>
 
@@ -96,11 +104,9 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
             <div className={styles.iconWrapper}>
               <CpuChipIcon className={styles.iconLargeAccent} />
             </div>
-            <h1 className={styles.titleWhite}>Especialização</h1>
-            <h2 className={styles.quoteText}>"Cada mercado tem sua linguagem."</h2>
-            <p className={styles.mutedText}>
-              Utilizamos frameworks como AIDA ou Clean Code para garantir autoridade técnica.
-            </p>
+            <h1 className={styles.titleWhite}>{dict.home.specialization}</h1>
+            <h2 className={styles.quoteText}>{dict.home.each_niche_has}</h2>
+            <p className={styles.mutedText}>{dict.home.we_use_frameworks}</p>
           </div>
         </Col>
 
@@ -110,11 +116,9 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
             <div className={styles.iconWrapper}>
               <CheckBadgeIcon className={styles.iconLargeAccent} />
             </div>
-            <h1 className={styles.titleWhite}>Prompt Mágico</h1>
-            <h2 className={styles.quoteText}>"Copie, cole e surpreenda-se."</h2>
-            <p className={styles.mutedText}>
-              Comando otimizado para GPT-4, Claude ou Gemini, pronto para resultados sêniores.
-            </p>
+            <h1 className={styles.titleWhite}>{dict.home.magic_prompt}</h1>
+            <h2 className={styles.quoteText}>{dict.home.copy_and_past}</h2>
+            <p className={styles.mutedText}>{dict.home.optmized_command}</p>
           </div>
         </Col>
       </Row>
@@ -124,7 +128,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
   {/* --- NICHE GRID ORIGINAL COM ESTILO REFORÇADO --- */}
   <section className={styles.sectionContainer}>
     <div className={styles.sectionHeaderRow}>
-      <h1 className={styles.headingPrimary}>Selecione seu campo estratégico</h1>
+      <h1 className={styles.headingPrimary}>{dict.home.select_your_niche}</h1>
       <div className={styles.desktopFlex}>
         <span className={styles.badgeText}>Role-Based Prompts</span>
         <Divider orientation="vertical" className={styles.dividerSmall} />
@@ -138,7 +142,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
 
         return (
           <Col xs={24} sm={12} md={8} lg={6} key={niche.slug}>
-            <Link href={`/${lang}/ai-prompt-generate/${niche.slug}`}>
+            <Link href={`/${lang}${dict.home.prompt_slug}${niche.slug}`}>
               <div className={styles.marginBottom2Rem}>
                 <div className={styles.featureCard}>
                   <div className={styles.nicheContent}>
@@ -166,12 +170,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
   {/* --- FOOTER INFORMATIVO --- */}
   <footer className={styles.heroContainer}>
     <Divider className={styles.dividerSmall} />
-    <p className={styles.footerText}>
-      AI2YOU • Engenharia de Prompt Estruturada
-    </p>
-    <p className={styles.helperText}>
-      Otimizado para modelos LLM de alto desempenho (ChatGPT, Claude, Gemini Pro).
-    </p>
+    <p className={styles.footerText}>{dict.home.ai2you_structured_prompt_engineering}</p>
+    <p className={styles.helperText}>{dict.home.optimized_for_high_performance}</p>
   </footer>
   <ShareMenu />
 </main>
