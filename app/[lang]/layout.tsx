@@ -7,66 +7,73 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import styles from './Home.module.css';
 import { getDictionary } from '@/lib/getDictionary';
 import type { Metadata } from 'next';
+import { use } from 'react';
+import AntdRegistry from '../AntdRegistry';
 
-export async function generateMetadata({ params }: { params: { lang: any } }): Promise<Metadata> {
-  const dict = await getDictionary( params.lang );
+export const metadata: Metadata = {
+  title: 'AI2You | Gerador de Prompts de Elite',
+  description: 'Gerador de Prompts com IA'
+};
+
+// export async function generateMetadata({ params }: { params: { lang: any } }): Promise<Metadata> {
+//   const dict = await getDictionary( params.lang );
   
-  return {
-    metadataBase: new URL('https://ai2you.com.br'), 
-    alternates: {
-      canonical: `/${params.lang}`,
-      languages: {
-        'pt-BR': '/pt',
-        'en-US': '/en',
-      },
-    },
-    title: {
-      default: dict.seo.home.title,
-      template: '%s | AI2You'
-    },
-    description: dict.seo.home.description,
-    keywords: [dict.seo.home.keywords],
-    openGraph: {
-      type: 'website',
-      locale: params.lang === 'pt' ? 'pt_BR' : 'en_US',
-      url: `https://ai2you.com.br/${params.lang}`,
-      siteName: 'AI2You',
-      title: 'AI2You | Domine a IA com Prompts de Elite',
-      description: 'Aumente sua produtividade em 10x com comandos profissionais e seguros.',
-      images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'AI2You Platform' }],
-    },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    }
-  };
-}
+//   return {
+//     metadataBase: new URL('https://ai2you.online'), 
+//     alternates: {
+//       canonical: `/${params.lang}`,
+//       languages: {
+//         'pt-BR': '/pt',
+//         'en-US': '/en',
+//       },
+//     },
+//     title: {
+//       default: dict.seo.home.title,
+//       template: '%s | AI2You'
+//     },
+//     description: dict.seo.home.description,
+//     keywords: [dict.seo.home.keywords],
+//     openGraph: {
+//       type: 'website',
+//       locale: params.lang === 'pt' ? 'pt_BR' : 'en_US',
+//       url: `https://ai2you.online/${params.lang}`,
+//       siteName: 'AI2You',
+//       title: 'AI2You | Domine a IA com Prompts de Elite',
+//       description: 'Aumente sua produtividade em 10x com comandos profissionais e seguros.',
+//       images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'AI2You Platform' }],
+//     },
+//     robots: {
+//       index: true,
+//       follow: true,
+//       googleBot: {
+//         index: true,
+//         follow: true,
+//         'max-video-preview': -1,
+//         'max-image-preview': 'large',
+//         'max-snippet': -1,
+//       },
+//     }
+//   };
+// }
 
 export default async function RootLayout({ 
   children, 
-  params 
+  params
 }: { 
   children: React.ReactNode, 
-  params: { lang: string } 
+  params: Promise<{ lang: string }>
 }) {
-  const { lang } = params;
+  const { lang } = await params;
 
   return (
-    <html lang={lang} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
+    <html lang={lang}>
       <head>
         {/* Favicon e Metas de Mobile */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={styles.appBody}>
-        <StyledComponentsRegistry>
+      <body suppressHydrationWarning className={styles.appBody}>
+        <AntdRegistry>
           <ConfigProvider
             theme={{
               algorithm: theme.darkAlgorithm,
@@ -89,7 +96,7 @@ export default async function RootLayout({
               </div>
             </App>
           </ConfigProvider>
-        </StyledComponentsRegistry>
+        </AntdRegistry>
         
         {/* Analytics deve estar no final do body */}
         <GoogleAnalytics gaId="G-8TMK294LL0" />
