@@ -69,10 +69,11 @@
       "icon": "CpuChipIcon",
       "description": "Advanced prompt creation for AI models and intelligent automation."
     },
+
     "cyber-security": {
       "title": "Cybersecurity",
       "icon": "ShieldCheckIcon",
-      "description": "Risk analysis, security best practices, and incident response."
+      "description": "Risk analysis, security best practices, and incident responses."
     },
     "graphic-design": {
       "title": "Graphic Design",
