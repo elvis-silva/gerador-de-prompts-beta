@@ -1,4 +1,11 @@
 {
+  "seo": {
+    "home": {
+      "title": "AI2You | AI Prompt Generator",
+      "description": "Create advanced AI prompts and boost results in marketing, sales and technology.",
+      "keywords": "ai prompt generator, artificial intelligence, prompt engineering"
+    }
+  },
   "home": {
     "badge": "Advanced Prompt Engineering",
     "title": "AI Prompt Generator",
@@ -20,17 +27,18 @@
     "select_your_niche": "Select your niche.",
     "prompt_slug": "/ai-prompt-generator/",
     "ai2you_structured_prompt_engineering": "AI2You • Structured Prompt Engineering",
-    "optimized_for_high_performance": "Optimized for high-performance LLM models (ChatGPT, Claude, Gemini Pro)."
+    "optimized_for_high_performance": "Optimized for high-performance LLM models (ChatGPT, Claude, Gemini Pro).",
+    "generate_engineering": "Generate Engineering"
   },
-    "navbar": {
-      "nav_links": [
-        { "name": "Home", "href": "/" },
-        { "name": "Blog", "href": "/pt/entendendo-ia-engenharia-prompt"},
-        { "name": "About", "href": "/pt/sobre" },
-        { "name": "Mission", "href": "/pt/mission" },
-        { "name": "Privacy", "href": "/pt/privacy" },
-        { "name": "Contact", "href": "/pt/contact" }
-      ]
+  "navbar": {
+    "nav_links": [
+      { "name": "Home", "href": "/" },
+      { "name": "Blog", "href": "/pt/entendendo-ia-engenharia-prompt"},
+      { "name": "About", "href": "/pt/sobre" },
+      { "name": "Mission", "href": "/pt/mission" },
+      { "name": "Privacy", "href": "/pt/privacy" },
+      { "name": "Contact", "href": "/pt/contact" }
+    ]
   },
   "footer": {
     "about": { "name": "About", "href": "/pt/sobre" },
@@ -79,5 +87,115 @@
     "copy_prompt": "Copy Prompt Expert",
     "config_eng": "Configure Engineering",
     "expert_eg": "Examples of Experts"
-  } 
+  },
+  "common": {
+    "home": "Home",
+    "about": "About",
+    "privacy": "Privacy",
+    "copy": "Copy Prompt",
+    "copied": "Successfully copied!",
+    "generate": "Generate Magic Prompt"
+  },
+  "niche": {
+    "digital-marketing": {
+      "title": "Digital Marketing",
+      "icon": "MegaphoneIcon",
+      "description": "Create high-conversion traffic strategies and persuasive copy."
+    },
+    "software-development": {
+      "title": "Software Development",
+      "icon": "CodeBracketIcon",
+      "description": "Prompts for refactoring, system architecture, and code debugging."
+    },
+    "content-creation": {
+      "title": "Content Creation",
+      "icon": "PencilSquareIcon",
+      "description": "Ideas for videos, social posts, and viral scripts."
+    },
+    "legal-assistant": {
+      "title": "Legal Assistant",
+      "icon": "ScaleIcon",
+      "description": "Contract analysis and drafting of legal documents."
+    },
+    "human-resources": {
+      "title": "Human Resources",
+      "icon": "UserGroupIcon",
+      "description": "Talent screening and creation of job descriptions."
+    },
+    "sales-expert": {
+      "title": "Sales Expert",
+      "icon": "CurrencyDollarIcon",
+      "description": "Sales scripts and objection-handling techniques."
+    },
+    "education-tutor": {
+      "title": "Education & Tutoring",
+      "icon": "AcademicCapIcon",
+      "description": "Lesson plans and simplified explanations for complex topics."
+    },
+    "medical-health": {
+      "title": "Health & Wellness",
+      "icon": "HeartIcon",
+      "description": "Support for informational reports and fitness routines."
+    },
+    "real-estate": {
+      "title": "Real Estate",
+      "icon": "HomeModernIcon",
+      "description": "Luxury property descriptions and market analysis."
+    },
+    "finances": {
+      "title": "Finance & Investments",
+      "icon": "PresentationChartLineIcon",
+      "description": "Portfolio analysis and financial market reports."
+    },
+    "copywriting": {
+      "title": "Professional Copywriting",
+      "icon": "SparklesIcon",
+      "description": "Creation of persuasive copy focused on conversion and sales."
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "icon": "ShoppingCartIcon",
+      "description": "Product descriptions, sales pages, and conversion strategies."
+    },
+    "data-analysis": {
+      "title": "Data Analysis",
+      "icon": "ChartBarIcon",
+      "description": "Data interpretation, insight generation, and analytical reports."
+    },
+    "artificial-intelligence": {
+      "title": "Artificial Intelligence",
+      "icon": "CpuChipIcon",
+      "description": "Advanced prompt creation for AI models and intelligent automation."
+    },
+    "cyber-security": {
+      "title": "Cybersecurity",
+      "icon": "ShieldCheckIcon",
+      "description": "Risk analysis, security best practices, and incident response."
+    },
+    "graphic-design": {
+      "title": "Graphic Design",
+      "icon": "PaintBrushIcon",
+      "description": "Creative briefs, visual concepts, and brand identity guidance."
+    },
+    "photography": {
+      "title": "Professional Photography",
+      "icon": "CameraIcon",
+      "description": "Photo shoot planning, visual storytelling, and creative direction."
+    },
+    "translation-localization": {
+      "title": "Translation & Localization",
+      "icon": "LanguageIcon",
+      "description": "Text translation with cultural and contextual adaptation."
+    },
+    "customer-support": {
+      "title": "Customer Support",
+      "icon": "ChatBubbleLeftEllipsisIcon",
+      "description": "Automated replies, support scripts, and customer experience improvement."
+    },
+    "business-strategy": {
+      "title": "Business Strategy",
+      "icon": "ChatBubbleLeftEllipsisIcon",
+      "description": "Strategic planning, market analysis, and decision-making support."
+    }
+  }
 }

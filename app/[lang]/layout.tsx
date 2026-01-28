@@ -3,55 +3,69 @@ import StyledComponentsRegistry from '@/lib/antd-registry';
 import Footer from '@/components/footer/Footer';
 import { Navbar } from '@/components/navbar/Navbar';
 import { PageTransition } from '@/components/PageTransition';
-import { GoogleAnalytics } from '@next/third-parties/google'
-import styles from './Home.module.css'
+import { GoogleAnalytics } from '@next/third-parties/google';
+import styles from './Home.module.css';
+import { getDictionary } from '@/lib/getDictionary';
+import type { Metadata } from 'next';
 
-export const metadata = {
-  metadataBase: new URL('https://ai2you.online'),
-  alternates: {
-    canonical: '/', 
-  },
-  title: {
-    default: 'AI2You | Engenharia de Prompt de Elite',
-    template: '%s | AI2You'
-  },
-  description: 'A plataforma definitiva para engenharia de prompt. Gere comandos estruturados para marketing, programação e negócios com privacidade absoluta.',
-  keywords: ['IA', 'Prompts', 'Engenharia de Prompt', 'ChatGPT', 'Produtividade', 'LGPD', 'Gerador de Prompt', 'Prompts para IA', 'AI Prompt Generator'],
-  authors: [{ name: 'AI2You Team' }],
-  creator: 'AI2You',
-  openGraph: {
-    type: 'website',
-    locale: 'pt_BR',
-    url: 'https://ai2you.online',
-    siteName: 'AI2You',
-    title: 'AI2You | Domine a IA com Prompts de Elite',
-    description: 'Aumente sua produtividade em 10x com comandos profissionais e seguros.',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'AI2You Platform' }],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  }
-};
+export async function generateMetadata({ params }: { params: { lang: any } }): Promise<Metadata> {
+  const dict = await getDictionary( params.lang );
+  
+  return {
+    metadataBase: new URL('https://ai2you.com.br'), 
+    alternates: {
+      canonical: `/${params.lang}`,
+      languages: {
+        'pt-BR': '/pt',
+        'en-US': '/en',
+      },
+    },
+    title: {
+      default: dict.seo.home.title,
+      template: '%s | AI2You'
+    },
+    description: dict.seo.home.description,
+    keywords: [dict.seo.home.keywords],
+    openGraph: {
+      type: 'website',
+      locale: params.lang === 'pt' ? 'pt_BR' : 'en_US',
+      url: `https://ai2you.com.br/${params.lang}`,
+      siteName: 'AI2You',
+      title: 'AI2You | Domine a IA com Prompts de Elite',
+      description: 'Aumente sua produtividade em 10x com comandos profissionais e seguros.',
+      images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'AI2You Platform' }],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    }
+  };
+}
 
 export default async function RootLayout({ 
   children, 
   params 
 }: { 
   children: React.ReactNode, 
-  params: Promise<{ lang: string }> 
+  params: { lang: string } 
 }) {
-
-  const { lang } = await params;
+  const { lang } = params;
 
   return (
-    <html lang={lang}>
+    <html lang={lang} dir={lang === 'ar' ? 'rtl' : 'ltr'}>
       <head>
-        {/*<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4768510961285493"
-     crossOrigin="anonymous"></script>*/}
+        {/* Favicon e Metas de Mobile */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={styles.appBody}>
-        <Navbar />
         <StyledComponentsRegistry>
           <ConfigProvider
             theme={{
@@ -59,24 +73,195 @@ export default async function RootLayout({
               token: {
                 borderRadius: 12,
                 colorPrimary: '#3b82f6', 
-                colorBgBase: '#ffffff',
+                colorBgBase: '#0f172a', 
                 },
               }}
             >
-            <PageTransition>
-              <App>
-                <div className={styles.pageLayout}>
-                  <div className={styles.pageContent}>
+            <App>
+              <div className={styles.pageLayout}>
+                <Navbar /> 
+                <PageTransition>
+                  <main className={styles.pageContent}>
                     {children}
-                  </div>
-                  <Footer />
-                </div>
-              </App>
-            </PageTransition>
+                  </main>
+                </PageTransition>
+                <Footer />
+              </div>
+            </App>
           </ConfigProvider>
         </StyledComponentsRegistry>
+        
+        {/* Analytics deve estar no final do body */}
+        <GoogleAnalytics gaId="G-8TMK294LL0" />
       </body>
-      <GoogleAnalytics gaId="G-8TMK294LL0" />
     </html>
   );
 }
+
+
+// import { App, ConfigProvider, theme } from 'antd';
+// import StyledComponentsRegistry from '@/lib/antd-registry';
+// import Footer from '@/components/footer/Footer';
+// import { Navbar } from '@/components/navbar/Navbar';
+// import { PageTransition } from '@/components/PageTransition';
+// import { GoogleAnalytics } from '@next/third-parties/google'
+// import styles from './Home.module.css'
+// import { getDictionary } from '@/lib/getDictionary';
+// import type { Metadata } from 'next';
+
+// export const metadata = {
+//   metadataBase: new URL('https://ai2you.online'),
+//   alternates: {
+//     canonical: '/', 
+//   },
+//   title: {
+//     default: 'AI2You | Engenharia de Prompt de Elite',
+//     template: '%s | AI2You'
+//   },
+//   description: 'A plataforma definitiva para engenharia de prompt. Gere comandos estruturados para marketing, programação e negócios com privacidade absoluta.',
+//   keywords: ['IA', 'Prompts', 'Engenharia de Prompt', 'ChatGPT', 'Produtividade', 'LGPD', 'Gerador de Prompt', 'Prompts para IA', 'AI Prompt Generator'],
+//   authors: [{ name: 'AI2You Team' }],
+//   creator: 'AI2You',
+//   openGraph: {
+//     type: 'website',
+//     locale: 'pt_BR',
+//     url: 'https://ai2you.online',
+//     siteName: 'AI2You',
+//     title: 'AI2You | Domine a IA com Prompts de Elite',
+//     description: 'Aumente sua produtividade em 10x com comandos profissionais e seguros.',
+//     images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'AI2You Platform' }],
+//   },
+//   robots: {
+//     index: true,
+//     follow: true,
+//   }
+// };
+
+// export default async function RootLayout({ 
+//   children, 
+//   params 
+// }: { 
+//   children: React.ReactNode, 
+//   params: { lang: string } 
+// }) {
+
+//   const { lang } = params;
+
+//   return (
+//     <html lang={lang}>
+//       <head>
+//         {/*<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4768510961285493"
+//      crossOrigin="anonymous"></script>*/}
+//       </head>
+//       <body className={styles.appBody}>
+//         <Navbar />
+//         <StyledComponentsRegistry>
+//           <ConfigProvider
+//             theme={{
+//               algorithm: theme.darkAlgorithm,
+//               token: {
+//                 borderRadius: 12,
+//                 colorPrimary: '#3b82f6', 
+//                 colorBgBase: '#ffffff',
+//                 },
+//               }}
+//             >
+//             <PageTransition>
+//               <App>
+//                 <div className={styles.pageLayout}>
+//                   <div className={styles.pageContent}>
+//                     {children}
+//                   </div>
+//                   <Footer />
+//                 </div>
+//               </App>
+//             </PageTransition>
+//           </ConfigProvider>
+//         </StyledComponentsRegistry>
+//       </body>
+//       {/* <GoogleAnalytics gaId="G-8TMK294LL0" /> */}
+//     </html>
+//   );
+// }
+
+
+// import type { Metadata } from 'next';
+// import { ConfigProvider, App, theme } from 'antd';
+// import {Navbar} from '@/components/navbar/Navbar';
+// import Footer from '@/components/footer/Footer';
+// import {PageTransition} from '@/components/PageTransition';
+// import StyledComponentsRegistry from '@/lib/antd-registry';
+// import { getDictionary } from '@/lib/getDictionary';
+// import styles from './Home.module.css'
+
+// export async function generateMetadata({
+//   params
+// }: {
+//   params: { lang: string };
+// }): Promise<Metadata> {
+//   const dict = await getDictionary(params.lang);
+//   const seo = dict.seo;
+
+//   return {
+//     title: {
+//       default: seo.title,
+//       template: `%s | AI2You`
+//     },
+//     description: seo.description,
+//     alternates: {
+//       canonical: `/${params.lang}`,
+//       languages: {
+//         'pt-BR': '/pt',
+//         'en-US': '/en'
+//       }
+//     },
+//     openGraph: {
+//       title: seo.title,
+//       description: seo.description,
+//       locale: params.lang === 'pt-BR' ? 'pt_BR' : 'en_US',
+//       siteName: 'AI2You',
+//       type: 'website'
+//     }
+//   };
+// }
+
+// export default async function RootLayout({
+//   children,
+//   params
+// }: {
+//   children: React.ReactNode;
+//   params: { lang: string };
+// }) {
+//   const { lang } = params;
+
+//   return (
+//     <html lang={lang}>
+//       <body className={styles.appBody}>
+//         <Navbar />
+//         <StyledComponentsRegistry>
+//           <ConfigProvider
+//             theme={{
+//               algorithm: theme.darkAlgorithm,
+//               token: {
+//                 borderRadius: 12,
+//                 colorPrimary: '#3b82f6',
+//                 colorBgBase: '#ffffff'
+//               }
+//             }}
+//           >
+//             <PageTransition>
+//               <App>
+//                 <div className={styles.pageLayout}>
+//                   <div className={styles.pageContent}>
+//                     {children}
+//                   </div>
+//                   <Footer />
+//                 </div>
+//               </App>
+//             </PageTransition>
+//           </ConfigProvider>
+//         </StyledComponentsRegistry>
+//       </body>
+//     </html>
+//   );
+// }

@@ -1,4 +1,11 @@
 {
+  "seo": {
+    "home": {
+      "title": "AI2You | Gerador de Prompt com IA",
+      "description": "Crie prompts avançados com inteligência artificial e aumente seus resultados em marketing, vendas e tecnologia.",
+      "keywords": "gerador de prompt, inteligência artificial, engenharia de prompt"
+    }
+  },
   "home": {
     "badge": "Engenharia de Prompt Avançada",
     "title": "Gerador de Prompt",
@@ -20,7 +27,8 @@
     "select_your_niche": "Selecione seu nicho",
     "prompt_slug": "/gerador-de-prompt/",
     "ai2you_structured_prompt_engineering": "AI2You • Engenharia de Prompt Estruturada",
-    "optimized_for_high_performance": "Otimizado para modelos LLM de alto desempenho (ChatGPT, Claude, Gemini Pro)."
+    "optimized_for_high_performance": "Otimizado para modelos LLM de alto desempenho (ChatGPT, Claude, Gemini Pro).",
+    "generate_engineering": "Gerar Engenharia"
   },
   "navbar": {
     "nav_links": [
@@ -79,5 +87,115 @@
     "copy_prompt": "Copiar Prompt Especialista",
     "config_eng": "Configurar Engenharia",
     "expert_eg": "Exemplos de Especialistas"
-  } 
+  },
+  "common": {
+    "home": "Início",
+    "about": "Sobre Nós",
+    "privacy": "Privacidade",
+    "copy": "Copiar Prompt",
+    "copied": "Copiado com sucesso!",
+    "generate": "Gerar Prompt Mágico"
+  },
+  "niche": {
+    "digital-marketing": {
+      "title": "Marketing Digital",
+      "icon": "MegaphoneIcon",
+      "description": "Crie estratégias de tráfego e copy de alta conversão."
+    },
+    "software-development": {
+      "title": "Desenvolvimento de Software",
+      "icon": "CodeBracketIcon",
+      "description": "Prompts para refatoração, arquitetura e debug de código."
+    },
+    "content-creation": {
+      "title": "Criação de Conteúdo",
+      "icon": "PencilSquareIcon",
+      "description": "Ideias para vídeos, posts e roteiros virais."
+    },
+    "legal-assistant": {
+      "title": "Assistente Jurídico",
+      "icon": "ScaleIcon",
+      "description": "Análise de contratos e redação de petições iniciais."
+    },
+    "human-resources": {
+      "title": "Recursos Humanos",
+      "icon": "UserGroupIcon",
+      "description": "Triagem de talentos e criação de descrições de cargos."
+    },
+    "sales-expert": {
+      "title": "Especialista em Vendas",
+      "icon": "CurrencyDollarIcon",
+      "description": "Scripts de vendas e quebra de objeções."
+    },
+    "education-tutor": {
+      "title": "Educação e Tutoria",
+      "icon": "AcademicCapIcon",
+      "description": "Planos de aula e explicações complexas simplificadas."
+    },
+    "medical-health": {
+      "title": "Saúde e Bem-estar",
+      "icon": "HeartIcon",
+      "description": "Auxílio em laudos informativos e rotinas de treinos."
+    },
+    "real-estate": {
+      "title": "Mercado Imobiliário",
+      "icon": "HomeModernIcon",
+      "description": "Descrições de imóveis de luxo e análise de mercado."
+    },
+    "finances": {
+      "title": "Finanças e Investimentos",
+      "icon": "PresentationChartLineIcon",
+      "description": "Análise de portfólio e relatórios de mercado financeiro."
+    },
+    "copywriting": {
+      "title": "Copywriting Profissional",
+      "icon": "SparklesIcon",
+      "description": "Criação de textos persuasivos focados em conversão e vendas."
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+       "icon": "ShoppingCartIcon",
+      "description": "Descrições de produtos, páginas de venda e estratégias de conversão."
+    },
+    "data-analysis": {
+      "title": "Análise de Dados",
+      "icon": "ChartBarIcon",
+      "description": "Interpretação de dados, geração de insights e relatórios analíticos."
+    },
+    "artificial-intelligence": {
+      "title": "Inteligência Artificial",
+      "icon": "CpuChipIcon",
+      "description": "Criação de prompts avançados para modelos de IA e automações inteligentes."
+    },
+    "cyber-security": {
+      "title": "Segurança da Informação",
+      "icon": "ShieldCheckIcon",
+      "description": "Análise de riscos, boas práticas de segurança e respostas a incidentes."
+    },
+    "graphic-design": {
+      "title": "Design Gráfico",
+      "icon": "PaintBrushIcon",
+      "description": "Briefings criativos, conceitos visuais e direcionamento de identidade."
+    },
+    "photography": {
+      "title": "Fotografia Profissional",
+      "icon": "CameraIcon",
+      "description": "Planejamento de ensaios, storytelling visual e direção criativa."
+    },
+    "translation-localization": {
+      "title": "Tradução e Localização",
+      "icon": "LanguageIcon",
+      "description": "Tradução de textos com adaptação cultural e contextual."
+    },
+    "customer-support": {
+      "title": "Atendimento ao Cliente",
+      "icon": "ChatBubbleLeftEllipsisIcon",
+      "description": "Respostas automáticas, scripts de suporte e melhoria da experiência do usuário."
+    },
+    "business-strategy": {
+      "title": "Estratégia de Negócios",
+      "icon": "ChatBubbleLeftEllipsisIcon",
+      "description": "Planejamento estratégico, análise de mercado e tomada de decisão."
+    }
+  }
 }

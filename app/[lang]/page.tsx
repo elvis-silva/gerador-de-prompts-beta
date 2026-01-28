@@ -2,27 +2,50 @@
 
 import { Typography, Row, Col, Card, Divider } from 'antd';
 import Link from 'next/link';
-import { 
-  MegaphoneIcon, 
-  CodeBracketIcon, 
-  CurrencyDollarIcon, 
-  PencilSquareIcon, 
-  ScaleIcon, 
-  UserGroupIcon, 
-  AcademicCapIcon, 
-  HeartIcon, 
-  HomeModernIcon, 
-  PresentationChartLineIcon,
-  SparklesIcon,
-  CommandLineIcon,
-  CpuChipIcon,
-  CheckBadgeIcon,
-} from '@heroicons/react/24/outline';
 import styles from './Home.module.css';
 import { ShareMenu } from './ShareMenu';
 import { useParams } from 'next/navigation';
 import pt from '@/i18n/pt.json';
 import en from '@/i18n/en.json';
+
+ import { 
+//   MegaphoneIcon, 
+//   CodeBracketIcon, 
+//   CurrencyDollarIcon, 
+//   PencilSquareIcon, 
+//   ScaleIcon, 
+//   UserGroupIcon, 
+//   AcademicCapIcon, 
+//   HeartIcon, 
+//   HomeModernIcon, 
+//   PresentationChartLineIcon,
+   SparklesIcon,
+   CommandLineIcon,
+   CpuChipIcon,
+   CheckBadgeIcon,
+//   ShoppingCartIcon,
+//   ChartBarIcon,
+//   ShieldCheckIcon,
+//   PaintBrushIcon,
+//   CameraIcon,
+//   ChatBubbleLeftEllipsisIcon,
+//   LanguageIcon,
+//   BriefcaseIcon
+ } from '@heroicons/react/24/outline';
+
+import nichesJson from '@/i18n/niches.json';
+import { iconRegistry } from '@/components/iconRegistry';
+
+const niches = Object.entries(nichesJson).map(([slug, data]) => {
+  const Icon = iconRegistry[data.icon];
+
+  return {
+    slug,
+    title: data.title,
+    icon: Icon ? <Icon /> : null
+  };
+});
+
 
 const dictionaries = { 'pt': pt, 'en': en };
 
@@ -33,19 +56,29 @@ export function useHomeDictionary() {
 
 const { Title, Text, Paragraph } = Typography;
 
-// Mapeamento original de nichos
-const niches = [
-  { slug: 'digital-marketing', title: 'Marketing', icon: MegaphoneIcon, color: 'text-blue-500' },
-  { slug: 'software-development', title: 'Programação', icon: CodeBracketIcon, color: 'text-emerald-500' },
-  { slug: 'sales-expert', title: 'Vendas', icon: CurrencyDollarIcon, color: 'text-amber-500' },
-  { slug: 'content-creator', title: 'Conteúdo', icon: PencilSquareIcon, color: 'text-purple-500' },
-  { slug: 'legal-assistant', title: 'Jurídico', icon: ScaleIcon, color: 'text-slate-600' },
-  { slug: 'human-resources', title: 'RH', icon: UserGroupIcon, color: 'text-pink-500' },
-  { slug: 'education-tutor', title: 'Educação', icon: AcademicCapIcon, color: 'text-indigo-500' },
-  { slug: 'medical-health', title: 'Saúde', icon: HeartIcon, color: 'text-red-500' },
-  { slug: 'real-estate', title: 'Imobiliário', icon: HomeModernIcon, color: 'text-cyan-600' },
-  { slug: 'finances', title: 'Finanças', icon: PresentationChartLineIcon, color: 'text-green-600' },
-];
+// const niches = [
+//   { slug: 'digital-marketing', title: 'Marketing', icon: MegaphoneIcon, color: 'text-blue-500' },
+//   { slug: 'software-development', title: 'Programação', icon: CodeBracketIcon, color: 'text-emerald-500' },
+//   { slug: 'sales-expert', title: 'Vendas', icon: CurrencyDollarIcon, color: 'text-amber-500' },
+//   { slug: 'content-creator', title: 'Conteúdo', icon: PencilSquareIcon, color: 'text-purple-500' },
+//   { slug: 'legal-assistant', title: 'Jurídico', icon: ScaleIcon, color: 'text-slate-600' },
+//   { slug: 'human-resources', title: 'RH', icon: UserGroupIcon, color: 'text-pink-500' },
+//   { slug: 'education-tutor', title: 'Educação', icon: AcademicCapIcon, color: 'text-indigo-500' },
+//   { slug: 'medical-health', title: 'Saúde', icon: HeartIcon, color: 'text-red-500' },
+//   { slug: 'real-estate', title: 'Imobiliário', icon: HomeModernIcon, color: 'text-cyan-600' },
+//   { slug: 'finances', title: 'Finanças', icon: PresentationChartLineIcon, color: 'text-green-600' },
+//   { slug: 'copywriting', title: 'Copywriting', icon: SparklesIcon, color: 'text-yellow-500' },
+//   { slug: 'devops', title: 'DevOps', icon: CommandLineIcon, color: 'text-gray-500' },
+//   { slug: 'artificial-intelligence', title: 'Inteligência Artificial', icon: CpuChipIcon, color: 'text-violet-500' },
+//   { slug: 'quality-assurance', title: 'Qualidade & Testes', icon: CheckBadgeIcon, color: 'text-teal-500' },
+//   { slug: 'ecommerce', title: 'E-commerce', icon: ShoppingCartIcon, color: 'text-orange-500' },
+//   { slug: 'data-analysis', title: 'Análise de Dados', icon: ChartBarIcon, color: 'text-sky-500' },
+//   { slug: 'cyber-security', title: 'Segurança', icon: ShieldCheckIcon, color: 'text-rose-500' },
+//   { slug: 'graphic-design', title: 'Design Gráfico', icon: PaintBrushIcon, color: 'text-fuchsia-500' },
+//   { slug: 'photography', title: 'Fotografia', icon: CameraIcon, color: 'text-lime-500' },
+//   { slug: 'customer-support', title: 'Atendimento', icon: ChatBubbleLeftEllipsisIcon, color: 'text-blue-400' }
+// ];
+
 
 export default function HomePage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = useParams();
@@ -53,9 +86,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
 
   return (
    <main className={styles.container}>
-  {/* --- HERO SECTION REFINADA --- */}
-  <section className={styles.hero}>
-    {/* Background Glow dinâmico via CSS Module */}
+  {/* --- HERO SECTION --- */}
+  <section className={styles.hero}>    
     <div className={styles.heroGradient} />
     
     <div className={styles.centeredContainer}>
@@ -77,7 +109,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
     </div>
   </section>
 
-  {/* --- NOVA SEÇÃO: GUIA PROFISSIONAL DE USO (Glassmorphism) --- */}
+  {/* --- GUIA PROFISSIONAL DE USO --- */}
   <section className={styles.infoSection}>
     <div className={styles.infoGlassCard}>
       <div className={styles.sectionHeader}>
@@ -125,7 +157,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
     </div>
   </section>
 
-  {/* --- NICHE GRID ORIGINAL COM ESTILO REFORÇADO --- */}
+  {/* --- NICHE GRID --- */}
   <section className={styles.sectionContainer}>
     <div className={styles.sectionHeaderRow}>
       <h1 className={styles.headingPrimary}>{dict.home.select_your_niche}</h1>
@@ -146,8 +178,9 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
               <div className={styles.marginBottom2Rem}>
                 <div className={styles.featureCard}>
                   <div className={styles.nicheContent}>
-                    <div className={`${styles.iconWrapper} ${styles[niche.color]}`}>
-                      <Icon className={styles.nicheIcon} />
+                    <div className={`${styles.iconWrapper} ${styles.nicheIcon}`}>
+                      {/* <Icon className={styles.nicheIcon} /> */}
+                      {niche.icon}
                     </div>
 
                     <h3 className={styles.nicheTitle}>
@@ -155,7 +188,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                     </h3>
 
                     <div className={styles.ctaText}>
-                      Gerar Engenharia
+                      {dict.home.generate_engineering}
                     </div>
                   </div>
                 </div>

@@ -2,25 +2,41 @@
 
 import React, { useState } from 'react';
 import { Form, Input, Select, Button, App, Typography, Tooltip, Space, Row, Col } from 'antd';
-import { 
-  Copy, Sparkles, UserCircle, Target, MessageSquare, 
-  FileText, Lightbulb, TrendingUp, Code, PenTool, Scale, 
-  Users, Briefcase, GraduationCap, HeartPulse, Building2, Wallet 
-} from 'lucide-react';
 import styles from './PromptForm.module.css';
 import { useParams } from 'next/navigation';
 import pt from "@/i18n/pt.json";
 import en from "@/i18n/en.json";
 import '@/styles/globals.css'
 
-const dictionaries = { 'pt': pt, 'en': en };
-
-export function usePromptFormDictionary() {
-  const { lang } = useParams();
-  return dictionaries[lang as keyof typeof dictionaries] ?? pt;
-}
-
-const { Title, Text } = Typography;
+import {
+  Copy, 
+  Sparkles, 
+  UserCircle, 
+  Target, 
+  MessageSquare, 
+  FileText, 
+  Lightbulb,
+  TrendingUp,
+  Code,
+  PenTool,
+  Scale,
+  Users,
+  Briefcase,
+  GraduationCap,
+  HeartPulse,
+  Building2,
+  Wallet,
+  Megaphone,
+  ShoppingCart,
+  BarChart3,
+  Cpu,
+  ShieldCheck,
+  Palette,
+  Camera,
+  Languages,
+  Headphones,
+  LineChart
+} from 'lucide-react';
 
 const nicheIcons: Record<string, React.ReactNode> = {
   "digital-marketing": <TrendingUp size={18} />,
@@ -32,8 +48,28 @@ const nicheIcons: Record<string, React.ReactNode> = {
   "education-tutor": <GraduationCap size={18} />,
   "medical-health": <HeartPulse size={18} />,
   "real-estate": <Building2 size={18} />,
-  "finances": <Wallet size={18} />
+  "finances": <Wallet size={18} />,
+  "copywriting": <Megaphone size={18} />,
+  "ecommerce": <ShoppingCart size={18} />,
+  "data-analysis": <BarChart3 size={18} />,
+  "artificial-intelligence": <Cpu size={18} />,
+  "cyber-security": <ShieldCheck size={18} />,
+  "graphic-design": <Palette size={18} />,
+  "photography": <Camera size={18} />,
+  "translation-localization": <Languages size={18} />,
+  "customer-support": <Headphones size={18} />,
+  "business-strategy": <LineChart size={18} />
 };
+
+const dictionaries = { 'pt': pt, 'en': en };
+
+export function usePromptFormDictionary() {
+  const { lang } = useParams();
+  return dictionaries[lang as keyof typeof dictionaries] ?? pt;
+}
+
+const { Title, Text } = Typography;
+
 
 export default function PromptForm({ dict }: { dict: any }) {
   const { message } = App.useApp();
@@ -73,7 +109,6 @@ export default function PromptForm({ dict }: { dict: any }) {
         <div className={styles.sectionHeader}>
           <Lightbulb className={styles.sectionIcon} />
           <p className={styles.sectionLabel}>{formDict.prompt.expert_eg}</p>
-
         </div>
         <div className={styles.templateGrid}>
           {Object.keys(tNiche).map((key) => (

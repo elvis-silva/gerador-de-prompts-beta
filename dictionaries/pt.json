@@ -62,6 +62,47 @@
     "finances": {
       "title": "Finanças e Investimentos",
       "description": "Análise de portfólio e relatórios de mercado financeiro."
+    },
+
+    "copywriting": {
+      "title": "Copywriting Profissional",
+      "description": "Criação de textos persuasivos focados em conversão e vendas."
+    },
+    "ecommerce": {
+      "title": "E-commerce",
+      "description": "Descrições de produtos, páginas de venda e estratégias de conversão."
+    },
+    "data-analysis": {
+      "title": "Análise de Dados",
+      "description": "Interpretação de dados, geração de insights e relatórios analíticos."
+    },
+    "artificial-intelligence": {
+      "title": "Inteligência Artificial",
+      "description": "Criação de prompts avançados para modelos de IA e automações inteligentes."
+    },
+    "cyber-security": {
+      "title": "Segurança da Informação",
+      "description": "Análise de riscos, boas práticas de segurança e respostas a incidentes."
+    },
+    "graphic-design": {
+      "title": "Design Gráfico",
+      "description": "Briefings criativos, conceitos visuais e direcionamento de identidade."
+    },
+    "photography": {
+      "title": "Fotografia Profissional",
+      "description": "Planejamento de ensaios, storytelling visual e direção criativa."
+    },
+    "translation-localization": {
+      "title": "Tradução e Localização",
+      "description": "Tradução de textos com adaptação cultural e contextual."
+    },
+    "customer-support": {
+      "title": "Atendimento ao Cliente",
+      "description": "Respostas automáticas, scripts de suporte e melhoria da experiência do usuário."
+    },
+    "business-strategy": {
+      "title": "Estratégia de Negócios",
+      "description": "Planejamento estratégico, análise de mercado e tomada de decisão."
     }
   }
 }

@@ -1,0 +1,51 @@
+import {
+  MegaphoneIcon,
+  CodeBracketIcon,
+  CurrencyDollarIcon,
+  CpuChipIcon,
+  PaintBrushIcon,
+  ChartBarIcon,
+  ShieldCheckIcon,
+  CameraIcon,
+  ChatBubbleLeftEllipsisIcon,
+  ShoppingCartIcon,
+  CommandLineIcon,
+  SparklesIcon,
+  CheckBadgeIcon,
+  AcademicCapIcon,
+  HeartIcon,
+  HomeModernIcon,
+  PresentationChartLineIcon,
+  UserGroupIcon,
+  ScaleIcon,
+  PencilSquareIcon,
+  LanguageIcon,
+  BriefcaseIcon
+} from '@heroicons/react/24/outline';
+
+import { ElementType } from 'react';
+
+export const iconRegistry: Record<string, ElementType> = {
+  MegaphoneIcon,
+  CodeBracketIcon,
+  CurrencyDollarIcon,
+  CpuChipIcon,
+  PaintBrushIcon,
+  ChartBarIcon,
+  ShieldCheckIcon,
+  CameraIcon,
+  ChatBubbleLeftEllipsisIcon,
+  ShoppingCartIcon,
+  CommandLineIcon,
+  SparklesIcon,
+  CheckBadgeIcon,
+  AcademicCapIcon,
+  HeartIcon,
+  HomeModernIcon,
+  PresentationChartLineIcon,
+  UserGroupIcon,
+  ScaleIcon,
+  PencilSquareIcon,
+  LanguageIcon,
+  BriefcaseIcon
+};
