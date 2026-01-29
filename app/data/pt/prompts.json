@@ -1,0 +1,13 @@
+{
+  "roles": [
+    { "label": "Especialista em Marketing", "value": "marketing" },
+    { "label": "Desenvolvedor de Software", "value": "developer" },
+    { "label": "Criador de Conteúdo", "value": "content" },
+    { "label": "Gestor de Vendas", "value": "sales" }
+  ],
+  "tones": [
+    { "label": "Profissional", "value": "professional" },
+    { "label": "Criativo", "value": "creative" },
+    { "label": "Didático", "value": "educational" }
+  ]
+}

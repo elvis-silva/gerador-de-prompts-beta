@@ -7,6 +7,8 @@ import { useParams } from 'next/navigation';
 import pt from "@/i18n/pt.json";
 import en from "@/i18n/en.json";
 import '@/styles/globals.css'
+import ptData from '@/app/data/pt/prompts.json';
+import enData from '@/app/data/en/prompts.json';
 
 import {
   Copy, 
@@ -37,6 +39,7 @@ import {
   Headphones,
   LineChart
 } from 'lucide-react';
+import { Option } from 'antd/es/mentions';
 
 const nicheIcons: Record<string, React.ReactNode> = {
   "digital-marketing": <TrendingUp size={18} />,
@@ -81,6 +84,8 @@ export default function PromptForm({ dict }: { dict: any }) {
   const tNiche = dict?.niche || {};
 
   const formDict = usePromptFormDictionary(); 
+  const { lang } = useParams();
+  const data = lang === 'pt' ? ptData : enData;
 
   const applyTemplate = (key: string) => {
     const niche = tNiche[key];
@@ -135,16 +140,34 @@ export default function PromptForm({ dict }: { dict: any }) {
               <Row gutter={16}>
                 <Col xs={24} md={12}>
                   <Form.Item className={styles.formDark} name="role" label={`${formDict.prompt.role_label}`} rules={[{ required: true }]}>
-                    <Input prefix={<UserCircle size={16} className={styles.inputPrefixIcon} />} className={styles.customInput} />
+                    {/* <Input prefix={<UserCircle size={16} className={styles.inputPrefixIcon} />} className={styles.customInput} /> */}
+                    <Select
+                      options={data.roles}
+                      placeholder={
+                        lang === 'pt'
+                          ? 'Selecione sua função'
+                          : 'Select your role'
+                      }
+                      aria-label="User role"
+                    />
                   </Form.Item>
                 </Col>
                 <Col xs={24} md={12}>
                   <Form.Item className={styles.formDark} name="tone" label={`${formDict.prompt.tone_label}`}>
-                    <Select className={styles.customSelect}>
-                      <Select.Option value="professional">{formDict.prompt.professional}</Select.Option>
-                      <Select.Option value="creative">{formDict.prompt.criative}</Select.Option>
-                      <Select.Option value="formal">{formDict.prompt.formal}</Select.Option>
-                    </Select>
+                    {/* <Select className={styles.customSelect}>
+                      <Select value="professional">{formDict.prompt.professional}</Select>
+                      <Option value="creative">{formDict.prompt.criative}</Option>
+                      <Option value="formal">{formDict.prompt.formal}</Option>
+                    </Select> */}
+                    <Select
+                      options={data.tones}
+                      placeholder={
+                        lang === 'pt'
+                          ? 'Escolha o tom'
+                          : 'Choose the tone'
+                      }
+                      aria-label="Prompt tone"
+                    />
                   </Form.Item>
                 </Col>
               </Row>
@@ -153,26 +176,26 @@ export default function PromptForm({ dict }: { dict: any }) {
                 <Input.TextArea rows={3} className={styles.customInput} />
               </Form.Item>
 
-               <Form.Item className={styles.formDark} name="responsibilities" label={tForm.responsibilities}>
+               <Form.Item className={styles.formDark} name="responsibilities" label={`${formDict.prompt.responsibilities}`}>
                 <Input.TextArea rows={2} />
               </Form.Item>
 
               <Row gutter={16}>
                 <Col span={12}>
-                  <Form.Item className={styles.formDark} name="strategy" label={tForm.strategy}><Input prefix={<Target size={16} />} /></Form.Item>
+                  <Form.Item className={styles.formDark} name="strategy" label={`${formDict.prompt.strategy_type}`}><Input prefix={<Target size={16} />} /></Form.Item>
                 </Col>
                 <Col span={12}>
-                  <Form.Item className={styles.formDark} name="grammar" label={tForm.grammar}><Input prefix={<MessageSquare size={16} />} /></Form.Item>
+                  <Form.Item className={styles.formDark} name="grammar" label={`${formDict.prompt.grammar}`}><Input prefix={<MessageSquare size={16} />} /></Form.Item>
                 </Col>
               </Row>
 
               <Row gutter={16}>
                 <Col span={12}>
-                  <Form.Item className={styles.formDark} name="userInfo" label={tForm.userInfo}><Input /></Form.Item>
+                  <Form.Item className={styles.formDark} name="userInfo" label={`${formDict.prompt.target_audience}`}><Input /></Form.Item>
                 </Col>
                 <Col span={12}>
-                  <Form.Item className={styles.formDark} name="format" label={tForm.format} rules={[{ required: true }]}>
-                    <Input prefix={<FileText size={16} />} placeholder={tForm.placeholders?.format} />
+                  <Form.Item className={styles.formDark} name="format" label={`${formDict.prompt.template}`} rules={[{ required: true }]}>
+                    <Input prefix={<FileText size={16} />} placeholder={`${formDict.prompt.format}`} />
                   </Form.Item>
                 </Col>
               </Row>

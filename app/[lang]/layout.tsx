@@ -1,5 +1,4 @@
 import { App, ConfigProvider, theme } from 'antd';
-import StyledComponentsRegistry from '@/lib/antd-registry';
 import Footer from '@/components/footer/Footer';
 import { Navbar } from '@/components/navbar/Navbar';
 import { PageTransition } from '@/components/PageTransition';
@@ -7,8 +6,7 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import styles from './Home.module.css';
 import { getDictionary } from '@/lib/getDictionary';
 import type { Metadata } from 'next';
-import { use } from 'react';
-import AntdRegistry from '../AntdRegistry';
+import AntdRegistry from '@/lib/antd-registry';
 
 export const metadata: Metadata = {
   title: 'AI2You | Gerador de Prompts de Elite',
@@ -66,13 +64,13 @@ export default async function RootLayout({
   const { lang } = await params;
 
   return (
-    <html lang={lang}>
+    <html lang={lang} suppressHydrationWarning>
       <head>
         {/* Favicon e Metas de Mobile */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body suppressHydrationWarning className={styles.appBody}>
+      <body className={styles.appBody}>
         <AntdRegistry>
           <ConfigProvider
             theme={{

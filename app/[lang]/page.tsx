@@ -157,13 +157,13 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
     </div>
   </section>
 
-  {/* --- NICHE GRID --- */}
+  --- NICHE GRID ---
   <section className={styles.sectionContainer}>
     <div className={styles.sectionHeaderRow}>
       <h1 className={styles.headingPrimary}>{dict.home.select_your_niche}</h1>
       <div className={styles.desktopFlex}>
         <span className={styles.badgeText}>Role-Based Prompts</span>
-        <Divider orientation="vertical" className={styles.dividerSmall} />
+        {/* <Divider orientation="vertical" className={styles.dividerSmall} /> */}
         <span className={styles.badgeText}>Multi-Model Ready</span>
       </div>
     </div>
@@ -202,7 +202,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
 
   {/* --- FOOTER INFORMATIVO --- */}
   <footer className={styles.heroContainer}>
-    <Divider className={styles.dividerSmall} />
+    {/* <Divider className={styles.dividerSmall} /> */}
     <p className={styles.footerText}>{dict.home.ai2you_structured_prompt_engineering}</p>
     <p className={styles.helperText}>{dict.home.optimized_for_high_performance}</p>
   </footer>

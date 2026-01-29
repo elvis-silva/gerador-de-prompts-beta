@@ -1,24 +1,17 @@
 'use client';
 
-import React, { useState } from 'react';
-import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs';
-import type Entity from '@ant-design/cssinjs/lib/Cache';
-import { useServerInsertedHTML } from 'next/navigation';
+import { ReactNode } from 'react';
+import { StyleProvider, createCache } from '@ant-design/cssinjs';
 
-export default function StyledComponentsRegistry({ children }: { children: React.ReactNode }) {
-  const [cache] = useState<Entity>(() => createCache());
+const cache = createCache();
 
-  // Injeta os estilos no <head> durante o Server-Side Rendering
-  useServerInsertedHTML(() => (
-    <script
-      dangerouslySetInnerHTML={{
-        __html: `</script>${extractStyle(cache)}<script>`,
-      }}
-    />
-  ));
-
+export default function AntdRegistry({
+  children,
+}: {
+  children: ReactNode;
+}) {
   return (
-    <StyleProvider cache={cache}>
+    <StyleProvider cache={cache} hashPriority="high">
       {children}
     </StyleProvider>
   );
