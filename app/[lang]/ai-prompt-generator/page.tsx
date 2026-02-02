@@ -6,6 +6,7 @@ import nichesJson from '@/i18n/niches.json';
 import { iconRegistry } from '@/components/iconRegistry';
 import { Typography, Row, Col, Card, Divider } from 'antd';
 
+
 type PageProps = {
   params: {
     lang: string;

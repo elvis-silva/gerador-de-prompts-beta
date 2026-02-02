@@ -100,7 +100,14 @@
     "digital-marketing": {
       "title": "Digital Marketing",
       "icon": "MegaphoneIcon",
-      "description": "Create high-conversion traffic strategies and persuasive copy."
+      "description": "Create high-conversion traffic strategies and persuasive copy.",
+      "roles": [
+        { "label": "Estrategista de Marketing", "value": "marketing-strategist" },
+        { "label": "Especialista em Tráfego Pago", "value": "paid-media-specialist" },
+        { "label": "Especialista em SEO", "value": "seo-specialist" },
+        { "label": "Copywriter Profissional", "value": "copywriter" },
+        { "label": "Growth Marketer", "value": "growth-marketer" }
+      ]
     },
     "software-development": {
       "title": "Software Development",

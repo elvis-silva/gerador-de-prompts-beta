@@ -1,0 +1,499 @@
+{
+  "niche": "digital-marketing",
+  "templates": [
+    {
+      "id": "md-01",
+      "title": {
+        "pt": "Estratégia Completa de Marketing Digital",
+        "en": "Complete Digital Marketing Strategy"
+      },
+      "role": "marketing-specialist",
+      "specialization": "strategy",
+      "tone": "professional",
+      "minScore": 60,
+      "context": {
+        "pt": "Preciso criar uma estratégia de marketing digital para um produto ou serviço específico.",
+        "en": "I need to create a digital marketing strategy for a specific product or service."
+      },
+      "responsibilities": [
+        "Analisar mercado e público-alvo",
+        "Definir canais prioritários",
+        "Estabelecer metas mensuráveis"
+      ],
+      "strategy": "Planejamento estratégico orientado a dados e conversão",
+      "format": "Plano estruturado em tópicos",
+      "prompt": {
+        "pt": "Você é um estrategista de marketing digital experiente. Crie uma estratégia completa para {{produto}}, focada em {{objetivo}}, considerando o público {{publico}}, orçamento {{orcamento}} e canais {{canais}}. Inclua KPIs e plano de execução.",
+        "en": "You are an experienced digital marketing strategist. Create a complete strategy for {{product}}, focused on {{goal}}, considering {{audience}}, {{budget}} and {{channels}}. Include KPIs and execution plan."
+      }
+    },
+
+    {
+      "id": "md-02",
+      "title": {
+        "pt": "Copy de Landing Page de Alta Conversão",
+        "en": "High-Converting Landing Page Copy"
+      },
+      "role": "copywriter",
+      "specialization": "conversion-copy",
+      "tone": "persuasive",
+      "minScore": 65,
+      "context": {
+        "pt": "Quero criar uma landing page focada em conversão.",
+        "en": "I want to create a conversion-focused landing page."
+      },
+      "responsibilities": [
+        "Criar headline persuasiva",
+        "Explorar dores e desejos",
+        "Construir CTA forte"
+      ],
+      "strategy": "Copywriting orientado a benefícios e prova social",
+      "format": "Texto estruturado por seções",
+      "prompt": {
+        "pt": "Atue como um copywriter especialista em conversão. Escreva a copy completa de uma landing page para {{produto}}, focada em {{beneficioPrincipal}}, usando gatilhos mentais éticos e CTA claro.",
+        "en": "Act as a conversion copywriter. Write a complete landing page copy for {{product}}, focused on {{mainBenefit}}, using ethical persuasion and a clear CTA."
+      }
+    },
+
+    {
+      "id": "md-03",
+      "title": {
+        "pt": "Funil de Vendas Digital",
+        "en": "Digital Sales Funnel"
+      },
+      "role": "marketing-specialist",
+      "specialization": "funnels",
+      "tone": "professional",
+      "minScore": 60,
+      "context": {
+        "pt": "Preciso estruturar um funil de vendas eficiente.",
+        "en": "I need to structure an effective sales funnel."
+      },
+      "responsibilities": [
+        "Definir topo, meio e fundo",
+        "Mapear conteúdos",
+        "Otimizar conversões"
+      ],
+      "strategy": "Funil baseado em jornada do cliente",
+      "format": "Fluxo em etapas",
+      "prompt": {
+        "pt": "Crie um funil de vendas completo para {{produto}}, detalhando estratégias para topo, meio e fundo do funil, incluindo conteúdos, ofertas e métricas.",
+        "en": "Create a complete sales funnel for {{product}}, detailing top, middle and bottom funnel strategies, including content, offers and metrics."
+      }
+    },
+
+    {
+      "id": "md-04",
+      "title": {
+        "pt": "Calendário de Conteúdo Estratégico",
+        "en": "Strategic Content Calendar"
+      },
+      "role": "content-strategist",
+      "specialization": "content-marketing",
+      "tone": "creative",
+      "minScore": 55,
+      "context": {
+        "pt": "Quero planejar conteúdos com foco em engajamento e vendas.",
+        "en": "I want to plan content focused on engagement and sales."
+      },
+      "responsibilities": [
+        "Planejar temas",
+        "Definir formatos",
+        "Alinhar com funil"
+      ],
+      "strategy": "Marketing de conteúdo orientado a conversão",
+      "format": "Tabela semanal",
+      "prompt": {
+        "pt": "Crie um calendário de conteúdo mensal para {{marca}} no canal {{canal}}, alinhado ao funil de vendas e objetivos {{objetivo}}.",
+        "en": "Create a monthly content calendar for {{brand}} on {{channel}}, aligned with the sales funnel and {{goal}}."
+      }
+    },
+
+    {
+      "id": "md-05",
+      "title": {
+        "pt": "Análise de Concorrência",
+        "en": "Competitor Analysis"
+      },
+      "role": "marketing-analyst",
+      "specialization": "market-analysis",
+      "tone": "analytical",
+      "minScore": 70,
+      "context": {
+        "pt": "Preciso entender o posicionamento dos concorrentes.",
+        "en": "I need to understand competitors positioning."
+      },
+      "responsibilities": [
+        "Mapear concorrentes",
+        "Identificar diferenciais",
+        "Gerar insights"
+      ],
+      "strategy": "Benchmarking estratégico",
+      "format": "Relatório comparativo",
+      "prompt": {
+        "pt": "Analise os principais concorrentes de {{produto}} no mercado {{nicho}} e identifique oportunidades de diferenciação e posicionamento.",
+        "en": "Analyze the main competitors of {{product}} in the {{niche}} market and identify differentiation and positioning opportunities."
+      }
+    },
+
+    {
+      "id": "md-06",
+      "title": { "pt": "Estratégia de SEO Completa", "en": "Complete SEO Strategy" },
+      "role": "seo-specialist",
+      "specialization": "seo",
+      "tone": "analytical",
+      "minScore": 65,
+      "context": {
+        "pt": "Preciso melhorar o posicionamento orgânico de um site.",
+        "en": "I need to improve a website organic ranking."
+      },
+      "responsibilities": [
+        "Pesquisa de palavras-chave",
+        "SEO on-page",
+        "SEO técnico"
+      ],
+      "strategy": "SEO orientado a intenção de busca e autoridade",
+      "format": "Checklist estratégico",
+      "prompt": {
+        "pt": "Crie uma estratégia completa de SEO para {{site}}, focada nas palavras-chave {{keywords}}, considerando concorrência, intenção de busca e otimizações técnicas.",
+        "en": "Create a complete SEO strategy for {{website}}, focused on {{keywords}}, considering competition, search intent and technical optimizations."
+      }
+    },
+
+    {
+      "id": "md-07",
+      "title": { "pt": "Campanha de Google Ads", "en": "Google Ads Campaign" },
+      "role": "paid-media-specialist",
+      "specialization": "google-ads",
+      "tone": "professional",
+      "minScore": 70,
+      "context": {
+        "pt": "Quero criar campanhas de tráfego pago eficientes.",
+        "en": "I want to create efficient paid traffic campaigns."
+      },
+      "responsibilities": [
+        "Estrutura de campanha",
+        "Criação de anúncios",
+        "Otimização de CPC"
+      ],
+      "strategy": "Aquisição orientada a ROI",
+      "format": "Estrutura de campanha",
+      "prompt": {
+        "pt": "Crie uma campanha de Google Ads para {{produto}}, focada em {{objetivo}}, incluindo grupos de anúncios, copies e palavras-chave.",
+        "en": "Create a Google Ads campaign for {{product}}, focused on {{goal}}, including ad groups, copies and keywords."
+      }
+    },
+
+    {
+      "id": "md-08",
+      "title": { "pt": "Campanha de Meta Ads", "en": "Meta Ads Campaign" },
+      "role": "paid-media-specialist",
+      "specialization": "meta-ads",
+      "tone": "persuasive",
+      "minScore": 65,
+      "context": {
+        "pt": "Preciso criar anúncios para Facebook e Instagram.",
+        "en": "I need to create ads for Facebook and Instagram."
+      },
+      "responsibilities": [
+        "Definir públicos",
+        "Criar criativos",
+        "Otimizar conversão"
+      ],
+      "strategy": "Criativos orientados a atenção e conversão",
+      "format": "Plano de anúncios",
+      "prompt": {
+        "pt": "Crie uma campanha de Meta Ads para {{produto}}, detalhando público, criativos, copies e CTA.",
+        "en": "Create a Meta Ads campaign for {{product}}, detailing audience, creatives, copies and CTA."
+      }
+    },
+
+    {
+      "id": "md-09",
+      "title": { "pt": "Email Marketing de Conversão", "en": "Conversion Email Marketing" },
+      "role": "email-marketer",
+      "specialization": "email-marketing",
+      "tone": "persuasive",
+      "minScore": 60,
+      "context": {
+        "pt": "Quero aumentar vendas via email.",
+        "en": "I want to increase sales via email."
+      },
+      "responsibilities": [
+        "Criar sequência de emails",
+        "Segmentar público",
+        "Otimizar abertura"
+      ],
+      "strategy": "Automação orientada a relacionamento",
+      "format": "Sequência numerada",
+      "prompt": {
+        "pt": "Crie uma sequência de email marketing para {{produto}}, focada em {{objetivo}}, incluindo assunto, conteúdo e CTA.",
+        "en": "Create an email marketing sequence for {{product}}, focused on {{goal}}, including subject, content and CTA."
+      }
+    },
+
+    {
+      "id": "md-10",
+      "title": { "pt": "Copy para Anúncios", "en": "Ad Copywriting" },
+      "role": "copywriter",
+      "specialization": "ads-copy",
+      "tone": "persuasive",
+      "minScore": 55,
+      "context": {
+        "pt": "Preciso criar copies curtas e impactantes.",
+        "en": "I need short and impactful ad copies."
+      },
+      "responsibilities": [
+        "Criar headlines",
+        "Explorar dores",
+        "Chamada para ação"
+      ],
+      "strategy": "Copy orientada a cliques",
+      "format": "Lista de variações",
+      "prompt": {
+        "pt": "Crie 5 variações de copy para anúncios do {{produto}}, focando em {{beneficio}}.",
+        "en": "Create 5 ad copy variations for {{product}}, focusing on {{benefit}}."
+      }
+    },
+
+    {
+      "id": "md-11",
+      "title": { "pt": "Estratégia de Branding Digital", "en": "Digital Branding Strategy" },
+      "role": "brand-strategist",
+      "specialization": "branding",
+      "tone": "professional",
+      "minScore": 70,
+      "context": {
+        "pt": "Quero fortalecer a marca no digital.",
+        "en": "I want to strengthen the brand online."
+      },
+      "responsibilities": [
+        "Definir posicionamento",
+        "Tom de voz",
+        "Identidade verbal"
+      ],
+      "strategy": "Branding consistente e memorável",
+      "format": "Guia estratégico",
+      "prompt": {
+        "pt": "Crie uma estratégia de branding digital para {{marca}}, definindo posicionamento, tom de voz e diferenciais.",
+        "en": "Create a digital branding strategy for {{brand}}, defining positioning, tone of voice and differentiators."
+      }
+    },
+
+    {
+      "id": "md-12",
+      "title": { "pt": "Growth Marketing Plan", "en": "Growth Marketing Plan" },
+      "role": "growth-marketer",
+      "specialization": "growth",
+      "tone": "analytical",
+      "minScore": 75,
+      "context": {
+        "pt": "Quero escalar resultados rapidamente.",
+        "en": "I want to scale results quickly."
+      },
+      "responsibilities": [
+        "Testes rápidos",
+        "Análise de dados",
+        "Escala"
+      ],
+      "strategy": "Growth baseado em experimentação",
+      "format": "Plano em sprints",
+      "prompt": {
+        "pt": "Crie um plano de growth marketing para {{produto}}, com hipóteses, testes e métricas.",
+        "en": "Create a growth marketing plan for {{product}}, with hypotheses, tests and metrics."
+      }
+    },
+
+    {
+      "id": "md-13",
+      "title": { "pt": "Conteúdo para Redes Sociais", "en": "Social Media Content" },
+      "role": "social-media-manager",
+      "specialization": "social-media",
+      "tone": "creative",
+      "minScore": 50,
+      "context": {
+        "pt": "Preciso aumentar engajamento nas redes.",
+        "en": "I need to increase social engagement."
+      },
+      "responsibilities": [
+        "Criar posts",
+        "Definir formatos",
+        "Aumentar alcance"
+      ],
+      "strategy": "Conteúdo nativo por plataforma",
+      "format": "Lista de ideias",
+      "prompt": {
+        "pt": "Crie ideias de posts para {{marca}} no {{canal}}, focadas em engajamento.",
+        "en": "Create post ideas for {{brand}} on {{channel}}, focused on engagement."
+      }
+    },
+
+    {
+      "id": "md-14",
+      "title": { "pt": "Storytelling de Marca", "en": "Brand Storytelling" },
+      "role": "copywriter",
+      "specialization": "storytelling",
+      "tone": "emotional",
+      "minScore": 55,
+      "context": {
+        "pt": "Quero criar conexão emocional com o público.",
+        "en": "I want to create emotional connection with the audience."
+      },
+      "responsibilities": [
+        "Narrativa",
+        "Valores",
+        "Identificação"
+      ],
+      "strategy": "Storytelling centrado no cliente",
+      "format": "Texto narrativo",
+      "prompt": {
+        "pt": "Crie um storytelling de marca para {{marca}}, destacando propósito e valores.",
+        "en": "Create a brand storytelling for {{brand}}, highlighting purpose and values."
+      }
+    },
+
+    {
+      "id": "md-15",
+      "title": { "pt": "Pesquisa de Persona", "en": "Persona Research" },
+      "role": "marketing-researcher",
+      "specialization": "persona",
+      "tone": "analytical",
+      "minScore": 60,
+      "context": {
+        "pt": "Preciso entender melhor meu público.",
+        "en": "I need to better understand my audience."
+      },
+      "responsibilities": [
+        "Mapear dores",
+        "Objetivos",
+        "Comportamentos"
+      ],
+      "strategy": "Persona orientada a conversão",
+      "format": "Perfil detalhado",
+      "prompt": {
+        "pt": "Crie uma persona detalhada para {{produto}}, incluindo dores, desejos e objeções.",
+        "en": "Create a detailed persona for {{product}}, including pains, desires and objections."
+      }
+    },
+
+    {
+      "id": "md-16",
+      "title": { "pt": "Plano de Métricas e KPIs", "en": "Metrics and KPIs Plan" },
+      "role": "marketing-analyst",
+      "specialization": "analytics",
+      "tone": "analytical",
+      "minScore": 70,
+      "context": {
+        "pt": "Quero medir resultados corretamente.",
+        "en": "I want to measure results properly."
+      },
+      "responsibilities": [
+        "Definir KPIs",
+        "Análise de dados",
+        "Otimização"
+      ],
+      "strategy": "Marketing orientado a dados",
+      "format": "Tabela de métricas",
+      "prompt": {
+        "pt": "Defina os principais KPIs para {{campanha}}, explicando como medir e otimizar.",
+        "en": "Define the main KPIs for {{campaign}}, explaining how to measure and optimize."
+      }
+    },
+
+    {
+      "id": "md-17",
+      "title": { "pt": "Estratégia de Lançamento Digital", "en": "Digital Launch Strategy" },
+      "role": "launch-strategist",
+      "specialization": "launch",
+      "tone": "professional",
+      "minScore": 75,
+      "context": {
+        "pt": "Vou lançar um produto digital.",
+        "en": "I will launch a digital product."
+      },
+      "responsibilities": [
+        "Pré-lançamento",
+        "Lançamento",
+        "Pós-lançamento"
+      ],
+      "strategy": "Lançamento orientado a conversão",
+      "format": "Plano por fases",
+      "prompt": {
+        "pt": "Crie uma estratégia de lançamento digital para {{produto}}, detalhando pré, lançamento e pós.",
+        "en": "Create a digital launch strategy for {{product}}, detailing pre-launch, launch and post-launch."
+      }
+    },
+
+    {
+      "id": "md-18",
+      "title": { "pt": "Otimização de Conversão (CRO)", "en": "Conversion Rate Optimization" },
+      "role": "cro-specialist",
+      "specialization": "cro",
+      "tone": "analytical",
+      "minScore": 80,
+      "context": {
+        "pt": "Quero aumentar taxa de conversão.",
+        "en": "I want to increase conversion rate."
+      },
+      "responsibilities": [
+        "Testes A/B",
+        "Análise de funil",
+        "UX"
+      ],
+      "strategy": "CRO baseado em dados",
+      "format": "Plano de testes",
+      "prompt": {
+        "pt": "Crie um plano de CRO para {{pagina}}, sugerindo testes e melhorias.",
+        "en": "Create a CRO plan for {{page}}, suggesting tests and improvements."
+      }
+    },
+
+    {
+      "id": "md-19",
+      "title": { "pt": "Estratégia de Influenciadores", "en": "Influencer Marketing Strategy" },
+      "role": "influencer-manager",
+      "specialization": "influencer-marketing",
+      "tone": "professional",
+      "minScore": 60,
+      "context": {
+        "pt": "Quero trabalhar com influenciadores.",
+        "en": "I want to work with influencers."
+      },
+      "responsibilities": [
+        "Seleção de influenciadores",
+        "Briefing",
+        "Mensuração"
+      ],
+      "strategy": "Parcerias orientadas a alcance e conversão",
+      "format": "Plano estratégico",
+      "prompt": {
+        "pt": "Crie uma estratégia de influencer marketing para {{marca}}, incluindo critérios e métricas.",
+        "en": "Create an influencer marketing strategy for {{brand}}, including criteria and metrics."
+      }
+    },
+
+    {
+      "id": "md-20",
+      "title": { "pt": "Plano de Automação de Marketing", "en": "Marketing Automation Plan" },
+      "role": "marketing-automation-specialist",
+      "specialization": "automation",
+      "tone": "technical",
+      "minScore": 70,
+      "context": {
+        "pt": "Quero automatizar processos de marketing.",
+        "en": "I want to automate marketing processes."
+      },
+      "responsibilities": [
+        "Automação de funil",
+        "Segmentação",
+        "Nutrição"
+      ],
+      "strategy": "Automação orientada a relacionamento",
+      "format": "Fluxo automatizado",
+      "prompt": {
+        "pt": "Crie um plano de automação de marketing para {{produto}}, incluindo fluxos, gatilhos e objetivos.",
+        "en": "Create a marketing automation plan for {{product}}, including flows, triggers and goals."
+      }
+    }
+  ]
+}

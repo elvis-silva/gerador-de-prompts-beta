@@ -1,21 +1,24 @@
 {
-  "title": "Marketing Digital",
+  "title": "Desenvolver de Software",
   "niche": {
-    "name": "Digital Marketing",
+    "name": "Desenvolver de Software",
+
     "roles": [
-      { "label": "Marketing Specialist", "value": "marketing-specialist" },
+      { "label": "Desenvolver de Software", "value": "marketing-specialist" },
       { "label": "Growth Hacker", "value": "growth-hacker" },
       { "label": "Traffic Manager", "value": "traffic-manager" },
       { "label": "SEO Analyst", "value": "seo-analyst" },
       { "label": "Content Strategist", "value": "content-strategist" }
     ],
+
     "tones": [
       { "label": "Professional", "value": "professional" },
-      { "label": "Creative", "value":  "creative" },
+      { "label": "Creative", "value": "creative" },
       { "label": "Persuasive", "value": "persuasive" },
       { "label": "Educational", "value": "educational" },
       { "label": "Data Driven", "value": "data-driven" }
     ],
+
     "contexts": [
       "Lançamento de produto digital",
       "Campanha de tráfego pago",
@@ -23,6 +26,7 @@
       "Funil de vendas com e-mail marketing",
       "Escala de negócio online"
     ],
+
     "responsibilities": [
       "Criar estratégias de aquisição de leads",
       "Otimizar campanhas de anúncios",
@@ -30,6 +34,7 @@
       "Desenvolver copy persuasiva",
       "Analisar métricas e KPIs"
     ],
+
     "strategies": [
       "Funil AIDA",
       "Copywriting direto",
@@ -37,6 +42,7 @@
       "Growth loops",
       "SEO orientado à conversão"
     ],
+
     "grammarStyles": [
       "Objetivo e direto",
       "Persuasivo",
@@ -44,6 +50,7 @@
       "Narrativo",
       "Técnico"
     ],
+
     "audiences": [
       "Empreendedores digitais",
       "Infoprodutores",
@@ -51,6 +58,7 @@
       "Gestores de marketing",
       "Startups"
     ],
+
     "responseFormats": [
       "Markdown",
       "Lista numerada",

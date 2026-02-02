@@ -100,7 +100,14 @@
     "digital-marketing": {
       "title": "Marketing Digital",
       "icon": "MegaphoneIcon",
-      "description": "Crie estratégias de tráfego e copy de alta conversão."
+      "description": "Crie estratégias de tráfego e copy de alta conversão.",
+      "roles": [
+        { "label": "Estrategista de Marketing", "value": "marketing-strategist" },
+        { "label": "Especialista em Tráfego Pago", "value": "paid-media-specialist" },
+        { "label": "Especialista em SEO", "value": "seo-specialist" },
+        { "label": "Copywriter Profissional", "value": "copywriter" },
+        { "label": "Growth Marketer", "value": "growth-marketer" }
+      ]
     },
     "software-development": {
       "title": "Desenvolvimento de Software",

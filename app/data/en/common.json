@@ -1,0 +1,13 @@
+{
+  "appName": "AI Prompt Generator",
+  "home": "Home",
+  "generate": "Generate",
+  "loading": "Loading...",
+  "score": "Score",
+  "plan": "Plan",
+  "plans": {
+    "free": "Free",
+    "expert": "Expert",
+    "premium": "Premium"
+  }
+}

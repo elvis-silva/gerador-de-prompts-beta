@@ -1,241 +1,837 @@
-'use client';
+'use client'
 
-import React, { useState } from 'react';
-import { Form, Input, Select, Button, App, Typography, Tooltip, Space, Row, Col } from 'antd';
-import styles from './PromptForm.module.css';
-import { useParams } from 'next/navigation';
-import pt from "@/i18n/pt.json";
-import en from "@/i18n/en.json";
-import '@/styles/globals.css'
-import ptData from '@/app/data/pt/prompts.json';
-import enData from '@/app/data/en/prompts.json';
+import { useState } from 'react'
 
-import {
-  Copy, 
-  Sparkles, 
-  UserCircle, 
-  Target, 
-  MessageSquare, 
-  FileText, 
-  Lightbulb,
-  TrendingUp,
-  Code,
-  PenTool,
-  Scale,
-  Users,
-  Briefcase,
-  GraduationCap,
-  HeartPulse,
-  Building2,
-  Wallet,
-  Megaphone,
-  ShoppingCart,
-  BarChart3,
-  Cpu,
-  ShieldCheck,
-  Palette,
-  Camera,
-  Languages,
-  Headphones,
-  LineChart
-} from 'lucide-react';
-import { Option } from 'antd/es/mentions';
-
-const nicheIcons: Record<string, React.ReactNode> = {
-  "digital-marketing": <TrendingUp size={18} />,
-  "software-development": <Code size={18} />,
-  "content-creation": <PenTool size={18} />,
-  "legal-assistant": <Scale size={18} />,
-  "human-resources": <Users size={18} />,
-  "sales-expert": <Briefcase size={18} />,
-  "education-tutor": <GraduationCap size={18} />,
-  "medical-health": <HeartPulse size={18} />,
-  "real-estate": <Building2 size={18} />,
-  "finances": <Wallet size={18} />,
-  "copywriting": <Megaphone size={18} />,
-  "ecommerce": <ShoppingCart size={18} />,
-  "data-analysis": <BarChart3 size={18} />,
-  "artificial-intelligence": <Cpu size={18} />,
-  "cyber-security": <ShieldCheck size={18} />,
-  "graphic-design": <Palette size={18} />,
-  "photography": <Camera size={18} />,
-  "translation-localization": <Languages size={18} />,
-  "customer-support": <Headphones size={18} />,
-  "business-strategy": <LineChart size={18} />
-};
-
-const dictionaries = { 'pt': pt, 'en': en };
-
-export function usePromptFormDictionary() {
-  const { lang } = useParams();
-  return dictionaries[lang as keyof typeof dictionaries] ?? pt;
+const colors = {
+  bg: '#ffffff',
+  surface: '#f9fafb',
+  border: '#e5e7eb',
+  text: '#0f172a',
+  muted: '#64748b',
+  primary: '#2563eb'
 }
 
-const { Title, Text } = Typography;
 
+type Option = {
+  label: string
+  value: string
+}
 
-export default function PromptForm({ dict }: { dict: any }) {
-  const { message } = App.useApp();
-  const [form] = Form.useForm();
-  const [generatedPrompt, setGeneratedPrompt] = useState<string>('');
+type PromptFormProps = {
+  data: {
+    niche?: {
+      roles?: Option[]
+      tones?: Option[]
+      contexts?: string[]
+      responsibilities?: string[]
+      strategies?: string[]
+      grammarStyles?: string[]
+      audiences?: string[]
+      responseFormats?: string[]
+    }
+  }
+}
 
-  const tForm = dict?.form || {};
-  const tCommon = dict?.common || {};
-  const tNiche = dict?.niche || {};
+const labelStyle: React.CSSProperties = {
+  fontSize: 14,
+  fontWeight: 600,
+  color: colors.text,
+  marginBottom: 6
+}
 
-  const formDict = usePromptFormDictionary(); 
-  const { lang } = useParams();
-  const data = lang === 'pt' ? ptData : enData;
+const selectStyle: React.CSSProperties = {
+  width: '100%',
+  padding: '12px 14px',
+  borderRadius: 8,
+  border: `1px solid ${colors.border}`,
+  fontSize: 14,
+  backgroundColor: colors.bg
+}
 
-  const applyTemplate = (key: string) => {
-    const niche = tNiche[key];
-    form.setFieldsValue({
-      role: niche.title,
-      context: niche.description,
-      tone: `${formDict.prompt.tone_text}`,
-      format: 'Markdown',
-      responsibilities: `${formDict.prompt.responsibilities_text}`,
-      strategy: `${formDict.prompt.strategy_text}`,
-      grammar: `${formDict.prompt.grammar_text}`,
-      userInfo: `${formDict.prompt.target_audience_text}`
-    });
-    message.success(`${formDict.prompt.template} ${niche.title} ${formDict.prompt.applied}!`);
-  };
+const textareaStyle: React.CSSProperties = {
+  ...selectStyle,
+  minHeight: 110,
+  resize: 'vertical'
+}
 
-  const onFinish = (values: any) => {
-    const prompt = `# ${formDict.prompt.role}\n${formDict.prompt.act_as} ${values.role}.\n\n# ${formDict.prompt.context}\n${values.context}\n\n# ${formDict.prompt.responsibilities}\n${values.responsibilities}\n\n# ${formDict.prompt.strategy}\n- ${formDict.prompt.tone}: ${values.tone}\n- ${formDict.prompt.target_audience}: ${values.userInfo}\n- ${formDict.prompt.format}: ${values.format}\n- ${formDict.prompt.grammar}: ${values.grammar}\n- ${formDict.prompt.strategy}: ${values.strategy}`;
-    setGeneratedPrompt(prompt);
-  };
+const sectionStyle: React.CSSProperties = {
+  display: 'flex',
+  flexDirection: 'column',
+  gap: 32,
+  maxWidth: 900,
+  margin: '0 auto',
+  padding: 32,
+  borderRadius: 16,
+  background: colors.bg,
+  border: `1px solid ${colors.border}`
+}
+
+const fieldStyle: React.CSSProperties = {
+  display: 'flex',
+  flexDirection: 'column'
+}
+
+const chipStyle: React.CSSProperties = {
+  padding: '6px 12px',
+  fontSize: 12,
+  borderRadius: 999,
+  background: colors.surface,
+  border: `1px solid ${colors.border}`,
+  cursor: 'pointer'
+}
+
+function SelectField({
+    label,
+    value,
+    options,
+    onChange
+  }: {
+    label: string
+    value: string
+    options: Option[]
+    onChange: (v: string) => void
+  }) {
+    return (
+      <div style={fieldStyle}>
+        <label style={labelStyle}>{label}</label>
+        <select style={selectStyle} value={value} onChange={e => onChange(e.target.value)}>
+          <option value="">Select {label}</option>
+          {options.map(opt => (
+            <option key={opt.value} value={opt.value}>
+              {opt.label}
+            </option>
+          ))}
+        </select>
+      </div>
+    )
+  }
+
+  function SelectSimpleField({
+    label,
+    value,
+    options,
+    onChange
+  }: {
+    label: string
+    value: string
+    options: string[]
+    onChange: (v: string) => void
+  }) {
+    return (
+      <div style={fieldStyle}>
+        <label style={labelStyle}>{label}</label>
+        <select style={selectStyle} value={value} onChange={e => onChange(e.target.value)}>
+          <option value="">Select {label}</option>
+          {options.map(opt => (
+            <option key={opt} value={opt}>
+              {opt}
+            </option>
+          ))}
+        </select>
+      </div>
+    )
+  }
+
+  function TextareaField({
+  label,
+  value,
+  suggestions,
+  onChange
+  }: {
+    label: string
+    value: string
+    suggestions: string[]
+    onChange: (v: string) => void
+  }) {
+    function handleSuggestionClick(text: string) {
+    const next =
+      value && !value.endsWith('\n') ? value + '\n' + text : value + text
+    onChange(next)
+  }
 
   return (
-    <div className={styles.container}>
-      {/* Templates Quick-Action */}
-      <section className={styles.templateSection}>
-        <div className={styles.sectionHeader}>
-          <Lightbulb className={styles.sectionIcon} />
-          <p className={styles.sectionLabel}>{formDict.prompt.expert_eg}</p>
-        </div>
-        <div className={styles.templateGrid}>
-          {Object.keys(tNiche).map((key) => (
-            <Tooltip key={key} title={tNiche[key].description}>
-              <button onClick={() => applyTemplate(key)} className={styles.templateButton}>
-                <span className={styles.textPrimary}>{nicheIcons[key] || <Sparkles size={16} />}</span>
-                {tNiche[key].title}
-              </button>
-            </Tooltip>
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 12
+      }}
+    >
+      <label
+        style={{
+          fontSize: 14,
+          fontWeight: 600,
+          color: '#0f172a'
+        }}
+      >
+        {label}
+      </label>
+
+      <div style={{ position: 'relative' }}>
+        <textarea
+          value={value}
+          onChange={e => onChange(e.target.value)}
+          placeholder={`Describe the ${label.toLowerCase()}`}
+          style={{
+            width: '100%',
+            minHeight: 120,
+            padding: '14px 0px',
+            borderRadius: 12,
+            border: '1px solid #e5e7eb',
+            fontSize: 14,
+            lineHeight: 1.6,
+            resize: 'vertical'
+          }}
+        />
+
+        {value && (
+          <button
+            type="button"
+            onClick={() => onChange('')}
+            aria-label="Clear field"
+            style={{
+              position: 'absolute',
+              top: 10,
+              right: 10,
+              width: 26,
+              height: 26,
+              borderRadius: '50%',
+              border: 'none',
+              background: '#e5e7eb',
+              color: '#0f172a',
+              fontSize: 14,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center'
+            }}
+          >
+            ✕
+          </button>
+        )}
+      </div>
+
+      {suggestions.length > 0 && (
+        <div
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: 8
+          }}
+        >
+          {suggestions.map(item => (
+            <button
+              key={item}
+              type="button"
+              onClick={() => handleSuggestionClick(item)}
+              style={{
+                padding: '6px 12px',
+                borderRadius: 999,
+                background: '#f1f5f9',
+                border: '1px solid #e5e7eb',
+                fontSize: 12,
+                cursor: 'pointer'
+              }}
+            >
+              {item}
+            </button>
           ))}
         </div>
-      </section>
-
-      <div className={styles.mainLayout}>
-        {/* Formulário de Configuração */}
-        <div className={styles.formWrapper}>
-          <div className={styles.glassCard}>
-            <Space align="center" className={styles.formHeader}>
-              <Sparkles className={styles.formHeaderIcon} />
-              <h1 className={styles.sectionTitle}>{formDict.prompt.config_eng}</h1>
-            </Space>
-
-            <Form className="formDark" form={form} layout="vertical" onFinish={onFinish} requiredMark={false}>
-              <Row gutter={16}>
-                <Col xs={24} md={12}>
-                  <Form.Item className={styles.formDark} name="role" label={`${formDict.prompt.role_label}`} rules={[{ required: true }]}>
-                    {/* <Input prefix={<UserCircle size={16} className={styles.inputPrefixIcon} />} className={styles.customInput} /> */}
-                    <Select
-                      options={data.roles}
-                      placeholder={
-                        lang === 'pt'
-                          ? 'Selecione sua função'
-                          : 'Select your role'
-                      }
-                      aria-label="User role"
-                    />
-                  </Form.Item>
-                </Col>
-                <Col xs={24} md={12}>
-                  <Form.Item className={styles.formDark} name="tone" label={`${formDict.prompt.tone_label}`}>
-                    {/* <Select className={styles.customSelect}>
-                      <Select value="professional">{formDict.prompt.professional}</Select>
-                      <Option value="creative">{formDict.prompt.criative}</Option>
-                      <Option value="formal">{formDict.prompt.formal}</Option>
-                    </Select> */}
-                    <Select
-                      options={data.tones}
-                      placeholder={
-                        lang === 'pt'
-                          ? 'Escolha o tom'
-                          : 'Choose the tone'
-                      }
-                      aria-label="Prompt tone"
-                    />
-                  </Form.Item>
-                </Col>
-              </Row>
-
-              <Form.Item className={styles.formDark} name="context" label={`${formDict.prompt.strategic_context}`}>
-                <Input.TextArea rows={3} className={styles.customInput} />
-              </Form.Item>
-
-               <Form.Item className={styles.formDark} name="responsibilities" label={`${formDict.prompt.responsibilities}`}>
-                <Input.TextArea rows={2} />
-              </Form.Item>
-
-              <Row gutter={16}>
-                <Col span={12}>
-                  <Form.Item className={styles.formDark} name="strategy" label={`${formDict.prompt.strategy_type}`}><Input prefix={<Target size={16} />} /></Form.Item>
-                </Col>
-                <Col span={12}>
-                  <Form.Item className={styles.formDark} name="grammar" label={`${formDict.prompt.grammar}`}><Input prefix={<MessageSquare size={16} />} /></Form.Item>
-                </Col>
-              </Row>
-
-              <Row gutter={16}>
-                <Col span={12}>
-                  <Form.Item className={styles.formDark} name="userInfo" label={`${formDict.prompt.target_audience}`}><Input /></Form.Item>
-                </Col>
-                <Col span={12}>
-                  <Form.Item className={styles.formDark} name="format" label={`${formDict.prompt.template}`} rules={[{ required: true }]}>
-                    <Input prefix={<FileText size={16} />} placeholder={`${formDict.prompt.format}`} />
-                  </Form.Item>
-                </Col>
-              </Row>
-
-              <Button type="primary" htmlType="submit" block className={styles.submitBtn}>
-                {formDict.prompt.generate_magic_prompt}
-              </Button>
-            </Form>
-          </div>
-        </div>
-
-        {/* Output Sticky */}
-        <div className={styles.outputWrapper}>
-          <div className={`${styles.glassCard} ${styles.stickyCard}`}>
-            <h1 className={styles.sectionTitle}>
-              <FileText size={18} className={styles.formHeaderIcon} /> {formDict.prompt.final_result}
-            </h1>
-            <textarea
-              value={generatedPrompt}
-              readOnly
-              className={styles.promptTextarea}
-              placeholder={formDict.prompt.final_instructions}
-            />
-            <Button 
-              onClick={() => {
-                navigator.clipboard.writeText(generatedPrompt);
-                message.success(tCommon.copied);
-              }}
-              disabled={!generatedPrompt}
-              className={styles.copyBtn}
-              icon={<Copy size={18} />}
-            >
-              {formDict.prompt.copy_prompt}
-            </Button>
-          </div>
-        </div>
-      </div>
+      )}
     </div>
-  );
+  )
 }
+
+type OutputPromptBoxProps = {
+  value: string
+}
+
+function OutputPromptBox({ value }: OutputPromptBoxProps) {
+  const [copied, setCopied] = useState(false)
+
+  async function handleCopy(text: string) {
+    try {
+      // Caminho moderno
+      if (navigator?.clipboard?.writeText) {
+        await navigator.clipboard.writeText(text)
+      } else {
+        // Fallback mobile / Safari
+        const textarea = document.createElement('textarea')
+        textarea.value = text
+        textarea.style.position = 'fixed'
+        textarea.style.opacity = '0'
+        textarea.style.left = '-9999px'
+
+        document.body.appendChild(textarea)
+        textarea.focus()
+        textarea.select()
+        document.execCommand('copy')
+        document.body.removeChild(textarea)
+      }
+
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2500)
+
+    } catch (err) {
+      alert('❌ Unable to copy. Please copy manually.')
+      console.error('Copy failed:', err)
+    }
+  }
+
+  return (
+    <section
+      style={{
+        marginTop: 40,
+        padding: 24,
+        borderRadius: 16,
+        background: colors.surface,
+        border: `1px solid ${colors.border}`,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 16
+      }}
+    >
+      <h3 style={{ fontSize: 16, fontWeight: 700 }}>
+        Generated Prompt
+      </h3>
+
+      <textarea
+        readOnly
+        value={value}
+        placeholder="Your generated prompt will appear here..."
+        style={{
+          minHeight: 180,
+          padding: '14px 16px',
+          borderRadius: 12,
+          border: `1px solid ${colors.border}`,
+          background: colors.bg,
+          resize: 'vertical',
+          fontSize: 14,
+          lineHeight: 1.6
+        }}
+      />
+
+      <button
+        type="button"
+        onClick={() => handleCopy(value)}
+        disabled={!value}
+        style={{
+          alignSelf: 'flex-end',
+          padding: '10px 18px',
+          borderRadius: 10,
+          background: value ? colors.primary : '#94a3b8',
+          color: '#ffffff',
+          fontWeight: 600,
+          cursor: value ? 'pointer' : 'not-allowed'
+        }}
+      >
+        Copy Prompt
+      </button>
+
+      {copied && (
+        <span
+          style={{
+            fontSize: 13,
+            color: '#16a34a',
+            fontWeight: 500
+          }}
+        >
+          ✅ Prompt copied! Paste it into your favorite AI ✨
+        </span>
+      )}
+    </section>
+  )
+}
+
+export default function PromptForm({ data }: PromptFormProps) {
+  const niche = data?.niche
+
+  const [state, setState] = useState({
+    role: '',
+    tone: '',
+    context: '',
+    responsibility: '',
+    strategy: '',
+    grammarStyle: '',
+    audience: '',
+    responseFormat: ''
+  })
+
+  const [generatedPrompt, setGeneratedPrompt] = useState('')
+
+  if (!niche) {
+    return <div style={{ color: 'red' }}>Niche data not loaded.</div>
+  }
+
+  function update(key: keyof typeof state, value: string) {
+    setState(prev => ({ ...prev, [key]: value }))
+  }
+
+  function buildPrompt(state: any) {
+  return `
+  You are acting as a ${state.role}.
+
+  Tone of voice:
+  ${state.tone}
+
+  Strategic context:
+  ${state.context}
+
+  Main responsibilities:
+  ${state.responsibility}
+
+  Strategy type:
+  ${state.strategy}
+
+  Grammar style:
+  ${state.grammarStyle}
+
+  Target audience:
+  ${state.audience}
+
+  Response format:
+  ${state.responseFormat}
+
+  Deliver a high-quality, expert-level answer.
+  `.trim()
+  }
+
+  return (
+    <section style={sectionStyle}>
+      <SelectField
+        label="Role"
+        value={state.role}
+        options={niche.roles ?? []}
+        onChange={v => update('role', v)}
+      />
+
+      <SelectField
+        label="Tone of Voice"
+        value={state.tone}
+        options={niche.tones ?? []}
+        onChange={v => update('tone', v)}
+      />
+
+      <TextareaField
+        label="Strategic Context"
+        value={state.context}
+        suggestions={niche.contexts ?? []}
+        onChange={v => update('context', v)}
+      />
+
+      <TextareaField
+        label="Responsibilities"
+        value={state.responsibility}
+        suggestions={niche.responsibilities ?? []}
+        onChange={v => update('responsibility', v)}
+      />
+
+      <SelectSimpleField
+        label="Strategy Type"
+        value={state.strategy}
+        options={niche.strategies ?? []}
+        onChange={v => update('strategy', v)}
+      />
+
+      <SelectSimpleField
+        label="Grammar Style"
+        value={state.grammarStyle}
+        options={niche.grammarStyles ?? []}
+        onChange={v => update('grammarStyle', v)}
+      />
+
+      <SelectSimpleField
+        label="Target Audience"
+        value={state.audience}
+        options={niche.audiences ?? []}
+        onChange={v => update('audience', v)}
+      />
+
+      <SelectSimpleField
+        label="Response Format"
+        value={state.responseFormat}
+        options={niche.responseFormats ?? []}
+        onChange={v => update('responseFormat', v)}
+      />
+
+      <button
+        type="button"
+        onClick={() => {
+          const prompt = buildPrompt(state)
+          setGeneratedPrompt(prompt)
+        }}
+        style={{
+          width: '100%',
+          padding: '14px',
+          borderRadius: 14,
+          background: '#2563eb',
+          color: '#ffffff',
+          fontWeight: 700,
+          fontSize: 15
+        }}
+      >
+        Generate Prompt
+      </button>
+
+      <OutputPromptBox value={generatedPrompt} />
+
+    </section>
+  )
+}
+
+
+
+
+
+
+// 'use client'
+
+// import { useState } from 'react'
+
+// type Option = {
+//   label: string
+//   value: string
+// }
+
+// type DigitalMarketingNiche = {
+//   name: string
+//   roles: Option[]
+//   tones: Option[]
+//   contexts: string[]
+//   responsibilities: string[]
+//   strategies: string[]
+//   grammarStyles: string[]
+//   audiences: string[]
+//   responseFormats: string[]
+// }
+
+// type PromptFormProps = {
+//   data: {
+//     niche?: {
+//       roles?: any[]
+//       tones?: any[]
+//       contexts?: string[]
+//       responsibilities?: string[]
+//       strategies?: string[]
+//       grammarStyles?: string[]
+//       audiences?: string[]
+//       responseFormats?: string[]
+//     }
+//   }
+// }
+
+// const colors = {
+//   bg: '#ffffff',
+//   surface: '#f9fafb',
+//   border: '#e5e7eb',
+//   text: '#0f172a',
+//   muted: '#64748b',
+//   primary: '#2563eb'
+// }
+
+
+// export default function PromptForm({ data }: PromptFormProps) {
+
+//   const niche = data?.niche
+
+//   if (!niche) {
+//     return (
+//       <div style={{ color: 'red' }}>
+//         Niche data not loaded correctly.
+//       </div>
+//     )
+//   }
+
+//   const labelStyle: React.CSSProperties = {
+//     fontSize: 14,
+//     fontWeight: 600,
+//     marginBottom: 6,
+//     color: '#0f172a'
+//   }
+
+//   const selectStyle: React.CSSProperties = {
+//     width: '100%',
+//     padding: '12px 14px',
+//     borderRadius: 8,
+//     border: '1px solid #e5e7eb',
+//     fontSize: 14,
+//     backgroundColor: '#ffffff'
+//   }
+
+//   const rowStyle: React.CSSProperties = {
+//     display: 'grid',
+//     gridTemplateColumns: '1fr 1fr',
+//     gap: 16,
+//     marginBottom: 20
+//   }
+
+//   const fullRowStyle: React.CSSProperties = {
+//     marginBottom: 20
+//   }
+
+//   const [state, setState] = useState({
+//     role: '',
+//     tone: '',
+//     context: '',
+//     responsibility: '',
+//     strategy: '',
+//     grammarStyle: '',
+//     audience: '',
+//     responseFormat: ''
+//   })
+
+//   function update(key: keyof typeof state, value: string) {
+//     setState(prev => ({ ...prev, [key]: value }))
+//   }
+
+//   function SelectField({
+//     label,
+//     value,
+//     options,
+//     onChange
+//   }: {
+//     label: string
+//     value: string
+//     options: { label: string; value: string }[]
+//     onChange: (v: string) => void
+//   }) {
+//     return (
+//       <div className="flex flex-col gap-2">
+//         <label className="font-medium">{label}</label>
+//         <select
+//           className="select"
+//           value={value}
+//           onChange={e => onChange(e.target.value)}
+//         >
+//           <option value="">Select {label}</option>
+//           {options.map(opt => (
+//             <option key={opt.value} value={opt.value}>
+//               {opt.label}
+//             </option>
+//           ))}
+//         </select>
+//       </div>
+//     )
+//   }
+
+//   function SelectSimpleField({
+//     label,
+//     value,
+//     options,
+//     onChange
+//   }: {
+//     label: string
+//     value: string
+//     options: string[]
+//     onChange: (v: string) => void
+//   }) {
+//     return (
+//       <div className="flex flex-col gap-2">
+//         <label className="font-medium">{label}</label>
+//         <select
+//           className="select"
+//           value={value}
+//           onChange={e => onChange(e.target.value)}
+//         >
+//           <option value="">Select {label}</option>
+//           {options.map(opt => (
+//             <option key={opt} value={opt}>
+//               {opt}
+//             </option>
+//           ))}
+//         </select>
+//       </div>
+//     )
+//   }
+
+//   function TextareaField({
+//     label,
+//     value,
+//     suggestions,
+//     onChange
+//   }: {
+//     label: string
+//     value: string
+//     suggestions: string[]
+//     onChange: (v: string) => void
+//   }) {
+//     return (
+//       <div className="flex flex-col gap-3">
+//         <label className="font-medium">{label}</label>
+
+//         <textarea
+//           className="textarea min-h-[110px]"
+//           value={value}
+//           onChange={e => onChange(e.target.value)}
+//           placeholder={`Describe the ${label.toLowerCase()}`}
+//         />
+
+//         <div className="flex flex-wrap gap-2">
+//           {suggestions.map(item => (
+//             <button
+//               key={item}
+//               type="button"
+//               onClick={() => onChange(item)}
+//               className="rounded-full bg-muted px-3 py-1 text-xs transition hover:bg-muted/70"
+//             >
+//               {item}
+//             </button>
+//           ))}
+//         </div>
+//       </div>
+//     )
+//   }
+
+
+//   return (
+//     <section className="space-y-8">
+//       {/* ROLE */}
+//       <SelectField
+//         label="Role"
+//         value={state.role}
+//         options={niche.roles ?? [] }
+//         onChange={v => update('role', v)}
+//       />
+
+//       {/* TONE */}
+//       <SelectField
+//         label="Tone of Voice"
+//         value={state.tone}
+//         options={niche.tones ?? [] }
+//         onChange={v => update('tone', v)}
+//       />
+
+//       {/* CONTEXT */}
+//       <TextareaField
+//         label="Strategic Context"
+//         value={state.context}
+//         suggestions={niche.contexts ?? []}
+//         onChange={v => update('context', v)}
+//       />
+
+//       {/* RESPONSIBILITIES */}
+//       <TextareaField
+//         label="Responsibilities"
+//         value={state.responsibility}
+//         suggestions={niche.responsibilities ?? []}
+//         onChange={v => update('responsibility', v)}
+//       />
+
+//       {/* STRATEGY */}
+//       <SelectSimpleField
+//         label="Strategy Type"
+//         value={state.strategy}
+//         options={niche.strategies ?? []}
+//         onChange={v => update('strategy', v)}
+//       />
+
+//       {/* GRAMMAR */}
+//       <SelectSimpleField
+//         label="Grammar Style"
+//         value={state.grammarStyle}
+//         options={niche.grammarStyles ?? []}
+//         onChange={v => update('grammarStyle', v)}
+//       />
+
+//       {/* AUDIENCE */}
+//       <SelectSimpleField
+//         label="Target Audience"
+//         value={state.audience}
+//         options={niche.audiences ?? []}
+//         onChange={v => update('audience', v)}
+//       />
+
+//       {/* RESPONSE FORMAT */}
+//       <SelectSimpleField
+//         label="Response Format"
+//         value={state.responseFormat}
+//         options={niche.responseFormats ?? []}
+//         onChange={v => update('responseFormat', v)}
+//       />
+
+//       <button
+//         type="button"
+//         className="w-full rounded-xl bg-primary py-3 text-white font-semibold transition hover:opacity-90"
+//       >
+//         Generate Prompt
+//       </button>
+//     </section>
+//   )
+// }
+
+
+
+
+
+
+// 'use client'
+
+// import { useEffect, useState } from 'react'
+// import { appManager } from '@/core/AppManager'
+
+// type PromptFormProps = {
+//   data: {
+//     niche: {
+//       roles: { label: string; value: string }[]
+//       tones: { label: string; value: string }[]
+//       contexts?: any[]
+//     }
+//   }
+// }
+
+// export default function PromptForm({ data }: PromptFormProps) {
+//   const [state, setState] = useState({
+//     role: '',
+//     specialization: '',
+//     tone: '',
+//     context: '',
+//     strategy: ''
+//   })
+
+//   useEffect(() => {
+//     appManager.setNicheData(data)
+//   }, [data])
+
+//   function handleChange(field: string, value: string) {
+//     setState(prev => ({ ...prev, [field]: value }))
+
+//     // regra automática simples
+//     if (field === 'strategy' || field === 'specialization') {
+//       appManager.updateScore(appManager.score + 10)
+//     }
+//   }
+
+//   if (!data) return null
+
+//   const { niche } = data;
+
+//   console.log('PROMPT FORM DATA:', data)
+//   console.log('NICHE:', data?.niche)
+//   console.log('ROLES:', data?.niche?.roles)
+
+//   return (
+//     <div className="space-y-6">
+//       <select className="select" defaultValue="">
+//         <option value="">Select role</option>
+//         {niche.roles.map(role => (
+//           <option key={role.value} value={role.value}>
+//             {role.label}
+//           </option>
+//         ))}
+//       </select>
+
+//       <select className="select" defaultValue="">
+//         <option value="">Select tone</option>
+//         {niche.tones.map(tone => (
+//           <option key={tone.value} value={tone.value}>
+//             {tone.label}
+//           </option>
+//         ))}
+//       </select>
+//     </div>
+//   )
+// }
+
 
 /*
 'use client';

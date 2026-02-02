@@ -7,6 +7,8 @@ import styles from './Home.module.css';
 import { getDictionary } from '@/lib/getDictionary';
 import type { Metadata } from 'next';
 import AntdRegistry from '@/lib/antd-registry';
+import { loadDictionary } from '@/lib/i18n'
+import { AppManagerProvider } from '@/core/AppManagerProvider';
 
 export const metadata: Metadata = {
   title: 'AI2You | Gerador de Prompts de Elite',
@@ -59,20 +61,26 @@ export default async function RootLayout({
   params
 }: { 
   children: React.ReactNode, 
-  params: Promise<{ lang: string }>
+  params: Promise<{ lang: any }>
 }) {
   const { lang } = await params;
+  const dict = await loadDictionary(lang, 'prompt-form');
 
   return (
-    <html lang={lang} suppressHydrationWarning>
+    <html suppressHydrationWarning>
       <head>
         {/* Favicon e Metas de Mobile */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={styles.appBody}>
+        <AppManagerProvider lang={lang} dict={dict}>
         <AntdRegistry>
-          <ConfigProvider
+          
+            <App>
+              <div className={styles.pageLayout}>
+                <Navbar /> 
+                <ConfigProvider
             theme={{
               algorithm: theme.darkAlgorithm,
               token: {
@@ -82,20 +90,17 @@ export default async function RootLayout({
                 },
               }}
             >
-            <App>
-              <div className={styles.pageLayout}>
-                <Navbar /> 
                 <PageTransition>
                   <main className={styles.pageContent}>
                     {children}
                   </main>
                 </PageTransition>
+                </ConfigProvider>
                 <Footer />
               </div>
             </App>
-          </ConfigProvider>
         </AntdRegistry>
-        
+        </AppManagerProvider>
         {/* Analytics deve estar no final do body */}
         <GoogleAnalytics gaId="G-8TMK294LL0" />
       </body>

@@ -1,0 +1,13 @@
+{
+  "appName": "AI Prompt Generator",
+  "home": "Início",
+  "generate": "Gerar",
+  "loading": "Carregando...",
+  "score": "Pontuação",
+  "plan": "Plano",
+  "plans": {
+    "free": "Gratuito",
+    "expert": "Expert",
+    "premium": "Premium"
+  }
+}
