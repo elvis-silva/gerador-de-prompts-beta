@@ -1,7 +1,8 @@
 {
   "title": "Inteligência Artificial",
   "niche": {
-    "name": "Artificial Intelligence",
+    "lang": "pt",
+    "name": "Inteligência Artificial",
 
     "roles": [
       { "label": "Especialista em IA", "value": "ai-specialist" },

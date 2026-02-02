@@ -1,7 +1,8 @@
 {
-  "title": "Customer Support",
+  "title": "Suporte ao Cliente",
   "niche": {
-    "name": "Customer Support",
+    "lang": "pt",
+    "name": "Suporte ao Cliente",
 
     "roles": [
       { "label": "Atendente de Suporte", "value": "support-agent" },

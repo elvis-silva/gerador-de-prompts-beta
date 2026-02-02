@@ -1,7 +1,8 @@
 {
   "title": "Saúde & Medicina",
   "niche": {
-    "name": "Medical & Health",
+    "lang": "pt",
+    "name": "Saúde & Medicina",
 
     "roles": [
       { "label": "Médico", "value": "doctor" },

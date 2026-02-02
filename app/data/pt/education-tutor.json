@@ -1,7 +1,8 @@
 {
   "title": "Educação",
   "niche": {
-    "name": "Education Tutor",
+    "lang": "pt",
+    "name": "Educação",
 
     "roles": [
       { "label": "Tutor Educacional", "value": "education-tutor" },

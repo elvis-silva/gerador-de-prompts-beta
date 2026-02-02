@@ -20,6 +20,7 @@ type Option = {
 type PromptFormProps = {
   data: {
     niche?: {
+      lang?: string
       roles?: Option[]
       tones?: Option[]
       contexts?: string[]
@@ -369,86 +370,86 @@ export default function PromptForm({ data }: PromptFormProps) {
 
   function buildPrompt(state: any) {
   return `
-  You are acting as a ${state.role}.
+  ${niche?.lang === 'pt' ? 'Atue como um' : 'You are acting as a'} ${state.role}.
 
-  Tone of voice:
+  ${niche?.lang === 'pt' ? '# Tom de voz:' : '# Tone of Voice:'}
   ${state.tone}
 
-  Strategic context:
+  ${niche?.lang === 'pt' ? '# Contexto:' : '# Strategic Context:'}
   ${state.context}
 
-  Main responsibilities:
+  ${niche?.lang === 'pt' ? '# Responsabilidades:' : '# Main Responsibilities:'}
   ${state.responsibility}
 
-  Strategy type:
+  ${niche?.lang === 'pt' ? '# Estratégia:' : '# Strategy type:'}
   ${state.strategy}
 
-  Grammar style:
+  ${niche?.lang === 'pt' ? '# Estilo Gramatical:' : '# Grammar style:'}
   ${state.grammarStyle}
 
-  Target audience:
+  ${niche?.lang === 'pt' ? '# Público Alvo:' : '# Target audience:'}
   ${state.audience}
 
-  Response format:
+  ${niche?.lang === 'pt' ? '# Formato da Resposta:' : '# Response format:'}
   ${state.responseFormat}
 
-  Deliver a high-quality, expert-level answer.
+  ${niche?.lang === 'pt' ? 'Forneça uma resposta de alta qualidade e nível especializado.' : 'Deliver a high-quality, expert-level answer.'}
   `.trim()
   }
 
   return (
     <section style={sectionStyle}>
       <SelectField
-        label="Role"
+        label={niche?.lang === 'pt' ? 'Função da IA' : "AI Role"}
         value={state.role}
         options={niche.roles ?? []}
         onChange={v => update('role', v)}
       />
 
       <SelectField
-        label="Tone of Voice"
+        label={niche?.lang === 'pt' ? 'Tom de Voz' : "Tone of Voice"}
         value={state.tone}
         options={niche.tones ?? []}
         onChange={v => update('tone', v)}
       />
 
       <TextareaField
-        label="Strategic Context"
+        label={niche?.lang === 'pt' ? 'Contexto' : "Strategic Context"}
         value={state.context}
         suggestions={niche.contexts ?? []}
         onChange={v => update('context', v)}
       />
 
       <TextareaField
-        label="Responsibilities"
+        label={niche?.lang === 'pt' ? 'Responsabilidades' : "Responsibilities"}
         value={state.responsibility}
         suggestions={niche.responsibilities ?? []}
         onChange={v => update('responsibility', v)}
       />
 
       <SelectSimpleField
-        label="Strategy Type"
+        label={niche?.lang === 'pt' ? 'Estratégia' : "Strategy Type"}
         value={state.strategy}
         options={niche.strategies ?? []}
         onChange={v => update('strategy', v)}
       />
 
       <SelectSimpleField
-        label="Grammar Style"
+        label={niche?.lang === 'pt' ? 'Estilo Gramatical' : "Grammar Style"}
         value={state.grammarStyle}
         options={niche.grammarStyles ?? []}
         onChange={v => update('grammarStyle', v)}
       />
 
       <SelectSimpleField
-        label="Target Audience"
+        label={niche?.lang === 'pt' ? 'Público Alvo' : "Target Audience"}
         value={state.audience}
         options={niche.audiences ?? []}
         onChange={v => update('audience', v)}
       />
 
       <SelectSimpleField
-        label="Response Format"
+        label={niche?.lang === 'pt' ? 'Formato da Resposta' : "Response Format"}
         value={state.responseFormat}
         options={niche.responseFormats ?? []}
         onChange={v => update('responseFormat', v)}

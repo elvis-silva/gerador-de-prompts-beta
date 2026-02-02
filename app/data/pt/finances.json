@@ -1,7 +1,8 @@
 {
   "title": "Finanças",
   "niche": {
-    "name": "Finances",
+    "lang": "pt",
+    "name": "Finanças",
 
     "roles": [
       { "label": "Analista Financeiro", "value": "financial-analyst" },

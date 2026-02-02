@@ -1,7 +1,8 @@
 {
   "title": "Vendas",
   "niche": {
-    "name": "Sales Expert",
+    "lang": "pt",
+    "name": "Vendas",
 
     "roles": [
       { "label": "Closer de Vendas", "value": "sales-closer" },

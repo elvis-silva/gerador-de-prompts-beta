@@ -1,7 +1,8 @@
 {
   "title": "Cibersegurança",
   "niche": {
-    "name": "Cyber Security",
+    "lang": "pt",
+    "name": "Cibersegurança",
 
     "roles": [
       { "label": "Especialista em Cibersegurança", "value": "cyber-security-specialist" },

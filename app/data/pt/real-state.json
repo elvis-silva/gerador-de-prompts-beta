@@ -1,7 +1,8 @@
 {
   "title": "Mercado Imobiliário",
   "niche": {
-    "name": "Real Estate",
+    "lang": "pt",
+    "name": "Mercado Imobiliário",
 
     "roles": [
       { "label": "Corretor de Imóveis", "value": "real-estate-agent" },

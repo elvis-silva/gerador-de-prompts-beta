@@ -1,22 +1,23 @@
 {
   "title": "Marketing Digital",
   "niche": {
-    "name": "Digital Marketing",
+    "lang": "pt",
+    "name": "Marketing Digital",
 
     "roles": [
-      { "label": "Marketing Specialist", "value": "marketing-specialist" },
+      { "label": "Especialista em Marketing", "value": "marketing-specialist" },
       { "label": "Growth Hacker", "value": "growth-hacker" },
-      { "label": "Traffic Manager", "value": "traffic-manager" },
-      { "label": "SEO Analyst", "value": "seo-analyst" },
-      { "label": "Content Strategist", "value": "content-strategist" }
+      { "label": "Gestor de Tráfego", "value": "traffic-manager" },
+      { "label": "Analista de SEO", "value": "seo-analyst" },
+      { "label": "Estrategista de Conteúdo", "value": "content-strategist" }
     ],
 
     "tones": [
-      { "label": "Professional", "value": "professional" },
-      { "label": "Creative", "value": "creative" },
-      { "label": "Persuasive", "value": "persuasive" },
-      { "label": "Educational", "value": "educational" },
-      { "label": "Data Driven", "value": "data-driven" }
+      { "label": "Profissional", "value": "professional" },
+      { "label": "Criativo", "value": "creative" },
+      { "label": "Persuasivo", "value": "persuasive" },
+      { "label": "Educacional", "value": "educational" },
+      { "label": "Orientado a Dados", "value": "data-driven" }
     ],
 
     "contexts": [

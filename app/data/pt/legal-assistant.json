@@ -1,7 +1,8 @@
 {
   "title": "Assistente Jurídico",
   "niche": {
-    "name": "Legal Assistant",
+    "lang": "pt",
+    "name": "Assistente Jurídico",
 
     "roles": [
       { "label": "Assistente Jurídico", "value": "legal-assistant" },

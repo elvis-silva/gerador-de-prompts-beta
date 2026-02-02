@@ -1,7 +1,8 @@
 {
   "title": "Recursos Humanos",
   "niche": {
-    "name": "Human Resources",
+    "lang": "pt",
+    "name": "Recursos Humanos",
 
     "roles": [
       { "label": "Analista de RH", "value": "hr-analyst" },

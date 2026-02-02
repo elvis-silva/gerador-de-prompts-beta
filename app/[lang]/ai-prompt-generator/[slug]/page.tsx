@@ -1,5 +1,6 @@
 import { loadDictionary } from '@/lib/i18n'
 import PromptForm from '@/components/promptForm/PromptForm'
+import styles from './page.module.css'
 
 type PageProps = {
   params: Promise<{
@@ -19,9 +20,17 @@ export default async function Page({ params }: PageProps) {
 
   return (
     <main className="p-10">
-      <h1 className="text-3xl font-bold mb-6">
-        {dict.niche.name}
-      </h1>
+      <div className={styles.centeredContainer}>
+        <h1 className={styles.textTitle}>
+          AI Prompt Generator
+          <br />
+          <span className={styles.textHighlight}>{dict.niche.name}</span>
+        </h1>
+
+        {/* <p className={styles.textSubtitle}>
+          Aqui é um parágrafo muito chique
+        </p> */}
+      </div>
 
       <PromptForm data={dict} />
     </main>

@@ -1,7 +1,8 @@
 {
   "title": "Criação de Conteúdo",
   "niche": {
-    "name": "Content Creation",
+    "lang": "pt",
+    "name": "Criação de Conteúdo",
 
     "roles": [
       { "label": "Criador de Conteúdo", "value": "criador-de-conteudo" },

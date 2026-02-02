@@ -1,7 +1,8 @@
 {
   "title": "Desenvolvimento de Software",
   "niche": {
-    "name": "Software Development",
+    "lang": "pt",
+    "name": "Desenvolvimento de Software",
 
     "roles": [
       { "label": "Software Engineer", "value": "software-engineer" },

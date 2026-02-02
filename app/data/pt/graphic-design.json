@@ -1,7 +1,8 @@
 {
-  "title": "Design Gráfico",
+  "title": "Designer Gráfico",
   "niche": {
-    "name": "Graphic Design",
+    "lang": "pt",
+    "name": "Designer Gráfico",
 
     "roles": [
       { "label": "Designer Gráfico", "value": "graphic-designer" },

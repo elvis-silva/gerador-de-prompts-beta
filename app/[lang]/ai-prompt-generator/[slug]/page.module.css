@@ -1,0 +1,41 @@
+.textTitle {
+  font-size: clamp(2rem, 7vw, 3.5rem);
+  line-height: 1.15;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.035em;
+  color: #f8fafc;
+}
+
+.textHighlight {
+  background: linear-gradient(135deg, #60a5fa, #a5b4fc);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.textSubtitle {
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 36rem;
+  margin: 0 auto 2.5rem;
+}
+
+.centeredContainer {
+  max-width: 80rem; /* equivalente ao max-w-7xl */
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 1rem; /* conforto mobile */
+}
+
+@media (min-width: 640px) {
+  .centeredContainer {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .centeredContainer {
+    padding: 0 2rem;
+  }
+}

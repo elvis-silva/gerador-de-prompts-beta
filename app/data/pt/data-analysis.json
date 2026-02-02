@@ -1,7 +1,8 @@
 {
   "title": "Análise de Dados",
   "niche": {
-    "name": "Data Analysis",
+    "lang": "pt",
+    "name": "Análise de Dados",
 
     "roles": [
       { "label": "Analista de Dados", "value": "data-analyst" },

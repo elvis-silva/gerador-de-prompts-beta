@@ -1,7 +1,8 @@
 {
   "title": "Fotografia",
   "niche": {
-    "name": "Photography",
+    "lang": "pt",
+    "name": "Fotografia",
 
     "roles": [
       { "label": "Fotógrafo Profissional", "value": "professional-photographer" },

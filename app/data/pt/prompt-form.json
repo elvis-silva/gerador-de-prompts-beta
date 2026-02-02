@@ -1,6 +1,7 @@
 {
   "title": "Marketing Digital",
   "niche": {
+    "lang": "pt",
     "name": "Digital Marketing",
     "roles": [
       { "label": "Marketing Specialist", "value": "marketing-specialist" },

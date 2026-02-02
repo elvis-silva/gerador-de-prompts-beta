@@ -1,6 +1,7 @@
 {
-  "title": "Marketing Digital",
+  "title": "Digital Marketing",
   "niche": {
+    "lang": "en",
     "name": "Digital Marketing",
 
     "roles": [
@@ -16,55 +17,55 @@
       { "label": "Creative", "value": "creative" },
       { "label": "Persuasive", "value": "persuasive" },
       { "label": "Educational", "value": "educational" },
-      { "label": "Data Driven", "value": "data-driven" }
+      { "label": "Data-Driven", "value": "data-driven" }
     ],
 
     "contexts": [
-      "Lançamento de produto digital",
-      "Campanha de tráfego pago",
-      "Construção de autoridade no Instagram",
-      "Funil de vendas com e-mail marketing",
-      "Escala de negócio online"
+      "Digital product launch",
+      "Paid traffic campaign",
+      "Building authority on Instagram",
+      "Sales funnel with email marketing",
+      "Online business scaling"
     ],
 
     "responsibilities": [
-      "Criar estratégias de aquisição de leads",
-      "Otimizar campanhas de anúncios",
-      "Aumentar taxa de conversão",
-      "Desenvolver copy persuasiva",
-      "Analisar métricas e KPIs"
+      "Create lead acquisition strategies",
+      "Optimize advertising campaigns",
+      "Increase conversion rates",
+      "Develop persuasive copy",
+      "Analyze metrics and KPIs"
     ],
 
     "strategies": [
-      "Funil AIDA",
-      "Copywriting direto",
-      "Storytelling estratégico",
+      "AIDA funnel",
+      "Direct-response copywriting",
+      "Strategic storytelling",
       "Growth loops",
-      "SEO orientado à conversão"
+      "Conversion-oriented SEO"
     ],
 
     "grammarStyles": [
-      "Objetivo e direto",
-      "Persuasivo",
-      "Didático",
-      "Narrativo",
-      "Técnico"
+      "Clear and direct",
+      "Persuasive",
+      "Educational",
+      "Narrative",
+      "Technical"
     ],
 
     "audiences": [
-      "Empreendedores digitais",
-      "Infoprodutores",
-      "Pequenas empresas",
-      "Gestores de marketing",
+      "Digital entrepreneurs",
+      "Infoproduct creators",
+      "Small businesses",
+      "Marketing managers",
       "Startups"
     ],
 
     "responseFormats": [
       "Markdown",
-      "Lista numerada",
+      "Numbered list",
       "Checklist",
-      "Passo a passo",
-      "Tabela comparativa"
+      "Step-by-step guide",
+      "Comparison table"
     ]
   }
 }
