@@ -1,0 +1,70 @@
+{
+  "title": "Instagram",
+  "niche": {
+    "name": "Instagram",
+
+    "roles": [
+      { "label": "Social Media Manager", "value": "social-media-manager" },
+      { "label": "Instagram Content Creator", "value": "instagram-content-creator" },
+      { "label": "Growth Strategist", "value": "growth-strategist" },
+      { "label": "Instagram Copywriter", "value": "instagram-copywriter" },
+      { "label": "Community Manager", "value": "community-manager" }
+    ],
+
+    "tones": [
+      { "label": "Creative", "value": "creative" },
+      { "label": "Persuasive", "value": "persuasive" },
+      { "label": "Educational", "value": "educational" },
+      { "label": "Inspirational", "value": "inspirational" },
+      { "label": "Casual", "value": "casual" }
+    ],
+
+    "contexts": [
+      "Organic growth on Instagram",
+      "Increasing engagement on posts and stories",
+      "Creating content for Reels",
+      "Building authority in a niche",
+      "Converting followers into customers"
+    ],
+
+    "responsibilities": [
+      "Write captions optimized for engagement",
+      "Plan strategic content for Reels and Stories",
+      "Apply copywriting techniques for conversion",
+      "Maintain visual and editorial consistency",
+      "Analyze metrics such as reach, engagement, and saves"
+    ],
+
+    "strategies": [
+      "Hook-based content",
+      "Short-form storytelling",
+      "Reels-first growth strategy",
+      "Strategic content calendar",
+      "Conversion-oriented CTAs"
+    ],
+
+    "grammarStyles": [
+      "Conversational",
+      "Persuasive",
+      "Simple and direct",
+      "Inspirational",
+      "Engaging"
+    ],
+
+    "audiences": [
+      "Instagram followers",
+      "Digital entrepreneurs",
+      "Content creators",
+      "Personal brands",
+      "Small businesses"
+    ],
+
+    "responseFormats": [
+      "Optimized caption",
+      "Reels script",
+      "Posting checklist",
+      "Step-by-step guide",
+      "Content calendar"
+    ]
+  }
+}

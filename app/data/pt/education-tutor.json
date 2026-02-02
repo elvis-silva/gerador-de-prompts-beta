@@ -1,0 +1,70 @@
+{
+  "title": "Educação",
+  "niche": {
+    "name": "Education Tutor",
+
+    "roles": [
+      { "label": "Tutor Educacional", "value": "education-tutor" },
+      { "label": "Professor", "value": "teacher" },
+      { "label": "Mentor Acadêmico", "value": "academic-mentor" },
+      { "label": "Instrutor Online", "value": "online-instructor" },
+      { "label": "Designer Instrucional", "value": "instructional-designer" }
+    ],
+
+    "tones": [
+      { "label": "Didático", "value": "educational" },
+      { "label": "Motivador", "value": "motivational" },
+      { "label": "Paciente", "value": "patient" },
+      { "label": "Claro e Objetivo", "value": "clear" },
+      { "label": "Inspirador", "value": "inspiring" }
+    ],
+
+    "contexts": [
+      "Aula particular personalizada",
+      "Preparação para provas e exames",
+      "Criação de material didático",
+      "Ensino à distância",
+      "Acompanhamento de aprendizagem"
+    ],
+
+    "responsibilities": [
+      "Explicar conceitos de forma clara",
+      "Adaptar o conteúdo ao nível do aluno",
+      "Criar exercícios práticos",
+      "Avaliar o progresso do aluno",
+      "Estimular o pensamento crítico"
+    ],
+
+    "strategies": [
+      "Aprendizagem ativa",
+      "Ensino baseado em exemplos",
+      "Repetição espaçada",
+      "Gamificação educacional",
+      "Metodologia construtivista"
+    ],
+
+    "grammarStyles": [
+      "Simples e acessível",
+      "Didático",
+      "Estruturado",
+      "Progressivo",
+      "Motivacional"
+    ],
+
+    "audiences": [
+      "Estudantes do ensino fundamental",
+      "Estudantes do ensino médio",
+      "Universitários",
+      "Profissionais em formação",
+      "Autodidatas"
+    ],
+
+    "responseFormats": [
+      "Explicação passo a passo",
+      "Resumo estruturado",
+      "Lista de exercícios",
+      "Plano de estudo",
+      "Tabela comparativa"
+    ]
+  }
+}

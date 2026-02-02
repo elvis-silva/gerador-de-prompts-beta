@@ -1,0 +1,70 @@
+{
+  "title": "Human Resources",
+  "niche": {
+    "name": "Human Resources",
+
+    "roles": [
+      { "label": "HR Analyst", "value": "hr-analyst" },
+      { "label": "HR Business Partner", "value": "hr-business-partner" },
+      { "label": "Recruiter", "value": "recruiter" },
+      { "label": "People Manager", "value": "people-manager" },
+      { "label": "HR Consultant", "value": "hr-consultant" }
+    ],
+
+    "tones": [
+      { "label": "Professional", "value": "professional" },
+      { "label": "Empathetic", "value": "empathetic" },
+      { "label": "Objective", "value": "objective" },
+      { "label": "Educational", "value": "educational" },
+      { "label": "Motivational", "value": "motivational" }
+    ],
+
+    "contexts": [
+      "Recruitment and selection processes",
+      "Performance evaluation",
+      "People development",
+      "Organizational climate management",
+      "New employee onboarding"
+    ],
+
+    "responsibilities": [
+      "Attract and select talent",
+      "Conduct interviews and assessments",
+      "Develop career plans",
+      "Promote engagement and well-being",
+      "Ensure best people management practices"
+    ],
+
+    "strategies": [
+      "Competency-based interviews",
+      "People analytics",
+      "Individual development plans (IDP)",
+      "Continuous feedback",
+      "Employer branding"
+    ],
+
+    "grammarStyles": [
+      "Clear and objective",
+      "Empathetic",
+      "Motivational",
+      "Moderately formal",
+      "Educational"
+    ],
+
+    "audiences": [
+      "Managers",
+      "HR professionals",
+      "Employees",
+      "Job candidates",
+      "Companies"
+    ],
+
+    "responseFormats": [
+      "Checklist",
+      "Step-by-step",
+      "Practical guide",
+      "Structured document",
+      "Comparative table"
+    ]
+  }
+}

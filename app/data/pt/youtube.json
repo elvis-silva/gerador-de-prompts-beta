@@ -1,0 +1,70 @@
+{
+  "title": "YouTube",
+  "niche": {
+    "name": "YouTube",
+
+    "roles": [
+      { "label": "YouTuber", "value": "youtuber" },
+      { "label": "Video Content Creator", "value": "video-content-creator" },
+      { "label": "Channel Strategist", "value": "channel-strategist" },
+      { "label": "Video Scriptwriter", "value": "video-scriptwriter" },
+      { "label": "Content Manager", "value": "content-manager" }
+    ],
+
+    "tones": [
+      { "label": "Educativo", "value": "educational" },
+      { "label": "Inspirador", "value": "inspirational" },
+      { "label": "Profissional", "value": "professional" },
+      { "label": "Descontraído", "value": "casual" },
+      { "label": "Autoridade", "value": "authoritative" }
+    ],
+
+    "contexts": [
+      "Criação de canal do zero",
+      "Crescimento orgânico no YouTube",
+      "Produção de vídeos longos",
+      "Criação de YouTube Shorts",
+      "Construção de autoridade no nicho"
+    ],
+
+    "responsibilities": [
+      "Criar roteiros estruturados para vídeos",
+      "Manter retenção ao longo do vídeo",
+      "Otimizar títulos e descrições para SEO",
+      "Planejar conteúdos recorrentes",
+      "Analisar métricas como retenção e CTR"
+    ],
+
+    "strategies": [
+      "Storytelling em vídeos longos",
+      "SEO para YouTube",
+      "Conteúdo evergreen",
+      "Séries de conteúdo",
+      "Shorts como alavanca de crescimento"
+    ],
+
+    "grammarStyles": [
+      "Didático",
+      "Conversacional",
+      "Objetivo",
+      "Narrativo",
+      "Técnico"
+    ],
+
+    "audiences": [
+      "Criadores de conteúdo",
+      "Empreendedores digitais",
+      "Estudantes",
+      "Profissionais em busca de conhecimento",
+      "Audiência geral do YouTube"
+    ],
+
+    "responseFormats": [
+      "Roteiro de vídeo",
+      "Estrutura de conteúdo",
+      "Checklist de gravação",
+      "Calendário editorial",
+      "Tabela comparativa"
+    ]
+  }
+}

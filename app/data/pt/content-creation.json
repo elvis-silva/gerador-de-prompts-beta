@@ -1,0 +1,70 @@
+{
+  "title": "Criação de Conteúdo",
+  "niche": {
+    "name": "Content Creation",
+
+    "roles": [
+      { "label": "Criador de Conteúdo", "value": "criador-de-conteudo" },
+      { "label": "Estrategista de Social Media", "value": "estrategista-social-media" },
+      { "label": "Copywriter", "value": "copywriter" },
+      { "label": "Roteirista de Vídeos", "value": "roteirista-de-videos" },
+      { "label": "Gestor de Conteúdo", "value": "gestor-de-conteudo" }
+    ],
+
+    "tones": [
+      { "label": "Criativo", "value": "criativo" },
+      { "label": "Persuasivo", "value": "persuasivo" },
+      { "label": "Educativo", "value": "educativo" },
+      { "label": "Inspirador", "value": "inspirador" },
+      { "label": "Descontraído", "value": "descontraido" }
+    ],
+
+    "contexts": [
+      "Criação de conteúdo para crescimento em redes sociais",
+      "Construção de autoridade pessoal ou de marca",
+      "Produção de conteúdo curto com potencial viral",
+      "Engajamento e fortalecimento de comunidade online",
+      "Planejamento de conteúdo para constância e escala"
+    ],
+
+    "responsibilities": [
+      "Criar conteúdos relevantes e envolventes",
+      "Escrever legendas e roteiros persuasivos",
+      "Manter consistência no tom e identidade da marca",
+      "Aumentar alcance e engajamento do público",
+      "Analisar métricas de desempenho de conteúdo"
+    ],
+
+    "strategies": [
+      "Storytelling estratégico",
+      "Conteúdo baseado em ganchos",
+      "Estratégia de pilares de conteúdo",
+      "Conteúdo orientado pela audiência",
+      "Criação baseada em tendências"
+    ],
+
+    "grammarStyles": [
+      "Conversacional",
+      "Persuasivo",
+      "Simples e direto",
+      "Narrativo",
+      "Envolvente"
+    ],
+
+    "audiences": [
+      "Seguidores em redes sociais",
+      "Consumidores de conteúdo digital",
+      "Marcas pessoais",
+      "Criadores digitais",
+      "Comunidades online"
+    ],
+
+    "responseFormats": [
+      "Markdown",
+      "Lista com marcadores",
+      "Passo a passo",
+      "Formato de roteiro",
+      "Tabela de calendário editorial"
+    ]
+  }
+}

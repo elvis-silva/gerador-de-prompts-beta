@@ -1,0 +1,70 @@
+{
+  "title": "Blog",
+  "niche": {
+    "name": "Blog",
+
+    "roles": [
+      { "label": "Redator de Conteúdo", "value": "content-writer" },
+      { "label": "Copywriter", "value": "copywriter" },
+      { "label": "Estrategista de Conteúdo", "value": "content-strategist" },
+      { "label": "Especialista em SEO", "value": "seo-specialist" },
+      { "label": "Editor de Blog", "value": "blog-editor" }
+    ],
+
+    "tones": [
+      { "label": "Profissional", "value": "professional" },
+      { "label": "Educativo", "value": "educational" },
+      { "label": "Persuasivo", "value": "persuasive" },
+      { "label": "Informativo", "value": "informative" },
+      { "label": "Autoridade", "value": "authoritative" }
+    ],
+
+    "contexts": [
+      "Criação de artigo para blog",
+      "Produção de conteúdo evergreen",
+      "Otimização de artigos para SEO",
+      "Construção de autoridade no nicho",
+      "Geração de tráfego orgânico"
+    ],
+
+    "responsibilities": [
+      "Criar artigos bem estruturados",
+      "Aplicar técnicas de SEO on-page",
+      "Produzir conteúdo original e relevante",
+      "Manter clareza e escaneabilidade do texto",
+      "Atualizar conteúdos antigos"
+    ],
+
+    "strategies": [
+      "SEO orientado a palavras-chave",
+      "Conteúdo evergreen",
+      "Topic clusters",
+      "Copywriting informativo",
+      "Otimização de intenção de busca"
+    ],
+
+    "grammarStyles": [
+      "Didático",
+      "Objetivo",
+      "Narrativo",
+      "Técnico",
+      "Persuasivo"
+    ],
+
+    "audiences": [
+      "Empreendedores",
+      "Profissionais de marketing",
+      "Estudantes",
+      "Pequenas e médias empresas",
+      "Leitores em busca de informação"
+    ],
+
+    "responseFormats": [
+      "Artigo completo",
+      "Post otimizado para SEO",
+      "Checklist de conteúdo",
+      "Guia passo a passo",
+      "Tabela comparativa"
+    ]
+  }
+}

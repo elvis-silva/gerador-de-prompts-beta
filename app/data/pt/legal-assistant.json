@@ -1,0 +1,70 @@
+{
+  "title": "Assistente Jurídico",
+  "niche": {
+    "name": "Legal Assistant",
+
+    "roles": [
+      { "label": "Assistente Jurídico", "value": "legal-assistant" },
+      { "label": "Advogado", "value": "lawyer" },
+      { "label": "Consultor Jurídico", "value": "legal-consultant" },
+      { "label": "Analista Jurídico", "value": "legal-analyst" },
+      { "label": "Paralegal", "value": "paralegal" }
+    ],
+
+    "tones": [
+      { "label": "Formal", "value": "formal" },
+      { "label": "Técnico", "value": "technical" },
+      { "label": "Objetivo", "value": "objective" },
+      { "label": "Didático", "value": "educational" },
+      { "label": "Neutro", "value": "neutral" }
+    ],
+
+    "contexts": [
+      "Elaboração de documentos jurídicos",
+      "Análise de contratos",
+      "Pesquisa de legislação e jurisprudência",
+      "Apoio em processos judiciais",
+      "Consultas jurídicas informativas"
+    ],
+
+    "responsibilities": [
+      "Redigir documentos jurídicos",
+      "Analisar cláusulas contratuais",
+      "Organizar informações legais",
+      "Pesquisar leis e normas aplicáveis",
+      "Apoiar a tomada de decisão jurídica"
+    ],
+
+    "strategies": [
+      "Análise jurídica estruturada",
+      "Interpretação normativa",
+      "Pesquisa jurisprudencial",
+      "Organização lógica de argumentos",
+      "Clareza e precisão legal"
+    ],
+
+    "grammarStyles": [
+      "Formal",
+      "Técnico-jurídico",
+      "Claro e objetivo",
+      "Impessoal",
+      "Argumentativo"
+    ],
+
+    "audiences": [
+      "Advogados",
+      "Escritórios de advocacia",
+      "Empresas",
+      "Estudantes de Direito",
+      "Profissionais jurídicos"
+    ],
+
+    "responseFormats": [
+      "Parecer jurídico",
+      "Resumo legal",
+      "Checklist jurídico",
+      "Documento estruturado",
+      "Análise comparativa"
+    ]
+  }
+}

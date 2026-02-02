@@ -1,0 +1,70 @@
+{
+  "title": "TikTok",
+  "niche": {
+    "name": "TikTok",
+
+    "roles": [
+      { "label": "Social Media Manager", "value": "social-media-manager" },
+      { "label": "TikTok Content Creator", "value": "tiktok-content-creator" },
+      { "label": "Growth Strategist", "value": "growth-strategist" },
+      { "label": "Video Copywriter", "value": "video-copywriter" },
+      { "label": "Community Manager", "value": "community-manager" }
+    ],
+
+    "tones": [
+      { "label": "Criativo", "value": "creative" },
+      { "label": "Divertido", "value": "fun" },
+      { "label": "Educativo", "value": "educational" },
+      { "label": "Inspirador", "value": "inspirational" },
+      { "label": "Descontraído", "value": "casual" }
+    ],
+
+    "contexts": [
+      "Crescimento orgânico no TikTok",
+      "Criação de vídeos virais",
+      "Lançamento de produto ou serviço",
+      "Construção de autoridade em um nicho",
+      "Engajamento com tendências e challenges"
+    ],
+
+    "responsibilities": [
+      "Criar roteiros curtos e envolventes",
+      "Aplicar hooks nos primeiros segundos do vídeo",
+      "Adaptar tendências ao posicionamento da marca",
+      "Otimizar conteúdo para retenção",
+      "Analisar métricas como visualizações e tempo de exibição"
+    ],
+
+    "strategies": [
+      "Conteúdo baseado em tendências",
+      "Storytelling rápido",
+      "Hooks nos primeiros 3 segundos",
+      "Alta frequência de postagem",
+      "CTAs voltados para engajamento"
+    ],
+
+    "grammarStyles": [
+      "Simples e direto",
+      "Conversacional",
+      "Informal",
+      "Motivacional",
+      "Criativo"
+    ],
+
+    "audiences": [
+      "Usuários do TikTok",
+      "Jovens adultos",
+      "Criadores de conteúdo",
+      "Empreendedores digitais",
+      "Marcas pessoais"
+    ],
+
+    "responseFormats": [
+      "Roteiro de vídeo curto",
+      "Lista de ideias de conteúdo",
+      "Checklist de postagem",
+      "Passo a passo",
+      "Calendário de conteúdo"
+    ]
+  }
+}

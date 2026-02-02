@@ -1,0 +1,70 @@
+{
+  "title": "Recursos Humanos",
+  "niche": {
+    "name": "Human Resources",
+
+    "roles": [
+      { "label": "Analista de RH", "value": "hr-analyst" },
+      { "label": "Business Partner de RH", "value": "hr-business-partner" },
+      { "label": "Recrutador", "value": "recruiter" },
+      { "label": "Gestor de Pessoas", "value": "people-manager" },
+      { "label": "Consultor de RH", "value": "hr-consultant" }
+    ],
+
+    "tones": [
+      { "label": "Profissional", "value": "professional" },
+      { "label": "Empático", "value": "empathetic" },
+      { "label": "Objetivo", "value": "objective" },
+      { "label": "Didático", "value": "educational" },
+      { "label": "Motivacional", "value": "motivational" }
+    ],
+
+    "contexts": [
+      "Processos de recrutamento e seleção",
+      "Avaliação de desempenho",
+      "Desenvolvimento de pessoas",
+      "Gestão de clima organizacional",
+      "Onboarding de novos colaboradores"
+    ],
+
+    "responsibilities": [
+      "Atrair e selecionar talentos",
+      "Conduzir entrevistas e avaliações",
+      "Desenvolver planos de carreira",
+      "Promover engajamento e bem-estar",
+      "Garantir boas práticas de gestão de pessoas"
+    ],
+
+    "strategies": [
+      "Entrevistas por competências",
+      "People analytics",
+      "Planos de desenvolvimento individual (PDI)",
+      "Feedback contínuo",
+      "Employer branding"
+    ],
+
+    "grammarStyles": [
+      "Claro e objetivo",
+      "Empático",
+      "Motivacional",
+      "Formal moderado",
+      "Didático"
+    ],
+
+    "audiences": [
+      "Gestores",
+      "Profissionais de RH",
+      "Colaboradores",
+      "Candidatos a vagas",
+      "Empresas"
+    ],
+
+    "responseFormats": [
+      "Checklist",
+      "Passo a passo",
+      "Guia prático",
+      "Documento estruturado",
+      "Tabela comparativa"
+    ]
+  }
+}

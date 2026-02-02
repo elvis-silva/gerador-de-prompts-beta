@@ -1,70 +1,70 @@
 {
-  "title": "Desenvolver de Software",
+  "title": "Software Development",
   "niche": {
-    "name": "Desenvolver de Software",
+    "name": "Software Development",
 
     "roles": [
-      { "label": "Desenvolver de Software", "value": "marketing-specialist" },
-      { "label": "Growth Hacker", "value": "growth-hacker" },
-      { "label": "Traffic Manager", "value": "traffic-manager" },
-      { "label": "SEO Analyst", "value": "seo-analyst" },
-      { "label": "Content Strategist", "value": "content-strategist" }
+      { "label": "Software Engineer", "value": "software-engineer" },
+      { "label": "Frontend Developer", "value": "frontend-developer" },
+      { "label": "Backend Developer", "value": "backend-developer" },
+      { "label": "Full Stack Developer", "value": "fullstack-developer" },
+      { "label": "Tech Lead", "value": "tech-lead" }
     ],
 
     "tones": [
       { "label": "Professional", "value": "professional" },
-      { "label": "Creative", "value": "creative" },
-      { "label": "Persuasive", "value": "persuasive" },
+      { "label": "Technical", "value": "technical" },
       { "label": "Educational", "value": "educational" },
-      { "label": "Data Driven", "value": "data-driven" }
+      { "label": "Objective", "value": "objective" },
+      { "label": "Mentor Style", "value": "mentor" }
     ],
 
     "contexts": [
-      "Lançamento de produto digital",
-      "Campanha de tráfego pago",
-      "Construção de autoridade no Instagram",
-      "Funil de vendas com e-mail marketing",
-      "Escala de negócio online"
+      "Developing a scalable web application",
+      "Building a REST or GraphQL API",
+      "Refactoring legacy code",
+      "Implementing software architecture best practices",
+      "Optimizing performance and security"
     ],
 
     "responsibilities": [
-      "Criar estratégias de aquisição de leads",
-      "Otimizar campanhas de anúncios",
-      "Aumentar taxa de conversão",
-      "Desenvolver copy persuasiva",
-      "Analisar métricas e KPIs"
+      "Design efficient software solutions",
+      "Write clean and testable code",
+      "Ensure scalability and maintainability",
+      "Review code and mentor other developers",
+      "Analyze technical and business requirements"
     ],
 
     "strategies": [
-      "Funil AIDA",
-      "Copywriting direto",
-      "Storytelling estratégico",
-      "Growth loops",
-      "SEO orientado à conversão"
+      "Clean Architecture",
+      "Domain-Driven Design (DDD)",
+      "Design Patterns",
+      "Test-Driven Development (TDD)",
+      "Incremental delivery and continuous refactoring"
     ],
 
     "grammarStyles": [
-      "Objetivo e direto",
-      "Persuasivo",
-      "Didático",
-      "Narrativo",
-      "Técnico"
+      "Technical and precise",
+      "Objective and direct",
+      "Educational",
+      "Structured",
+      "Analytical"
     ],
 
     "audiences": [
-      "Empreendedores digitais",
-      "Infoprodutores",
-      "Pequenas empresas",
-      "Gestores de marketing",
-      "Startups"
+      "Junior developers",
+      "Experienced developers",
+      "Engineering teams",
+      "Technology startups",
+      "Software companies"
     ],
 
     "responseFormats": [
       "Markdown",
-      "Lista numerada",
-      "Checklist",
-      "Passo a passo",
-      "Tabela comparativa"
+      "Commented code",
+      "Step-by-step guide",
+      "Technical checklist",
+      "Practical example with explanation"
     ]
   }
 }

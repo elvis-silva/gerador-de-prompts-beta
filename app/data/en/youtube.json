@@ -1,0 +1,70 @@
+{
+  "title": "YouTube",
+  "niche": {
+    "name": "YouTube",
+
+    "roles": [
+      { "label": "YouTuber", "value": "youtuber" },
+      { "label": "Video Content Creator", "value": "video-content-creator" },
+      { "label": "Channel Strategist", "value": "channel-strategist" },
+      { "label": "Video Scriptwriter", "value": "video-scriptwriter" },
+      { "label": "Content Manager", "value": "content-manager" }
+    ],
+
+    "tones": [
+      { "label": "Educational", "value": "educational" },
+      { "label": "Inspirational", "value": "inspirational" },
+      { "label": "Professional", "value": "professional" },
+      { "label": "Casual", "value": "casual" },
+      { "label": "Authoritative", "value": "authoritative" }
+    ],
+
+    "contexts": [
+      "Creating a channel from scratch",
+      "Organic growth on YouTube",
+      "Producing long-form videos",
+      "Creating YouTube Shorts",
+      "Building authority in a niche"
+    ],
+
+    "responsibilities": [
+      "Create well-structured video scripts",
+      "Maintain audience retention throughout the video",
+      "Optimize titles and descriptions for YouTube SEO",
+      "Plan recurring content formats",
+      "Analyze metrics such as retention and CTR"
+    ],
+
+    "strategies": [
+      "Long-form storytelling",
+      "YouTube SEO optimization",
+      "Evergreen content",
+      "Content series",
+      "Shorts as a growth lever"
+    ],
+
+    "grammarStyles": [
+      "Didactic",
+      "Conversational",
+      "Direct",
+      "Narrative",
+      "Technical"
+    ],
+
+    "audiences": [
+      "Content creators",
+      "Digital entrepreneurs",
+      "Students",
+      "Professionals seeking knowledge",
+      "General YouTube audience"
+    ],
+
+    "responseFormats": [
+      "Video script",
+      "Content structure",
+      "Recording checklist",
+      "Editorial calendar",
+      "Comparison table"
+    ]
+  }
+}

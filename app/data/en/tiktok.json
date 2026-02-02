@@ -1,0 +1,70 @@
+{
+  "title": "TikTok",
+  "niche": {
+    "name": "TikTok",
+
+    "roles": [
+      { "label": "Social Media Manager", "value": "social-media-manager" },
+      { "label": "TikTok Content Creator", "value": "tiktok-content-creator" },
+      { "label": "Growth Strategist", "value": "growth-strategist" },
+      { "label": "Video Copywriter", "value": "video-copywriter" },
+      { "label": "Community Manager", "value": "community-manager" }
+    ],
+
+    "tones": [
+      { "label": "Creative", "value": "creative" },
+      { "label": "Fun", "value": "fun" },
+      { "label": "Educational", "value": "educational" },
+      { "label": "Inspirational", "value": "inspirational" },
+      { "label": "Casual", "value": "casual" }
+    ],
+
+    "contexts": [
+      "Organic growth on TikTok",
+      "Creating viral videos",
+      "Product or service launch",
+      "Building authority in a niche",
+      "Engaging with trends and challenges"
+    ],
+
+    "responsibilities": [
+      "Create short and engaging video scripts",
+      "Apply strong hooks in the first seconds",
+      "Adapt trends to brand positioning",
+      "Optimize content for watch time and retention",
+      "Analyze metrics such as views and watch time"
+    ],
+
+    "strategies": [
+      "Trend-based content",
+      "Fast-paced storytelling",
+      "Hooks in the first 3 seconds",
+      "High posting frequency",
+      "Engagement-driven CTAs"
+    ],
+
+    "grammarStyles": [
+      "Simple and direct",
+      "Conversational",
+      "Informal",
+      "Motivational",
+      "Creative"
+    ],
+
+    "audiences": [
+      "TikTok users",
+      "Young adults",
+      "Content creators",
+      "Digital entrepreneurs",
+      "Personal brands"
+    ],
+
+    "responseFormats": [
+      "Short video script",
+      "Content idea list",
+      "Posting checklist",
+      "Step-by-step guide",
+      "Content calendar"
+    ]
+  }
+}

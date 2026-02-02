@@ -9,11 +9,11 @@ type PageProps = {
 }
 
 export default async function Page({ params }: PageProps) {
-  const { lang, slug } = await params // ✅ AQUI ESTÁ O PULO DO GATO
+  const { lang, slug } = await params 
 
   console.log('ROUTE PARAMS:', lang, slug)
 
-  const dict = await loadDictionary(lang, 'digital-marketing')
+  const dict = await loadDictionary(lang, slug)
 
   console.log('DICT RAW:', dict)
 

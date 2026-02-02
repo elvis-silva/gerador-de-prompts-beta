@@ -1,0 +1,70 @@
+{
+  "title": "Content Creation",
+  "niche": {
+    "name": "Content Creation",
+
+    "roles": [
+      { "label": "Content Creator", "value": "content-creator" },
+      { "label": "Social Media Strategist", "value": "social-media-strategist" },
+      { "label": "Copywriter", "value": "copywriter" },
+      { "label": "Video Scriptwriter", "value": "video-scriptwriter" },
+      { "label": "Content Manager", "value": "content-manager" }
+    ],
+
+    "tones": [
+      { "label": "Creative", "value": "creative" },
+      { "label": "Persuasive", "value": "persuasive" },
+      { "label": "Educational", "value": "educational" },
+      { "label": "Inspirational", "value": "inspirational" },
+      { "label": "Casual", "value": "casual" }
+    ],
+
+    "contexts": [
+      "Creating content for social media growth",
+      "Launching a personal or brand authority channel",
+      "Producing viral short-form content",
+      "Building an engaged online community",
+      "Content planning for consistent posting"
+    ],
+
+    "responsibilities": [
+      "Create engaging and relevant content",
+      "Write compelling captions and scripts",
+      "Maintain brand voice consistency",
+      "Increase audience engagement and reach",
+      "Analyze content performance metrics"
+    ],
+
+    "strategies": [
+      "Storytelling",
+      "Hook-based content",
+      "Content pillars strategy",
+      "Audience-driven content",
+      "Trend-based creation"
+    ],
+
+    "grammarStyles": [
+      "Conversational",
+      "Persuasive",
+      "Simple and clear",
+      "Narrative",
+      "Engaging"
+    ],
+
+    "audiences": [
+      "Social media followers",
+      "Content consumers",
+      "Personal brands",
+      "Digital creators",
+      "Online communities"
+    ],
+
+    "responseFormats": [
+      "Markdown",
+      "Bullet points",
+      "Step-by-step guide",
+      "Script format",
+      "Content calendar table"
+    ]
+  }
+}

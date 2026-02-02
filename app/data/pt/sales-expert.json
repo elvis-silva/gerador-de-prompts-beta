@@ -1,0 +1,70 @@
+{
+  "title": "Vendas",
+  "niche": {
+    "name": "Sales Expert",
+
+    "roles": [
+      { "label": "Closer de Vendas", "value": "sales-closer" },
+      { "label": "SDR", "value": "sdr" },
+      { "label": "Gerente de Vendas", "value": "sales-manager" },
+      { "label": "Consultor Comercial", "value": "sales-consultant" },
+      { "label": "Executivo de Contas", "value": "account-executive" }
+    ],
+
+    "tones": [
+      { "label": "Persuasivo", "value": "persuasive" },
+      { "label": "Profissional", "value": "professional" },
+      { "label": "Consultivo", "value": "consultative" },
+      { "label": "Confiante", "value": "confident" },
+      { "label": "Motivacional", "value": "motivational" }
+    ],
+
+    "contexts": [
+      "Prospecção ativa de clientes",
+      "Reunião de diagnóstico comercial",
+      "Follow-up de propostas",
+      "Negociação de contratos",
+      "Fechamento de vendas de alto ticket"
+    ],
+
+    "responsibilities": [
+      "Identificar oportunidades de venda",
+      "Qualificar leads",
+      "Apresentar soluções de forma estratégica",
+      "Conduzir negociações",
+      "Fechar contratos e bater metas"
+    ],
+
+    "strategies": [
+      "SPIN Selling",
+      "Venda consultiva",
+      "Outbound estratégico",
+      "Rapport e espelhamento",
+      "Gatilhos mentais de decisão"
+    ],
+
+    "grammarStyles": [
+      "Direto e persuasivo",
+      "Claro e objetivo",
+      "Conversacional",
+      "Motivacional",
+      "Profissional"
+    ],
+
+    "audiences": [
+      "Empresários",
+      "Tomadores de decisão",
+      "Leads B2B",
+      "Leads B2C",
+      "Diretores e gestores"
+    ],
+
+    "responseFormats": [
+      "Script de vendas",
+      "Checklist",
+      "Passo a passo",
+      "Lista de objeções e respostas",
+      "Tabela comparativa"
+    ]
+  }
+}

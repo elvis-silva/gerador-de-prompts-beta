@@ -1,0 +1,70 @@
+{
+  "title": "Blog",
+  "niche": {
+    "name": "Blog",
+
+    "roles": [
+      { "label": "Content Writer", "value": "content-writer" },
+      { "label": "Copywriter", "value": "copywriter" },
+      { "label": "Content Strategist", "value": "content-strategist" },
+      { "label": "SEO Specialist", "value": "seo-specialist" },
+      { "label": "Blog Editor", "value": "blog-editor" }
+    ],
+
+    "tones": [
+      { "label": "Professional", "value": "professional" },
+      { "label": "Educational", "value": "educational" },
+      { "label": "Persuasive", "value": "persuasive" },
+      { "label": "Informative", "value": "informative" },
+      { "label": "Authoritative", "value": "authoritative" }
+    ],
+
+    "contexts": [
+      "Writing a blog post",
+      "Creating evergreen content",
+      "Optimizing articles for SEO",
+      "Building authority in a niche",
+      "Generating organic traffic"
+    ],
+
+    "responsibilities": [
+      "Write well-structured blog articles",
+      "Apply on-page SEO best practices",
+      "Produce original and valuable content",
+      "Ensure readability and scannability",
+      "Update and refresh old content"
+    ],
+
+    "strategies": [
+      "Keyword-driven SEO",
+      "Evergreen content",
+      "Topic clusters",
+      "Informational copywriting",
+      "Search intent optimization"
+    ],
+
+    "grammarStyles": [
+      "Didactic",
+      "Direct",
+      "Narrative",
+      "Technical",
+      "Persuasive"
+    ],
+
+    "audiences": [
+      "Entrepreneurs",
+      "Marketing professionals",
+      "Students",
+      "Small and medium-sized businesses",
+      "Readers seeking information"
+    ],
+
+    "responseFormats": [
+      "Full article",
+      "SEO-optimized post",
+      "Content checklist",
+      "Step-by-step guide",
+      "Comparison table"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Medical & Health",
+  "niche": {
+    "name": "Medical & Health",
+
+    "roles": [
+      { "label": "Doctor", "value": "doctor" },
+      { "label": "Health Professional", "value": "health-professional" },
+      { "label": "Preventive Health Specialist", "value": "preventive-health-specialist" },
+      { "label": "Wellness Consultant", "value": "wellness-consultant" },
+      { "label": "Health Educator", "value": "health-educator" }
+    ],
+
+    "tones": [
+      { "label": "Professional", "value": "professional" },
+      { "label": "Empathetic", "value": "empathetic" },
+      { "label": "Educational", "value": "educational" },
+      { "label": "Clear and Objective", "value": "clear" },
+      { "label": "Evidence-Based", "value": "evidence-based" }
+    ],
+
+    "contexts": [
+      "General health guidance",
+      "Disease prevention education",
+      "Explanation of exams and diagnoses",
+      "Healthy lifestyle promotion",
+      "Informational patient support"
+    ],
+
+    "responsibilities": [
+      "Explain medical concepts clearly",
+      "Guide on prevention and basic care",
+      "Translate technical terms into plain language",
+      "Promote informed health decisions",
+      "Emphasize the importance of professional follow-up"
+    ],
+
+    "strategies": [
+      "Evidence-based health education",
+      "Clear and empathetic communication",
+      "Prevention-focused approach",
+      "Patient-centered care",
+      "Responsible self-care promotion"
+    ],
+
+    "grammarStyles": [
+      "Clear and objective",
+      "Didactic",
+      "Moderately technical",
+      "Supportive",
+      "Professional-formal"
+    ],
+
+    "audiences": [
+      "General public",
+      "Patients seeking information",
+      "Family members of patients",
+      "Healthcare professionals in training",
+      "People interested in wellness"
+    ],
+
+    "responseFormats": [
+      "Step-by-step explanation",
+      "Informative summary",
+      "Recommendation list",
+      "Q&A format",
+      "Comparison table"
+    ]
+  }
+}

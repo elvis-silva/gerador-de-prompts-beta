@@ -1,0 +1,70 @@
+{
+  "title": "Instagram",
+  "niche": {
+    "name": "Instagram",
+
+    "roles": [
+      { "label": "Social Media Manager", "value": "social-media-manager" },
+      { "label": "Criador de Conteúdo para Instagram", "value": "criador-instagram" },
+      { "label": "Estrategista de Crescimento", "value": "estrategista-crescimento" },
+      { "label": "Copywriter para Instagram", "value": "copywriter-instagram" },
+      { "label": "Gestor de Comunidade", "value": "gestor-de-comunidade" }
+    ],
+
+    "tones": [
+      { "label": "Criativo", "value": "criativo" },
+      { "label": "Persuasivo", "value": "persuasivo" },
+      { "label": "Educativo", "value": "educativo" },
+      { "label": "Inspirador", "value": "inspirador" },
+      { "label": "Descontraído", "value": "descontraido" }
+    ],
+
+    "contexts": [
+      "Crescimento orgânico no Instagram",
+      "Aumento de engajamento em posts e stories",
+      "Criação de conteúdo para Reels",
+      "Construção de autoridade no nicho",
+      "Conversão de seguidores em clientes"
+    ],
+
+    "responsibilities": [
+      "Criar legendas otimizadas para engajamento",
+      "Planejar conteúdo estratégico para Reels e Stories",
+      "Aplicar técnicas de copywriting para conversão",
+      "Manter consistência visual e editorial",
+      "Analisar métricas como alcance, engajamento e salvamentos"
+    ],
+
+    "strategies": [
+      "Conteúdo baseado em ganchos",
+      "Storytelling curto e direto",
+      "Estratégia de Reels para alcance",
+      "Calendário editorial estratégico",
+      "CTA orientado à conversão"
+    ],
+
+    "grammarStyles": [
+      "Conversacional",
+      "Persuasivo",
+      "Simples e direto",
+      "Inspirador",
+      "Envolvente"
+    ],
+
+    "audiences": [
+      "Seguidores do Instagram",
+      "Empreendedores digitais",
+      "Criadores de conteúdo",
+      "Marcas pessoais",
+      "Pequenos negócios"
+    ],
+
+    "responseFormats": [
+      "Legenda otimizada",
+      "Roteiro para Reels",
+      "Checklist de postagem",
+      "Passo a passo",
+      "Calendário de conteúdo"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Sales",
+  "niche": {
+    "name": "Sales Expert",
+
+    "roles": [
+      { "label": "Sales Closer", "value": "sales-closer" },
+      { "label": "SDR", "value": "sdr" },
+      { "label": "Sales Manager", "value": "sales-manager" },
+      { "label": "Sales Consultant", "value": "sales-consultant" },
+      { "label": "Account Executive", "value": "account-executive" }
+    ],
+
+    "tones": [
+      { "label": "Persuasive", "value": "persuasive" },
+      { "label": "Professional", "value": "professional" },
+      { "label": "Consultative", "value": "consultative" },
+      { "label": "Confident", "value": "confident" },
+      { "label": "Motivational", "value": "motivational" }
+    ],
+
+    "contexts": [
+      "Active lead prospecting",
+      "Sales discovery call",
+      "Proposal follow-up",
+      "Contract negotiation",
+      "High-ticket sales closing"
+    ],
+
+    "responsibilities": [
+      "Identify sales opportunities",
+      "Qualify leads",
+      "Present solutions strategically",
+      "Conduct negotiations",
+      "Close deals and achieve targets"
+    ],
+
+    "strategies": [
+      "SPIN Selling",
+      "Consultative selling",
+      "Strategic outbound",
+      "Rapport building and mirroring",
+      "Psychological triggers"
+    ],
+
+    "grammarStyles": [
+      "Direct and persuasive",
+      "Clear and objective",
+      "Conversational",
+      "Motivational",
+      "Professional"
+    ],
+
+    "audiences": [
+      "Business owners",
+      "Decision makers",
+      "B2B leads",
+      "B2C leads",
+      "Executives and managers"
+    ],
+
+    "responseFormats": [
+      "Sales script",
+      "Checklist",
+      "Step-by-step",
+      "Objection handling list",
+      "Comparative table"
+    ]
+  }
+}

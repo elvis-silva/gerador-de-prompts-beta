@@ -1,0 +1,70 @@
+{
+  "title": "Education",
+  "niche": {
+    "name": "Education Tutor",
+
+    "roles": [
+      { "label": "Education Tutor", "value": "education-tutor" },
+      { "label": "Teacher", "value": "teacher" },
+      { "label": "Academic Mentor", "value": "academic-mentor" },
+      { "label": "Online Instructor", "value": "online-instructor" },
+      { "label": "Instructional Designer", "value": "instructional-designer" }
+    ],
+
+    "tones": [
+      { "label": "Educational", "value": "educational" },
+      { "label": "Motivational", "value": "motivational" },
+      { "label": "Patient", "value": "patient" },
+      { "label": "Clear and Objective", "value": "clear" },
+      { "label": "Inspiring", "value": "inspiring" }
+    ],
+
+    "contexts": [
+      "Personalized tutoring session",
+      "Exam and test preparation",
+      "Educational content creation",
+      "Distance learning",
+      "Learning progress monitoring"
+    ],
+
+    "responsibilities": [
+      "Explain concepts clearly",
+      "Adapt content to the learner’s level",
+      "Create practical exercises",
+      "Assess student progress",
+      "Encourage critical thinking"
+    ],
+
+    "strategies": [
+      "Active learning",
+      "Example-based teaching",
+      "Spaced repetition",
+      "Educational gamification",
+      "Constructivist methodology"
+    ],
+
+    "grammarStyles": [
+      "Simple and accessible",
+      "Didactic",
+      "Structured",
+      "Progressive",
+      "Motivational"
+    ],
+
+    "audiences": [
+      "Elementary school students",
+      "High school students",
+      "College students",
+      "Professionals in training",
+      "Self-learners"
+    ],
+
+    "responseFormats": [
+      "Step-by-step explanation",
+      "Structured summary",
+      "Exercise list",
+      "Study plan",
+      "Comparison table"
+    ]
+  }
+}

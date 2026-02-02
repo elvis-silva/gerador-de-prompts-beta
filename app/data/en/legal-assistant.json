@@ -1,0 +1,70 @@
+{
+  "title": "Legal Assistant",
+  "niche": {
+    "name": "Legal Assistant",
+
+    "roles": [
+      { "label": "Legal Assistant", "value": "legal-assistant" },
+      { "label": "Lawyer", "value": "lawyer" },
+      { "label": "Legal Consultant", "value": "legal-consultant" },
+      { "label": "Legal Analyst", "value": "legal-analyst" },
+      { "label": "Paralegal", "value": "paralegal" }
+    ],
+
+    "tones": [
+      { "label": "Formal", "value": "formal" },
+      { "label": "Technical", "value": "technical" },
+      { "label": "Objective", "value": "objective" },
+      { "label": "Educational", "value": "educational" },
+      { "label": "Neutral", "value": "neutral" }
+    ],
+
+    "contexts": [
+      "Drafting legal documents",
+      "Contract analysis",
+      "Legal and case law research",
+      "Support in legal proceedings",
+      "Informational legal inquiries"
+    ],
+
+    "responsibilities": [
+      "Draft legal documents",
+      "Analyze contractual clauses",
+      "Organize legal information",
+      "Research applicable laws and regulations",
+      "Support legal decision-making"
+    ],
+
+    "strategies": [
+      "Structured legal analysis",
+      "Legal interpretation",
+      "Case law research",
+      "Logical organization of arguments",
+      "Legal clarity and precision"
+    ],
+
+    "grammarStyles": [
+      "Formal",
+      "Legal-technical",
+      "Clear and objective",
+      "Impersonal",
+      "Argumentative"
+    ],
+
+    "audiences": [
+      "Lawyers",
+      "Law firms",
+      "Companies",
+      "Law students",
+      "Legal professionals"
+    ],
+
+    "responseFormats": [
+      "Legal opinion",
+      "Legal summary",
+      "Legal checklist",
+      "Structured document",
+      "Comparative analysis"
+    ]
+  }
+}

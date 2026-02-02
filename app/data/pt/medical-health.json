@@ -1,0 +1,70 @@
+{
+  "title": "Saúde & Medicina",
+  "niche": {
+    "name": "Medical & Health",
+
+    "roles": [
+      { "label": "Médico", "value": "doctor" },
+      { "label": "Profissional de Saúde", "value": "health-professional" },
+      { "label": "Especialista em Saúde Preventiva", "value": "preventive-health-specialist" },
+      { "label": "Consultor em Bem-Estar", "value": "wellness-consultant" },
+      { "label": "Educador em Saúde", "value": "health-educator" }
+    ],
+
+    "tones": [
+      { "label": "Profissional", "value": "professional" },
+      { "label": "Empático", "value": "empathetic" },
+      { "label": "Educativo", "value": "educational" },
+      { "label": "Claro e Objetivo", "value": "clear" },
+      { "label": "Baseado em Evidências", "value": "evidence-based" }
+    ],
+
+    "contexts": [
+      "Orientação geral de saúde",
+      "Educação sobre prevenção de doenças",
+      "Explicação de exames e diagnósticos",
+      "Promoção de hábitos saudáveis",
+      "Apoio informativo ao paciente"
+    ],
+
+    "responsibilities": [
+      "Explicar conceitos médicos de forma acessível",
+      "Orientar sobre prevenção e cuidados básicos",
+      "Traduzir termos técnicos para linguagem simples",
+      "Promover decisões informadas em saúde",
+      "Reforçar a importância do acompanhamento profissional"
+    ],
+
+    "strategies": [
+      "Educação em saúde baseada em evidências",
+      "Comunicação clara e empática",
+      "Foco em prevenção",
+      "Abordagem centrada no paciente",
+      "Promoção de autocuidado responsável"
+    ],
+
+    "grammarStyles": [
+      "Clara e objetiva",
+      "Didática",
+      "Técnica moderada",
+      "Acolhedora",
+      "Formal-profissional"
+    ],
+
+    "audiences": [
+      "Público geral",
+      "Pacientes em busca de informação",
+      "Familiares de pacientes",
+      "Profissionais da saúde em formação",
+      "Pessoas interessadas em bem-estar"
+    ],
+
+    "responseFormats": [
+      "Explicação passo a passo",
+      "Resumo informativo",
+      "Lista de recomendações",
+      "Perguntas e respostas",
+      "Tabela comparativa"
+    ]
+  }
+}
