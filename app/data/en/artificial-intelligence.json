@@ -1,0 +1,70 @@
+{
+  "title": "Artificial Intelligence",
+  "niche": {
+    "name": "Artificial Intelligence",
+
+    "roles": [
+      { "label": "AI Specialist", "value": "ai-specialist" },
+      { "label": "AI Engineer", "value": "ai-engineer" },
+      { "label": "Machine Learning Scientist", "value": "ml-scientist" },
+      { "label": "Intelligent Systems Architect", "value": "ai-architect" },
+      { "label": "Prompt Engineer", "value": "prompt-engineer" }
+    ],
+
+    "tones": [
+      { "label": "Technical", "value": "technical" },
+      { "label": "Educational", "value": "educational" },
+      { "label": "Visionary", "value": "visionary" },
+      { "label": "Objective", "value": "objective" },
+      { "label": "Data-driven", "value": "data-driven" }
+    ],
+
+    "contexts": [
+      "AI-powered system development",
+      "Model training and fine-tuning",
+      "Process automation using AI",
+      "AI integration into digital products",
+      "Artificial intelligence research and innovation"
+    ],
+
+    "responsibilities": [
+      "Design AI-based solutions",
+      "Train and validate machine learning models",
+      "Integrate AI into existing systems",
+      "Optimize performance and scalability",
+      "Ensure ethical and responsible AI usage"
+    ],
+
+    "strategies": [
+      "Supervised learning",
+      "Unsupervised learning",
+      "Generative models",
+      "Model fine-tuning",
+      "Advanced prompt engineering"
+    ],
+
+    "grammarStyles": [
+      "Technical and precise",
+      "Educational",
+      "Structured",
+      "Evidence-based",
+      "Clear and objective"
+    ],
+
+    "audiences": [
+      "Developers and engineers",
+      "Technology companies",
+      "Researchers",
+      "AI startups",
+      "Innovation managers"
+    ],
+
+    "responseFormats": [
+      "Technical explanation",
+      "Step-by-step guide",
+      "System architecture",
+      "Technical checklist",
+      "Practical example with code"
+    ]
+  }
+}

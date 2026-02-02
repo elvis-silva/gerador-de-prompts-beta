@@ -1,0 +1,70 @@
+{
+  "title": "Estratégia de Negócios",
+  "niche": {
+    "name": "Estratégia de Negócios",
+
+    "roles": [
+      { "label": "Estrategista de Negócios", "value": "business-strategist" },
+      { "label": "Consultor Estratégico", "value": "strategy-consultant" },
+      { "label": "CEO", "value": "ceo" },
+      { "label": "Fundador", "value": "founder" },
+      { "label": "Analista de Negócios", "value": "business-analyst" }
+    ],
+
+    "tones": [
+      { "label": "Estratégico", "value": "strategic" },
+      { "label": "Analítico", "value": "analytical" },
+      { "label": "Executivo", "value": "executive" },
+      { "label": "Objetivo", "value": "objective" },
+      { "label": "Visionário", "value": "visionary" }
+    ],
+
+    "contexts": [
+      "Planejamento estratégico",
+      "Crescimento de negócios",
+      "Análise de mercado",
+      "Tomada de decisão",
+      "Escala e expansão"
+    ],
+
+    "responsibilities": [
+      "Definir direcionamento estratégico",
+      "Analisar mercado e concorrência",
+      "Identificar oportunidades de crescimento",
+      "Apoiar decisões executivas",
+      "Alinhar visão, metas e execução"
+    ],
+
+    "strategies": [
+      "Análise SWOT",
+      "OKRs",
+      "Modelo de Negócio (Business Model Canvas)",
+      "Análise de mercado",
+      "Planejamento estratégico"
+    ],
+
+    "grammarStyles": [
+      "Clara e estruturada",
+      "Analítica",
+      "Objetiva",
+      "Executiva",
+      "Orientada a decisões"
+    ],
+
+    "audiences": [
+      "Empreendedores",
+      "Executivos",
+      "Startups",
+      "Empresas em crescimento",
+      "Consultores de negócios"
+    ],
+
+    "responseFormats": [
+      "Plano estratégico",
+      "Lista estruturada",
+      "Framework de decisão",
+      "Análise comparativa",
+      "Roadmap"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Mercado Imobiliário",
+  "niche": {
+    "name": "Real Estate",
+
+    "roles": [
+      { "label": "Corretor de Imóveis", "value": "real-estate-agent" },
+      { "label": "Consultor Imobiliário", "value": "real-estate-consultant" },
+      { "label": "Investidor Imobiliário", "value": "real-estate-investor" },
+      { "label": "Gestor de Imóveis", "value": "property-manager" },
+      { "label": "Especialista em Avaliação Imobiliária", "value": "property-appraiser" }
+    ],
+
+    "tones": [
+      { "label": "Profissional", "value": "professional" },
+      { "label": "Persuasivo", "value": "persuasive" },
+      { "label": "Consultivo", "value": "consultative" },
+      { "label": "Educativo", "value": "educational" },
+      { "label": "Confiável", "value": "trustworthy" }
+    ],
+
+    "contexts": [
+      "Venda de imóveis residenciais",
+      "Locação de imóveis",
+      "Captação de novos imóveis",
+      "Análise de investimento imobiliário",
+      "Lançamento de empreendimentos"
+    ],
+
+    "responsibilities": [
+      "Apresentar imóveis de forma estratégica",
+      "Conduzir negociações imobiliárias",
+      "Analisar perfil do comprador ou investidor",
+      "Destacar diferenciais do imóvel",
+      "Orientar sobre documentação e processos"
+    ],
+
+    "strategies": [
+      "Marketing imobiliário digital",
+      "Storytelling para venda de imóveis",
+      "Geração de leads qualificados",
+      "Análise de mercado local",
+      "Follow-up consultivo"
+    ],
+
+    "grammarStyles": [
+      "Clara e objetiva",
+      "Persuasiva",
+      "Consultiva",
+      "Profissional",
+      "Orientada à conversão"
+    ],
+
+    "audiences": [
+      "Compradores de imóveis",
+      "Investidores imobiliários",
+      "Locatários",
+      "Construtoras",
+      "Proprietários de imóveis"
+    ],
+
+    "responseFormats": [
+      "Descrição detalhada do imóvel",
+      "Checklist de compra ou locação",
+      "Comparativo de imóveis",
+      "Resumo consultivo",
+      "Tabela de investimento"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Customer Support",
+  "niche": {
+    "name": "Customer Support",
+
+    "roles": [
+      { "label": "Atendente de Suporte", "value": "support-agent" },
+      { "label": "Especialista em Suporte ao Cliente", "value": "customer-support-specialist" },
+      { "label": "Suporte Técnico", "value": "technical-support" },
+      { "label": "Analista de Suporte", "value": "support-analyst" },
+      { "label": "Gerente de Customer Support", "value": "support-manager" }
+    ],
+
+    "tones": [
+      { "label": "Empático", "value": "empathetic" },
+      { "label": "Claro", "value": "clear" },
+      { "label": "Profissional", "value": "professional" },
+      { "label": "Calmo", "value": "calm" },
+      { "label": "Resolutivo", "value": "solution-oriented" }
+    ],
+
+    "contexts": [
+      "Atendimento via chat",
+      "Suporte por e-mail",
+      "Tickets de suporte",
+      "Pós-venda",
+      "Resolução de problemas técnicos"
+    ],
+
+    "responsibilities": [
+      "Atender clientes com empatia",
+      "Resolver dúvidas e problemas",
+      "Explicar soluções de forma clara",
+      "Reduzir atrito e frustração do cliente",
+      "Garantir satisfação e retenção"
+    ],
+
+    "strategies": [
+      "Escuta ativa",
+      "Comunicação clara",
+      "Resolução orientada a solução",
+      "Padronização de respostas",
+      "Melhoria contínua do atendimento"
+    ],
+
+    "grammarStyles": [
+      "Clara e objetiva",
+      "Empática",
+      "Didática",
+      "Profissional",
+      "Tranquilizadora"
+    ],
+
+    "audiences": [
+      "Usuários finais",
+      "Clientes SaaS",
+      "Empresas B2B",
+      "E-commerces",
+      "Times de produto"
+    ],
+
+    "responseFormats": [
+      "Resposta direta",
+      "Passo a passo",
+      "Mensagem empática",
+      "Resposta padrão (macro)",
+      "Checklist de solução"
+    ]
+  }
+}

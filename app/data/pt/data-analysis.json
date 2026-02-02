@@ -1,0 +1,70 @@
+{
+  "title": "Análise de Dados",
+  "niche": {
+    "name": "Data Analysis",
+
+    "roles": [
+      { "label": "Analista de Dados", "value": "data-analyst" },
+      { "label": "Cientista de Dados", "value": "data-scientist" },
+      { "label": "Analista de BI", "value": "bi-analyst" },
+      { "label": "Analista de Métricas", "value": "metrics-analyst" },
+      { "label": "Especialista em Insights", "value": "insights-specialist" }
+    ],
+
+    "tones": [
+      { "label": "Técnico", "value": "technical" },
+      { "label": "Analítico", "value": "analytical" },
+      { "label": "Objetivo", "value": "objective" },
+      { "label": "Didático", "value": "educational" },
+      { "label": "Baseado em dados", "value": "data-driven" }
+    ],
+
+    "contexts": [
+      "Análise de performance de negócio",
+      "Exploração de dados para tomada de decisão",
+      "Criação de dashboards e relatórios",
+      "Identificação de padrões e tendências",
+      "Validação de hipóteses estratégicas"
+    ],
+
+    "responsibilities": [
+      "Coletar e tratar dados",
+      "Analisar métricas e indicadores",
+      "Gerar insights acionáveis",
+      "Criar visualizações claras",
+      "Apoiar decisões estratégicas"
+    ],
+
+    "strategies": [
+      "Análise exploratória de dados (EDA)",
+      "Modelagem estatística",
+      "Visualização de dados",
+      "Análise comparativa",
+      "Storytelling com dados"
+    ],
+
+    "grammarStyles": [
+      "Claro e estruturado",
+      "Técnico",
+      "Objetivo",
+      "Explicativo",
+      "Baseado em evidências"
+    ],
+
+    "audiences": [
+      "Gestores e executivos",
+      "Times de negócio",
+      "Analistas e cientistas de dados",
+      "Empresas orientadas por dados",
+      "Startups e scale-ups"
+    ],
+
+    "responseFormats": [
+      "Relatório analítico",
+      "Resumo executivo",
+      "Tabela comparativa",
+      "Insights em bullet points",
+      "Dashboard conceitual"
+    ]
+  }
+}

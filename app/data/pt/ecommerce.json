@@ -1,0 +1,70 @@
+{
+  "title": "E-commerce",
+  "niche": {
+    "name": "E-commerce",
+
+    "roles": [
+      { "label": "Especialista em E-commerce", "value": "ecommerce-specialist" },
+      { "label": "Gestor de Loja Online", "value": "online-store-manager" },
+      { "label": "Especialista em Conversão", "value": "conversion-specialist" },
+      { "label": "Gestor de Produtos", "value": "product-manager" },
+      { "label": "Especialista em Marketplaces", "value": "marketplace-specialist" }
+    ],
+
+    "tones": [
+      { "label": "Persuasivo", "value": "persuasive" },
+      { "label": "Profissional", "value": "professional" },
+      { "label": "Orientado a vendas", "value": "sales-oriented" },
+      { "label": "Informativo", "value": "informative" },
+      { "label": "Confiável", "value": "trustworthy" }
+    ],
+
+    "contexts": [
+      "Lançamento de produto em loja virtual",
+      "Otimização de páginas de produto",
+      "Campanha promocional",
+      "Estratégia de upsell e cross-sell",
+      "Escala de vendas online"
+    ],
+
+    "responsibilities": [
+      "Aumentar taxa de conversão",
+      "Otimizar experiência do usuário",
+      "Criar descrições de produtos",
+      "Gerenciar catálogo e ofertas",
+      "Analisar métricas de vendas"
+    ],
+
+    "strategies": [
+      "Copy para e-commerce",
+      "Upsell e cross-sell",
+      "Prova social",
+      "Oferta irresistível",
+      "Otimização de checkout"
+    ],
+
+    "grammarStyles": [
+      "Objetivo",
+      "Persuasivo",
+      "Claro e direto",
+      "Orientado a benefícios",
+      "Com foco em ação"
+    ],
+
+    "audiences": [
+      "Consumidores finais",
+      "Compradores online",
+      "Pequenas e médias empresas",
+      "Empreendedores digitais",
+      "Lojistas virtuais"
+    ],
+
+    "responseFormats": [
+      "Descrição de produto",
+      "Lista de benefícios",
+      "Bullet points",
+      "Texto persuasivo",
+      "Tabela comparativa"
+    ]
+  }
+}

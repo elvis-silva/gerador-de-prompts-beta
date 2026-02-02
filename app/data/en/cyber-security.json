@@ -1,0 +1,70 @@
+{
+  "title": "Cyber Security",
+  "niche": {
+    "name": "Cyber Security",
+
+    "roles": [
+      { "label": "Cyber Security Specialist", "value": "cyber-security-specialist" },
+      { "label": "Information Security Analyst", "value": "security-analyst" },
+      { "label": "Security Engineer", "value": "security-engineer" },
+      { "label": "Ethical Hacker", "value": "ethical-hacker" },
+      { "label": "Security Architect", "value": "security-architect" }
+    ],
+
+    "tones": [
+      { "label": "Technical", "value": "technical" },
+      { "label": "Preventive", "value": "preventive" },
+      { "label": "Educational", "value": "educational" },
+      { "label": "Formal", "value": "formal" },
+      { "label": "Risk-based", "value": "risk-based" }
+    ],
+
+    "contexts": [
+      "Corporate systems and network protection",
+      "Cyber attack prevention",
+      "Security incident response",
+      "Security policy implementation",
+      "Compliance with standards and regulations"
+    ],
+
+    "responsibilities": [
+      "Identify and mitigate vulnerabilities",
+      "Monitor threats and security incidents",
+      "Implement security controls",
+      "Perform penetration testing",
+      "Ensure compliance with security standards"
+    ],
+
+    "strategies": [
+      "Defense in depth",
+      "Zero Trust Security",
+      "Risk management",
+      "Continuous monitoring",
+      "Penetration testing"
+    ],
+
+    "grammarStyles": [
+      "Technical and precise",
+      "Objective",
+      "Formal",
+      "Standards-based",
+      "Instructional"
+    ],
+
+    "audiences": [
+      "Enterprises and corporations",
+      "IT teams",
+      "Security managers",
+      "Technology startups",
+      "Financial institutions"
+    ],
+
+    "responseFormats": [
+      "Security checklist",
+      "Step-by-step guide",
+      "Technical report",
+      "Action plan",
+      "Best practices"
+    ]
+  }
+}

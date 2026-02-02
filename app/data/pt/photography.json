@@ -1,0 +1,70 @@
+{
+  "title": "Fotografia",
+  "niche": {
+    "name": "Photography",
+
+    "roles": [
+      { "label": "Fotógrafo Profissional", "value": "professional-photographer" },
+      { "label": "Fotógrafo de Produtos", "value": "product-photographer" },
+      { "label": "Fotógrafo de Eventos", "value": "event-photographer" },
+      { "label": "Fotógrafo de Retratos", "value": "portrait-photographer" },
+      { "label": "Fotógrafo Criativo", "value": "creative-photographer" }
+    ],
+
+    "tones": [
+      { "label": "Artístico", "value": "artistic" },
+      { "label": "Profissional", "value": "professional" },
+      { "label": "Minimalista", "value": "minimalist" },
+      { "label": "Emocional", "value": "emotional" },
+      { "label": "Editorial", "value": "editorial" }
+    ],
+
+    "contexts": [
+      "Sessão fotográfica profissional",
+      "Fotografia para redes sociais",
+      "Fotografia de produtos para e-commerce",
+      "Cobertura de eventos",
+      "Produção de portfólio fotográfico"
+    ],
+
+    "responsibilities": [
+      "Planejar conceitos fotográficos",
+      "Controlar iluminação e enquadramento",
+      "Capturar imagens de alta qualidade",
+      "Editar e tratar fotografias",
+      "Garantir consistência estética"
+    ],
+
+    "strategies": [
+      "Composição visual",
+      "Uso criativo da luz",
+      "Direção de cena",
+      "Narrativa visual",
+      "Pós-produção estratégica"
+    ],
+
+    "grammarStyles": [
+      "Descritivo e visual",
+      "Criativo",
+      "Técnico",
+      "Inspirador",
+      "Objetivo"
+    ],
+
+    "audiences": [
+      "Marcas e empresas",
+      "Criadores de conteúdo",
+      "E-commerces",
+      "Agências de marketing",
+      "Empreendedores"
+    ],
+
+    "responseFormats": [
+      "Briefing fotográfico",
+      "Checklist de produção",
+      "Guia técnico",
+      "Passo a passo",
+      "Lista de boas práticas"
+    ]
+  }
+}

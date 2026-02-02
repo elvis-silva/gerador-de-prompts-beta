@@ -1,0 +1,70 @@
+{
+  "title": "Real Estate",
+  "niche": {
+    "name": "Real Estate",
+
+    "roles": [
+      { "label": "Real Estate Agent", "value": "real-estate-agent" },
+      { "label": "Real Estate Consultant", "value": "real-estate-consultant" },
+      { "label": "Real Estate Investor", "value": "real-estate-investor" },
+      { "label": "Property Manager", "value": "property-manager" },
+      { "label": "Property Appraiser", "value": "property-appraiser" }
+    ],
+
+    "tones": [
+      { "label": "Professional", "value": "professional" },
+      { "label": "Persuasive", "value": "persuasive" },
+      { "label": "Consultative", "value": "consultative" },
+      { "label": "Educational", "value": "educational" },
+      { "label": "Trustworthy", "value": "trustworthy" }
+    ],
+
+    "contexts": [
+      "Residential property sales",
+      "Property rental",
+      "Property acquisition",
+      "Real estate investment analysis",
+      "New development launches"
+    ],
+
+    "responsibilities": [
+      "Present properties strategically",
+      "Conduct real estate negotiations",
+      "Analyze buyer or investor profiles",
+      "Highlight property differentiators",
+      "Guide through documentation and processes"
+    ],
+
+    "strategies": [
+      "Digital real estate marketing",
+      "Property storytelling",
+      "Qualified lead generation",
+      "Local market analysis",
+      "Consultative follow-up"
+    ],
+
+    "grammarStyles": [
+      "Clear and objective",
+      "Persuasive",
+      "Consultative",
+      "Professional",
+      "Conversion-oriented"
+    ],
+
+    "audiences": [
+      "Property buyers",
+      "Real estate investors",
+      "Renters",
+      "Developers",
+      "Property owners"
+    ],
+
+    "responseFormats": [
+      "Detailed property description",
+      "Buying or renting checklist",
+      "Property comparison",
+      "Consultative summary",
+      "Investment table"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Photography",
+  "niche": {
+    "name": "Photography",
+
+    "roles": [
+      { "label": "Professional Photographer", "value": "professional-photographer" },
+      { "label": "Product Photographer", "value": "product-photographer" },
+      { "label": "Event Photographer", "value": "event-photographer" },
+      { "label": "Portrait Photographer", "value": "portrait-photographer" },
+      { "label": "Creative Photographer", "value": "creative-photographer" }
+    ],
+
+    "tones": [
+      { "label": "Artistic", "value": "artistic" },
+      { "label": "Professional", "value": "professional" },
+      { "label": "Minimalist", "value": "minimalist" },
+      { "label": "Emotional", "value": "emotional" },
+      { "label": "Editorial", "value": "editorial" }
+    ],
+
+    "contexts": [
+      "Professional photo shoot",
+      "Social media photography",
+      "Product photography for e-commerce",
+      "Event coverage",
+      "Photography portfolio production"
+    ],
+
+    "responsibilities": [
+      "Plan photographic concepts",
+      "Control lighting and framing",
+      "Capture high-quality images",
+      "Edit and retouch photographs",
+      "Ensure aesthetic consistency"
+    ],
+
+    "strategies": [
+      "Visual composition",
+      "Creative use of lighting",
+      "Scene direction",
+      "Visual storytelling",
+      "Strategic post-production"
+    ],
+
+    "grammarStyles": [
+      "Descriptive and visual",
+      "Creative",
+      "Technical",
+      "Inspiring",
+      "Objective"
+    ],
+
+    "audiences": [
+      "Brands and businesses",
+      "Content creators",
+      "E-commerce brands",
+      "Marketing agencies",
+      "Entrepreneurs"
+    ],
+
+    "responseFormats": [
+      "Photography brief",
+      "Production checklist",
+      "Technical guide",
+      "Step-by-step",
+      "Best practices list"
+    ]
+  }
+}

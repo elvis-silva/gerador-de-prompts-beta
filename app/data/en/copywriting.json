@@ -1,0 +1,70 @@
+{
+  "title": "Copywriting",
+  "niche": {
+    "name": "Copywriting",
+
+    "roles": [
+      { "label": "Copywriter", "value": "copywriter" },
+      { "label": "Sales Copywriter", "value": "sales-copywriter" },
+      { "label": "Funnel Copywriter", "value": "funnel-copywriter" },
+      { "label": "Ads Copywriter", "value": "ads-copywriter" },
+      { "label": "Landing Page Specialist", "value": "landing-page-copywriter" }
+    ],
+
+    "tones": [
+      { "label": "Persuasive", "value": "persuasive" },
+      { "label": "Conversational", "value": "conversational" },
+      { "label": "Emotional", "value": "emotional" },
+      { "label": "Authoritative", "value": "authoritative" },
+      { "label": "Direct", "value": "direct" }
+    ],
+
+    "contexts": [
+      "Sales page",
+      "Paid traffic ad",
+      "Product launch",
+      "Email marketing",
+      "High-conversion offer"
+    ],
+
+    "responsibilities": [
+      "Write persuasive copy",
+      "Increase conversion rates",
+      "Create compelling headlines",
+      "Structure sales arguments",
+      "Apply psychological triggers"
+    ],
+
+    "strategies": [
+      "AIDA",
+      "PAS",
+      "Storytelling",
+      "Psychological triggers",
+      "Conversion-oriented copy"
+    ],
+
+    "grammarStyles": [
+      "Short and objective",
+      "Persuasive",
+      "Conversational",
+      "Narrative",
+      "High-impact"
+    ],
+
+    "audiences": [
+      "Digital entrepreneurs",
+      "Infoproduct creators",
+      "Traffic managers",
+      "Startups",
+      "Small businesses"
+    ],
+
+    "responseFormats": [
+      "Continuous text",
+      "Numbered list",
+      "Headline + CTA",
+      "Copy structure",
+      "A/B versions"
+    ]
+  }
+}

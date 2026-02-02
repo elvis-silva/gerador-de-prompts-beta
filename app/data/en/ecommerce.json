@@ -1,0 +1,70 @@
+{
+  "title": "E-commerce",
+  "niche": {
+    "name": "E-commerce",
+
+    "roles": [
+      { "label": "E-commerce Specialist", "value": "ecommerce-specialist" },
+      { "label": "Online Store Manager", "value": "online-store-manager" },
+      { "label": "Conversion Rate Specialist", "value": "conversion-specialist" },
+      { "label": "Product Manager", "value": "product-manager" },
+      { "label": "Marketplace Specialist", "value": "marketplace-specialist" }
+    ],
+
+    "tones": [
+      { "label": "Persuasive", "value": "persuasive" },
+      { "label": "Professional", "value": "professional" },
+      { "label": "Sales-oriented", "value": "sales-oriented" },
+      { "label": "Informative", "value": "informative" },
+      { "label": "Trustworthy", "value": "trustworthy" }
+    ],
+
+    "contexts": [
+      "Online store product launch",
+      "Product page optimization",
+      "Promotional campaign",
+      "Upsell and cross-sell strategy",
+      "Scaling online sales"
+    ],
+
+    "responsibilities": [
+      "Increase conversion rate",
+      "Optimize user experience",
+      "Write product descriptions",
+      "Manage catalog and offers",
+      "Analyze sales metrics"
+    ],
+
+    "strategies": [
+      "E-commerce copywriting",
+      "Upsell and cross-sell",
+      "Social proof",
+      "Irresistible offer",
+      "Checkout optimization"
+    ],
+
+    "grammarStyles": [
+      "Objective",
+      "Persuasive",
+      "Clear and direct",
+      "Benefit-driven",
+      "Action-oriented"
+    ],
+
+    "audiences": [
+      "End consumers",
+      "Online shoppers",
+      "Small and medium businesses",
+      "Digital entrepreneurs",
+      "Online store owners"
+    ],
+
+    "responseFormats": [
+      "Product description",
+      "Benefits list",
+      "Bullet points",
+      "Persuasive text",
+      "Comparison table"
+    ]
+  }
+}

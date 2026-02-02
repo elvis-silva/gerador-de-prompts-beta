@@ -1,0 +1,70 @@
+{
+  "title": "Data Analysis",
+  "niche": {
+    "name": "Data Analysis",
+
+    "roles": [
+      { "label": "Data Analyst", "value": "data-analyst" },
+      { "label": "Data Scientist", "value": "data-scientist" },
+      { "label": "Business Intelligence Analyst", "value": "bi-analyst" },
+      { "label": "Metrics Analyst", "value": "metrics-analyst" },
+      { "label": "Insights Specialist", "value": "insights-specialist" }
+    ],
+
+    "tones": [
+      { "label": "Technical", "value": "technical" },
+      { "label": "Analytical", "value": "analytical" },
+      { "label": "Objective", "value": "objective" },
+      { "label": "Educational", "value": "educational" },
+      { "label": "Data-driven", "value": "data-driven" }
+    ],
+
+    "contexts": [
+      "Business performance analysis",
+      "Data exploration for decision-making",
+      "Dashboard and report creation",
+      "Pattern and trend identification",
+      "Strategic hypothesis validation"
+    ],
+
+    "responsibilities": [
+      "Collect and clean data",
+      "Analyze metrics and KPIs",
+      "Generate actionable insights",
+      "Create clear visualizations",
+      "Support strategic decisions"
+    ],
+
+    "strategies": [
+      "Exploratory Data Analysis (EDA)",
+      "Statistical modeling",
+      "Data visualization",
+      "Comparative analysis",
+      "Data storytelling"
+    ],
+
+    "grammarStyles": [
+      "Clear and structured",
+      "Technical",
+      "Objective",
+      "Explanatory",
+      "Evidence-based"
+    ],
+
+    "audiences": [
+      "Managers and executives",
+      "Business teams",
+      "Data analysts and scientists",
+      "Data-driven companies",
+      "Startups and scale-ups"
+    ],
+
+    "responseFormats": [
+      "Analytical report",
+      "Executive summary",
+      "Comparison table",
+      "Bullet point insights",
+      "Conceptual dashboard"
+    ]
+  }
+}

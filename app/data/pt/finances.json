@@ -1,0 +1,70 @@
+{
+  "title": "Finanças",
+  "niche": {
+    "name": "Finances",
+
+    "roles": [
+      { "label": "Analista Financeiro", "value": "financial-analyst" },
+      { "label": "Consultor Financeiro", "value": "financial-consultant" },
+      { "label": "Planejador Financeiro", "value": "financial-planner" },
+      { "label": "Especialista em Investimentos", "value": "investment-specialist" },
+      { "label": "Gestor Financeiro", "value": "finance-manager" }
+    ],
+
+    "tones": [
+      { "label": "Profissional", "value": "professional" },
+      { "label": "Confiável", "value": "trustworthy" },
+      { "label": "Educativo", "value": "educational" },
+      { "label": "Analítico", "value": "analytical" },
+      { "label": "Consultivo", "value": "consultative" }
+    ],
+
+    "contexts": [
+      "Planejamento financeiro pessoal",
+      "Gestão financeira empresarial",
+      "Análise de investimentos",
+      "Controle de fluxo de caixa",
+      "Preparação para aposentadoria"
+    ],
+
+    "responsibilities": [
+      "Analisar dados financeiros",
+      "Criar estratégias de investimentos",
+      "Otimizar orçamento e despesas",
+      "Avaliar riscos financeiros",
+      "Acompanhar indicadores e resultados"
+    ],
+
+    "strategies": [
+      "Diversificação de investimentos",
+      "Análise fundamentalista",
+      "Gestão de riscos",
+      "Planejamento de longo prazo",
+      "Otimização fiscal"
+    ],
+
+    "grammarStyles": [
+      "Clara e objetiva",
+      "Técnica",
+      "Didática",
+      "Analítica",
+      "Orientada a resultados"
+    ],
+
+    "audiences": [
+      "Pessoas físicas",
+      "Empreendedores",
+      "Pequenas e médias empresas",
+      "Investidores",
+      "Executivos"
+    ],
+
+    "responseFormats": [
+      "Relatório financeiro",
+      "Checklist",
+      "Passo a passo",
+      "Resumo executivo",
+      "Tabela comparativa"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Copywriting",
+  "niche": {
+    "name": "Copywriting",
+
+    "roles": [
+      { "label": "Copywriter", "value": "copywriter" },
+      { "label": "Copywriter de Vendas", "value": "sales-copywriter" },
+      { "label": "Especialista em Funis", "value": "funnel-copywriter" },
+      { "label": "Copywriter para Anúncios", "value": "ads-copywriter" },
+      { "label": "Especialista em Landing Pages", "value": "landing-page-copywriter" }
+    ],
+
+    "tones": [
+      { "label": "Persuasivo", "value": "persuasive" },
+      { "label": "Conversacional", "value": "conversational" },
+      { "label": "Emocional", "value": "emotional" },
+      { "label": "Autoridade", "value": "authoritative" },
+      { "label": "Direto", "value": "direct" }
+    ],
+
+    "contexts": [
+      "Página de vendas",
+      "Anúncio para tráfego pago",
+      "Lançamento de produto",
+      "E-mail marketing",
+      "Oferta de alta conversão"
+    ],
+
+    "responsibilities": [
+      "Escrever textos persuasivos",
+      "Aumentar taxa de conversão",
+      "Criar headlines impactantes",
+      "Estruturar argumentos de venda",
+      "Aplicar gatilhos mentais"
+    ],
+
+    "strategies": [
+      "AIDA",
+      "PAS",
+      "Storytelling",
+      "Gatilhos mentais",
+      "Copy orientada à conversão"
+    ],
+
+    "grammarStyles": [
+      "Curta e objetiva",
+      "Persuasiva",
+      "Conversacional",
+      "Narrativa",
+      "Impactante"
+    ],
+
+    "audiences": [
+      "Empreendedores digitais",
+      "Infoprodutores",
+      "Gestores de tráfego",
+      "Startups",
+      "Pequenas empresas"
+    ],
+
+    "responseFormats": [
+      "Texto corrido",
+      "Lista numerada",
+      "Headline + CTA",
+      "Estrutura de copy",
+      "Versões A/B"
+    ]
+  }
+}

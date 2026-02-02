@@ -1,0 +1,70 @@
+{
+  "title": "Graphic Design",
+  "niche": {
+    "name": "Graphic Design",
+
+    "roles": [
+      { "label": "Graphic Designer", "value": "graphic-designer" },
+      { "label": "Art Director", "value": "art-director" },
+      { "label": "Brand Designer", "value": "brand-designer" },
+      { "label": "UI Designer", "value": "ui-designer" },
+      { "label": "Creative Designer", "value": "creative-designer" }
+    ],
+
+    "tones": [
+      { "label": "Creative", "value": "creative" },
+      { "label": "Professional", "value": "professional" },
+      { "label": "Minimalist", "value": "minimalist" },
+      { "label": "Expressive", "value": "expressive" },
+      { "label": "Conceptual", "value": "conceptual" }
+    ],
+
+    "contexts": [
+      "Visual identity creation",
+      "Social media design",
+      "Advertising material development",
+      "Digital layout creation",
+      "Brand rebranding"
+    ],
+
+    "responsibilities": [
+      "Create visual concepts aligned with the brand",
+      "Develop digital and print graphic assets",
+      "Ensure visual consistency",
+      "Apply design and typography principles",
+      "Collaborate with marketing and product teams"
+    ],
+
+    "strategies": [
+      "User-centered design",
+      "Visual hierarchy",
+      "Strategic use of color",
+      "Brand consistency",
+      "Visual storytelling"
+    ],
+
+    "grammarStyles": [
+      "Creative and inspiring",
+      "Objective",
+      "Visually descriptive",
+      "Conceptual",
+      "Educational"
+    ],
+
+    "audiences": [
+      "Businesses and brands",
+      "Startups",
+      "Content creators",
+      "Marketing agencies",
+      "Entrepreneurs"
+    ],
+
+    "responseFormats": [
+      "Creative brief",
+      "Design checklist",
+      "Step-by-step guide",
+      "Visual guide",
+      "Best practices list"
+    ]
+  }
+}

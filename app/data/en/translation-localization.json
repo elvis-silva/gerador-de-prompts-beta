@@ -1,0 +1,70 @@
+{
+  "title": "Translation and Localization",
+  "niche": {
+    "name": "Translation and Localization",
+
+    "roles": [
+      { "label": "Translator", "value": "translator" },
+      { "label": "Localization Specialist", "value": "localization-specialist" },
+      { "label": "Technical Translator", "value": "technical-translator" },
+      { "label": "Marketing Translator", "value": "marketing-translator" },
+      { "label": "i18n Specialist", "value": "i18n-specialist" }
+    ],
+
+    "tones": [
+      { "label": "Natural", "value": "natural" },
+      { "label": "Professional", "value": "professional" },
+      { "label": "Culturally Adapted", "value": "culturally-adapted" },
+      { "label": "Formal", "value": "formal" },
+      { "label": "Informal", "value": "informal" }
+    ],
+
+    "contexts": [
+      "Websites and landing pages",
+      "Applications and software",
+      "Marketing materials",
+      "Technical documentation",
+      "Educational content"
+    ],
+
+    "responsibilities": [
+      "Translate content while preserving original meaning",
+      "Adapt content to cultural context",
+      "Ensure fluency and natural language",
+      "Maintain tone and message intent",
+      "Avoid inappropriate literal translations"
+    ],
+
+    "strategies": [
+      "Cultural localization",
+      "Transcreation",
+      "Semantic adaptation",
+      "Terminology consistency",
+      "i18n best practices"
+    ],
+
+    "grammarStyles": [
+      "Clear and natural",
+      "Fluent",
+      "Target-language adapted",
+      "Context-aware",
+      "Precise"
+    ],
+
+    "audiences": [
+      "Global companies",
+      "SaaS startups",
+      "Content creators",
+      "Product teams",
+      "Marketing professionals"
+    ],
+
+    "responseFormats": [
+      "Translated text",
+      "Localized versions",
+      "Original vs translated comparison",
+      "Adaptation suggestions",
+      "Contextual glossary"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Design Gráfico",
+  "niche": {
+    "name": "Graphic Design",
+
+    "roles": [
+      { "label": "Designer Gráfico", "value": "graphic-designer" },
+      { "label": "Diretor de Arte", "value": "art-director" },
+      { "label": "Designer de Marca", "value": "brand-designer" },
+      { "label": "Designer de UI", "value": "ui-designer" },
+      { "label": "Designer Criativo", "value": "creative-designer" }
+    ],
+
+    "tones": [
+      { "label": "Criativo", "value": "creative" },
+      { "label": "Profissional", "value": "professional" },
+      { "label": "Minimalista", "value": "minimalist" },
+      { "label": "Expressivo", "value": "expressive" },
+      { "label": "Conceitual", "value": "conceptual" }
+    ],
+
+    "contexts": [
+      "Criação de identidade visual",
+      "Design para redes sociais",
+      "Desenvolvimento de material publicitário",
+      "Criação de layouts digitais",
+      "Rebranding de marca"
+    ],
+
+    "responsibilities": [
+      "Criar conceitos visuais alinhados à marca",
+      "Desenvolver peças gráficas digitais e impressas",
+      "Garantir consistência visual",
+      "Aplicar princípios de design e tipografia",
+      "Colaborar com times de marketing e produto"
+    ],
+
+    "strategies": [
+      "Design centrado no usuário",
+      "Hierarquia visual",
+      "Uso estratégico de cores",
+      "Consistência de marca",
+      "Storytelling visual"
+    ],
+
+    "grammarStyles": [
+      "Criativo e inspirador",
+      "Objetivo",
+      "Visualmente descritivo",
+      "Conceitual",
+      "Didático"
+    ],
+
+    "audiences": [
+      "Empresas e marcas",
+      "Startups",
+      "Criadores de conteúdo",
+      "Agências de marketing",
+      "Empreendedores"
+    ],
+
+    "responseFormats": [
+      "Briefing criativo",
+      "Checklist de design",
+      "Passo a passo",
+      "Guia visual",
+      "Lista de boas práticas"
+    ]
+  }
+}

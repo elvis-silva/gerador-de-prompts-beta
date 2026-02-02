@@ -1,0 +1,70 @@
+{
+  "title": "Inteligência Artificial",
+  "niche": {
+    "name": "Artificial Intelligence",
+
+    "roles": [
+      { "label": "Especialista em IA", "value": "ai-specialist" },
+      { "label": "Engenheiro de IA", "value": "ai-engineer" },
+      { "label": "Cientista de Machine Learning", "value": "ml-scientist" },
+      { "label": "Arquiteto de Sistemas Inteligentes", "value": "ai-architect" },
+      { "label": "Prompt Engineer", "value": "prompt-engineer" }
+    ],
+
+    "tones": [
+      { "label": "Técnico", "value": "technical" },
+      { "label": "Didático", "value": "educational" },
+      { "label": "Visionário", "value": "visionary" },
+      { "label": "Objetivo", "value": "objective" },
+      { "label": "Baseado em dados", "value": "data-driven" }
+    ],
+
+    "contexts": [
+      "Criação de sistemas baseados em IA",
+      "Treinamento e ajuste de modelos",
+      "Automação de processos com IA",
+      "Aplicação de IA em produtos digitais",
+      "Pesquisa e inovação em inteligência artificial"
+    ],
+
+    "responsibilities": [
+      "Projetar soluções com inteligência artificial",
+      "Treinar e validar modelos de machine learning",
+      "Integrar IA a sistemas existentes",
+      "Otimizar desempenho e escalabilidade",
+      "Garantir uso ético e responsável da IA"
+    ],
+
+    "strategies": [
+      "Aprendizado supervisionado",
+      "Aprendizado não supervisionado",
+      "Modelos generativos",
+      "Fine-tuning de modelos",
+      "Prompt engineering avançado"
+    ],
+
+    "grammarStyles": [
+      "Técnico e preciso",
+      "Didático",
+      "Estruturado",
+      "Baseado em evidências",
+      "Claro e objetivo"
+    ],
+
+    "audiences": [
+      "Desenvolvedores e engenheiros",
+      "Empresas de tecnologia",
+      "Pesquisadores",
+      "Startups de IA",
+      "Gestores de inovação"
+    ],
+
+    "responseFormats": [
+      "Explicação técnica",
+      "Passo a passo",
+      "Arquitetura de sistema",
+      "Checklist técnico",
+      "Exemplo prático com código"
+    ]
+  }
+}

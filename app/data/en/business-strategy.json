@@ -1,0 +1,70 @@
+{
+  "title": "Business Strategy",
+  "niche": {
+    "name": "Business Strategy",
+
+    "roles": [
+      { "label": "Business Strategist", "value": "business-strategist" },
+      { "label": "Strategy Consultant", "value": "strategy-consultant" },
+      { "label": "CEO", "value": "ceo" },
+      { "label": "Founder", "value": "founder" },
+      { "label": "Business Analyst", "value": "business-analyst" }
+    ],
+
+    "tones": [
+      { "label": "Strategic", "value": "strategic" },
+      { "label": "Analytical", "value": "analytical" },
+      { "label": "Executive", "value": "executive" },
+      { "label": "Objective", "value": "objective" },
+      { "label": "Visionary", "value": "visionary" }
+    ],
+
+    "contexts": [
+      "Strategic planning",
+      "Business growth",
+      "Market analysis",
+      "Decision making",
+      "Scaling and expansion"
+    ],
+
+    "responsibilities": [
+      "Define strategic direction",
+      "Analyze market and competition",
+      "Identify growth opportunities",
+      "Support executive decisions",
+      "Align vision, goals, and execution"
+    ],
+
+    "strategies": [
+      "SWOT analysis",
+      "OKRs",
+      "Business Model Canvas",
+      "Market analysis",
+      "Strategic planning"
+    ],
+
+    "grammarStyles": [
+      "Clear and structured",
+      "Analytical",
+      "Objective",
+      "Executive",
+      "Decision-oriented"
+    ],
+
+    "audiences": [
+      "Entrepreneurs",
+      "Executives",
+      "Startups",
+      "Growing companies",
+      "Business consultants"
+    ],
+
+    "responseFormats": [
+      "Strategic plan",
+      "Structured list",
+      "Decision framework",
+      "Comparative analysis",
+      "Roadmap"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Cibersegurança",
+  "niche": {
+    "name": "Cyber Security",
+
+    "roles": [
+      { "label": "Especialista em Cibersegurança", "value": "cyber-security-specialist" },
+      { "label": "Analista de Segurança da Informação", "value": "security-analyst" },
+      { "label": "Engenheiro de Segurança", "value": "security-engineer" },
+      { "label": "Ethical Hacker", "value": "ethical-hacker" },
+      { "label": "Arquiteto de Segurança", "value": "security-architect" }
+    ],
+
+    "tones": [
+      { "label": "Técnico", "value": "technical" },
+      { "label": "Preventivo", "value": "preventive" },
+      { "label": "Didático", "value": "educational" },
+      { "label": "Formal", "value": "formal" },
+      { "label": "Baseado em risco", "value": "risk-based" }
+    ],
+
+    "contexts": [
+      "Proteção de sistemas e redes corporativas",
+      "Prevenção de ataques cibernéticos",
+      "Resposta a incidentes de segurança",
+      "Implementação de políticas de segurança",
+      "Conformidade com normas e regulamentações"
+    ],
+
+    "responsibilities": [
+      "Identificar e mitigar vulnerabilidades",
+      "Monitorar ameaças e incidentes",
+      "Implementar controles de segurança",
+      "Realizar testes de invasão",
+      "Garantir conformidade com padrões de segurança"
+    ],
+
+    "strategies": [
+      "Defesa em profundidade",
+      "Zero Trust Security",
+      "Gestão de riscos",
+      "Monitoramento contínuo",
+      "Testes de penetração"
+    ],
+
+    "grammarStyles": [
+      "Técnico e preciso",
+      "Objetivo",
+      "Formal",
+      "Baseado em normas",
+      "Instrucional"
+    ],
+
+    "audiences": [
+      "Empresas e corporações",
+      "Equipes de TI",
+      "Gestores de segurança",
+      "Startups de tecnologia",
+      "Instituições financeiras"
+    ],
+
+    "responseFormats": [
+      "Checklist de segurança",
+      "Guia passo a passo",
+      "Relatório técnico",
+      "Plano de ação",
+      "Boas práticas"
+    ]
+  }
+}

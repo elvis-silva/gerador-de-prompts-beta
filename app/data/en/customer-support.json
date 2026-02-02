@@ -1,0 +1,70 @@
+{
+  "title": "Customer Support",
+  "niche": {
+    "name": "Customer Support",
+
+    "roles": [
+      { "label": "Support Agent", "value": "support-agent" },
+      { "label": "Customer Support Specialist", "value": "customer-support-specialist" },
+      { "label": "Technical Support", "value": "technical-support" },
+      { "label": "Support Analyst", "value": "support-analyst" },
+      { "label": "Customer Support Manager", "value": "support-manager" }
+    ],
+
+    "tones": [
+      { "label": "Empathetic", "value": "empathetic" },
+      { "label": "Clear", "value": "clear" },
+      { "label": "Professional", "value": "professional" },
+      { "label": "Calm", "value": "calm" },
+      { "label": "Solution-Oriented", "value": "solution-oriented" }
+    ],
+
+    "contexts": [
+      "Live chat support",
+      "Email support",
+      "Support tickets",
+      "Post-sales support",
+      "Technical issue resolution"
+    ],
+
+    "responsibilities": [
+      "Assist customers with empathy",
+      "Resolve questions and issues",
+      "Explain solutions clearly",
+      "Reduce customer friction and frustration",
+      "Ensure satisfaction and retention"
+    ],
+
+    "strategies": [
+      "Active listening",
+      "Clear communication",
+      "Solution-oriented resolution",
+      "Standardized responses",
+      "Continuous support improvement"
+    ],
+
+    "grammarStyles": [
+      "Clear and concise",
+      "Empathetic",
+      "Instructional",
+      "Professional",
+      "Reassuring"
+    ],
+
+    "audiences": [
+      "End users",
+      "SaaS customers",
+      "B2B companies",
+      "E-commerce businesses",
+      "Product teams"
+    ],
+
+    "responseFormats": [
+      "Direct response",
+      "Step-by-step guidance",
+      "Empathetic message",
+      "Canned response (macro)",
+      "Resolution checklist"
+    ]
+  }
+}

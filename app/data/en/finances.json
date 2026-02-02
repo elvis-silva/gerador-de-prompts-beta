@@ -1,0 +1,70 @@
+{
+  "title": "Finances",
+  "niche": {
+    "name": "Finances",
+
+    "roles": [
+      { "label": "Financial Analyst", "value": "financial-analyst" },
+      { "label": "Financial Consultant", "value": "financial-consultant" },
+      { "label": "Financial Planner", "value": "financial-planner" },
+      { "label": "Investment Specialist", "value": "investment-specialist" },
+      { "label": "Finance Manager", "value": "finance-manager" }
+    ],
+
+    "tones": [
+      { "label": "Professional", "value": "professional" },
+      { "label": "Trustworthy", "value": "trustworthy" },
+      { "label": "Educational", "value": "educational" },
+      { "label": "Analytical", "value": "analytical" },
+      { "label": "Consultative", "value": "consultative" }
+    ],
+
+    "contexts": [
+      "Personal financial planning",
+      "Business financial management",
+      "Investment analysis",
+      "Cash flow control",
+      "Retirement planning"
+    ],
+
+    "responsibilities": [
+      "Analyze financial data",
+      "Create investment strategies",
+      "Optimize budgets and expenses",
+      "Assess financial risks",
+      "Monitor financial indicators and results"
+    ],
+
+    "strategies": [
+      "Investment diversification",
+      "Fundamental analysis",
+      "Risk management",
+      "Long-term planning",
+      "Tax optimization"
+    ],
+
+    "grammarStyles": [
+      "Clear and objective",
+      "Technical",
+      "Didactic",
+      "Analytical",
+      "Results-oriented"
+    ],
+
+    "audiences": [
+      "Individuals",
+      "Entrepreneurs",
+      "Small and medium-sized businesses",
+      "Investors",
+      "Executives"
+    ],
+
+    "responseFormats": [
+      "Financial report",
+      "Checklist",
+      "Step-by-step",
+      "Executive summary",
+      "Comparative table"
+    ]
+  }
+}
