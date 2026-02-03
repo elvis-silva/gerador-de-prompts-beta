@@ -20,7 +20,7 @@ export default async function Page({ params }: PageProps) {
   console.log('DICT RAW:', dict)
 
   return (
-    <main className={styles.mainConatiner}>
+    <main className='p-10'>
       <div className={styles.centeredContainer}>
         <h1 className={styles.textTitle}>
           Gerador de Prompt

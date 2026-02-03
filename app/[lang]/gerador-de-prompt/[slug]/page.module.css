@@ -1,3 +1,5 @@
+
+
 .textTitle {
   font-size: clamp(2rem, 7vw, 3.5rem);
   line-height: 1.15;
@@ -37,5 +39,48 @@
 @media (min-width: 1024px) {
   .centeredContainer {
     padding: 0 2rem;
+  }
+}
+
+.nicheContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.featureCard,
+.nicheCard {
+  background: rgba(15, 23, 42, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1.75rem;
+  color: #f8fafc;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 1rem;
+  height: 100%;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.featureCard:hover,
+.nicheCard:hover {
+  transform: translateY(-6px);
+  border-color: rgba(96, 165, 250, 0.45) !important;
+  background: rgba(30, 41, 59, 0.7) !important;
+  box-shadow: 0 18px 36px rgba(59, 130, 246, 0.18);
+}
+
+@media (hover: hover) {
+  .featureCard:hover,
+  .nicheCard:hover {
+    transform: translateY(-6px);
+    border-color: rgba(96, 165, 250, 0.45);
+    background: rgba(30, 41, 59, 0.7);
+    box-shadow: 0 18px 36px rgba(59, 130, 246, 0.18);
   }
 }
