@@ -404,7 +404,9 @@ export default function PromptForm({ data }: PromptFormProps) {
   const niche = data?.niche
 
   const [state, setState] = useState({
+    roleLabel: '',
     role: '',
+    toneLabel: '',
     tone: '',
     context: '',
     responsibility: '',
@@ -413,6 +415,11 @@ export default function PromptForm({ data }: PromptFormProps) {
     audience: '',
     responseFormat: ''
   })
+
+  type RoleState = {
+    roleLabel: string
+    roleValue: string
+  }
 
   const [generatedPrompt, setGeneratedPrompt] = useState('')
 
@@ -426,10 +433,10 @@ export default function PromptForm({ data }: PromptFormProps) {
 
   function buildPrompt(state: any) {
   return `
-  ${niche?.lang === 'pt' ? 'Atue como um' : 'You are acting as a'} ${state.role}.
+  ${niche?.lang === 'pt' ? 'Atue como um' : 'You are acting as a'} ${state.roleLabel}.
 
   ${niche?.lang === 'pt' ? '# Tom de voz:' : '# Tone of Voice:'}
-  ${state.tone}
+  ${state.toneLabel}
 
   ${niche?.lang === 'pt' ? '# Contexto:' : '# Strategic Context:'}
   ${state.context}
@@ -466,14 +473,24 @@ export default function PromptForm({ data }: PromptFormProps) {
         label={niche?.lang === 'pt' ? 'Função da IA' : "AI Role"}
         value={state.role}
         options={niche.roles ?? []}
-        onChange={v => update('role', getLabelByValue(niche.roles ?? [], v))}
+        onChange={v => {
+          const selected = niche.roles?.find(opt => opt.value === v)
+
+          update('roleLabel', selected?.label ?? '')
+          update('role', v)
+        }}
       />
 
       <SelectField
         label={niche?.lang === 'pt' ? 'Tom de Voz' : "Tone of Voice"}
         value={state.tone}
         options={niche.tones ?? []}
-        onChange={v => update('tone', v)}
+        onChange={v => {
+          const selected = niche.tones?.find(opt => opt.value === v)
+
+          update('toneLabel', selected?.label ?? '')
+          update('tone', v)
+        }}
       />
 
       <TextareaField
