@@ -9,12 +9,18 @@ class AppManager {
   nicheData: any = null
   score = 0
   plan: 'free' | 'expert' | 'premium' = 'free'
+  role: string = ''
 
   static getInstance() {
     if (!this.instance) {
       this.instance = new AppManager()
     }
     return this.instance
+  }
+
+  setRole(role: string): string {
+    this.role = role
+    return this.role
   }
 
   /* 🔹 i18n */

@@ -1,6 +1,7 @@
 'use client'
 
-import { useState } from 'react'
+import { appManager } from '@/core/AppManager'
+import { useEffect, useState, useRef } from 'react'
 
 const colors = {
   bg: '#ffffff',
@@ -21,6 +22,7 @@ type PromptFormProps = {
   data: {
     niche?: {
       lang?: string
+      name?: string
       roles?: Option[]
       tones?: Option[]
       contexts?: string[]
@@ -37,7 +39,7 @@ const labelStyle: React.CSSProperties = {
   fontSize: 14,
   fontWeight: 600,
   color: colors.text,
-  marginBottom: 6
+  marginBottom: 6,
 }
 
 const selectStyle: React.CSSProperties = {
@@ -61,6 +63,8 @@ const sectionStyle: React.CSSProperties = {
   gap: 32,
   maxWidth: 900,
   margin: '0 auto',
+  marginBottom: 64,
+  marginTop: 64,
   padding: 32,
   borderRadius: 16,
   background: colors.bg,
@@ -243,30 +247,80 @@ function SelectField({
   )
 }
 
+interface Props {
+  value: string;
+  colors: {
+    border: string;
+    bg: string;
+  };
+}
+
+function AutoGrowTextarea({ value, colors }: Props) {
+  const textareaRef = useRef<HTMLTextAreaElement | null>(null);
+
+  useEffect(() => {
+    const el = textareaRef.current;
+    if (!el) return;
+
+    // Reseta a altura para recalcular corretamente
+    el.style.height = "auto";
+    el.style.height = `${Math.min(el.scrollHeight, 600)}px`;
+  }, [value]);
+
+  return (
+    <textarea
+      ref={textareaRef}
+      readOnly
+      value={value}
+      placeholder="Your generated prompt will appear here..."
+      style={{
+        minHeight: 180,
+        padding: "14px 16px",
+        borderRadius: 12,
+        border: `1px solid ${colors.border}`,
+        background: colors.bg,
+        resize: "none",
+        fontSize: 14,
+        lineHeight: 1.6,
+        overflow: "hidden"
+      }}
+    />
+  );
+}
+
 type OutputPromptBoxProps = {
   value: string
 }
 
 function OutputPromptBox({ value }: OutputPromptBoxProps) {
   const [copied, setCopied] = useState(false)
+  const textareaRef = useRef<HTMLTextAreaElement | null>(null)
+
+  useEffect(() => {
+    const el = textareaRef.current
+    if (!el) return
+
+    el.style.height = "auto"
+    el.style.height = `${el.scrollHeight}px`
+    // el.style.height = `${Math.min(el.scrollHeight, 600)}px`
+    el.style.transition = "height 0.15s ease"
+  }, [value])
 
   async function handleCopy(text: string) {
     try {
-      // Caminho moderno
       if (navigator?.clipboard?.writeText) {
         await navigator.clipboard.writeText(text)
       } else {
-        // Fallback mobile / Safari
-        const textarea = document.createElement('textarea')
+        const textarea = document.createElement("textarea")
         textarea.value = text
-        textarea.style.position = 'fixed'
-        textarea.style.opacity = '0'
-        textarea.style.left = '-9999px'
+        textarea.style.position = "fixed"
+        textarea.style.opacity = "0"
+        textarea.style.left = "-9999px"
 
         document.body.appendChild(textarea)
         textarea.focus()
         textarea.select()
-        document.execCommand('copy')
+        document.execCommand("copy")
         document.body.removeChild(textarea)
       }
 
@@ -274,8 +328,8 @@ function OutputPromptBox({ value }: OutputPromptBoxProps) {
       setTimeout(() => setCopied(false), 2500)
 
     } catch (err) {
-      alert('❌ Unable to copy. Please copy manually.')
-      console.error('Copy failed:', err)
+      alert("❌ Unable to copy. Please copy manually.")
+      console.error("Copy failed:", err)
     }
   }
 
@@ -287,8 +341,8 @@ function OutputPromptBox({ value }: OutputPromptBoxProps) {
         borderRadius: 16,
         background: colors.surface,
         border: `1px solid ${colors.border}`,
-        display: 'flex',
-        flexDirection: 'column',
+        display: "flex",
+        flexDirection: "column",
         gap: 16
       }}
     >
@@ -297,18 +351,20 @@ function OutputPromptBox({ value }: OutputPromptBoxProps) {
       </h3>
 
       <textarea
+        ref={textareaRef}
         readOnly
         value={value}
         placeholder="Your generated prompt will appear here..."
         style={{
           minHeight: 180,
-          padding: '14px 16px',
+          padding: "14px 16px",
           borderRadius: 12,
           border: `1px solid ${colors.border}`,
           background: colors.bg,
-          resize: 'vertical',
+          resize: "none",
           fontSize: 14,
-          lineHeight: 1.6
+          lineHeight: 1.6,
+          overflow: "hidden"
         }}
       />
 
@@ -317,13 +373,13 @@ function OutputPromptBox({ value }: OutputPromptBoxProps) {
         onClick={() => handleCopy(value)}
         disabled={!value}
         style={{
-          alignSelf: 'flex-end',
-          padding: '10px 18px',
+          alignSelf: "flex-end",
+          padding: "10px 18px",
           borderRadius: 10,
-          background: value ? colors.primary : '#94a3b8',
-          color: '#ffffff',
+          background: value ? colors.primary : "#94a3b8",
+          color: "#ffffff",
           fontWeight: 600,
-          cursor: value ? 'pointer' : 'not-allowed'
+          cursor: value ? "pointer" : "not-allowed"
         }}
       >
         Copy Prompt
@@ -333,7 +389,7 @@ function OutputPromptBox({ value }: OutputPromptBoxProps) {
         <span
           style={{
             fontSize: 13,
-            color: '#16a34a',
+            color: "#16a34a",
             fontWeight: 500
           }}
         >
@@ -397,13 +453,20 @@ export default function PromptForm({ data }: PromptFormProps) {
   `.trim()
   }
 
+  function getLabelByValue(
+    options: { label: string; value: string }[],
+    value: string
+  ) {
+    return options.find(o => o.value === value)?.label ?? value
+  }
+
   return (
     <section style={sectionStyle}>
       <SelectField
         label={niche?.lang === 'pt' ? 'Função da IA' : "AI Role"}
         value={state.role}
         options={niche.roles ?? []}
-        onChange={v => update('role', v)}
+        onChange={v => update('role', getLabelByValue(niche.roles ?? [], v))}
       />
 
       <SelectField
