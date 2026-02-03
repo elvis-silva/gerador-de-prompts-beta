@@ -80,7 +80,7 @@ export default async function RootLayout({
             <App>
               <div className={styles.pageLayout}>
                 <Navbar /> 
-                <ConfigProvider
+                {/* <ConfigProvider
             theme={{
               algorithm: theme.darkAlgorithm,
               token: {
@@ -89,13 +89,13 @@ export default async function RootLayout({
                 colorBgBase: '#0f172a', 
                 },
               }}
-            >
+            > */}
                 <PageTransition>
                   <main className={styles.pageContent}>
                     {children}
                   </main>
                 </PageTransition>
-                </ConfigProvider>
+                {/* </ConfigProvider> */}
                 <Footer />
               </div>
             </App>

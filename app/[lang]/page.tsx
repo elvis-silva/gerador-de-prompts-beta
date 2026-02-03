@@ -7,6 +7,7 @@ import { ShareMenu } from './ShareMenu';
 import { useParams } from 'next/navigation';
 import pt from '@/i18n/pt.json';
 import en from '@/i18n/en.json';
+import { useEffect } from 'react';
 
  import { 
 //   MegaphoneIcon, 
@@ -42,7 +43,7 @@ const niches = Object.entries(nichesJson).map(([slug, data]) => {
   return {
     slug,
     title: data.title,
-    icon: Icon ? <Icon /> : null
+    icon: data.icon //Icon ? <Icon /> : null
   };
 });
 
@@ -169,7 +170,8 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
 
     <Row gutter={[24, 24]}>
       {niches.map((niche) => {
-        const Icon = niche.icon;
+        const Icon = iconRegistry[niche.icon]
+
 
         return (
           <Col xs={24} sm={12} md={8} lg={6} key={niche.slug}>
@@ -177,9 +179,9 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
               <div className={styles.marginBottom2Rem}>
                 <div className={styles.featureCard}>
                   <div className={styles.nicheContent}>
-                    <div className={`${styles.iconWrapper} ${styles.nicheIcon}`}>
-                      {/* <Icon size={20}/> */}
-                      {niche.icon}
+                    <div className={`${styles.nicheIcon}`}>
+                      <Icon size={48}/> 
+                      {/* {niche.icon} */}
                     </div>
 
                     <h3 className={styles.nicheTitle}>

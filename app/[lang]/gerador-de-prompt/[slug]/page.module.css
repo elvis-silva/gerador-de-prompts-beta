@@ -22,10 +22,10 @@
 }
 
 .centeredContainer {
-  max-width: 80rem; /* equivalente ao max-w-7xl */
+  max-width: 80rem; 
   margin: 0 auto;
   text-align: center;
-  padding: 0 1rem; /* conforto mobile */
+  padding: 0 1rem; 
 }
 
 @media (min-width: 640px) {

@@ -10,6 +10,7 @@ type PageProps = {
 }
 
 export default async function Page({ params }: PageProps) {
+
   const { lang, slug } = await params 
 
   console.log('ROUTE PARAMS:', lang, slug)
@@ -19,7 +20,7 @@ export default async function Page({ params }: PageProps) {
   console.log('DICT RAW:', dict)
 
   return (
-    <main className="p-10">
+    <main className={styles.mainConatiner}>
       <div className={styles.centeredContainer}>
         <h1 className={styles.textTitle}>
           Gerador de Prompt

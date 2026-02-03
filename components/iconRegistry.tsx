@@ -54,6 +54,10 @@ export type IconName =
   | 'PencilSquareIcon'
   | 'LanguageIcon'
   | 'BriefcaseIcon'
+  | 'InstagramIcon'
+  | 'TiktokIcon'
+  | 'YoutubeIcon'
+  | 'BlogIcon'
 
 
 export const iconRegistry: Record<string, ElementType> = {
