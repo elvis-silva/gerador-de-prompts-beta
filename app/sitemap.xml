@@ -69,6 +69,46 @@
   </url>
 
   <url>
+    <loc>https://www.ai2you.online/pt/gerador-de-prompt</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/gerador-de-prompt" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generator" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/gerador-de-prompt/instagram</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/gerador-de-prompt/instagram" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generator/instagram" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/gerador-de-prompt/tiktok</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/gerador-de-prompt/tiktok" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generator/tiktok" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/gerador-de-prompt/youtube</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/gerador-de-prompt/youtube" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generator/youtube" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://www.ai2you.online/pt/gerador-de-prompt/blog</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/gerador-de-prompt/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generator/blog" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
     <loc>https://www.ai2you.online/pt/gerador-de-prompt/digital-marketing</loc>
     <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/gerador-de-prompt/digital-marketing" />
     <xhtml:link rel="alternate" hreflang="en" href="http://www.ai2you.online/en/ai-prompt-generator/digital-marketing" />
