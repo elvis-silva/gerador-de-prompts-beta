@@ -34,7 +34,7 @@ import en from '@/i18n/en.json';
  } from '@heroicons/react/24/outline';
 
 import nichesJson from '@/i18n/niches.json';
-import { iconRegistry } from '@/components/iconRegistry';
+import { IconName, iconRegistry } from '@/components/iconRegistry';
 
 const niches = Object.entries(nichesJson).map(([slug, data]) => {
   const Icon = iconRegistry[data.icon];
@@ -157,7 +157,6 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
     </div>
   </section>
 
-  --- NICHE GRID ---
   <section className={styles.sectionContainer}>
     <div className={styles.sectionHeaderRow}>
       <h1 className={styles.headingPrimary}>{dict.home.select_your_niche}</h1>
@@ -179,7 +178,7 @@ export default function HomePage({ params }: { params: Promise<{ lang: string }>
                 <div className={styles.featureCard}>
                   <div className={styles.nicheContent}>
                     <div className={`${styles.iconWrapper} ${styles.nicheIcon}`}>
-                      {/* <Icon className={styles.nicheIcon} /> */}
+                      {/* <Icon size={20}/> */}
                       {niche.icon}
                     </div>
 

@@ -434,9 +434,10 @@ body {
 }
 
 .nicheIcon {
-  width: 6rem;   /* h-8 w-8 */
-  height: 6rem;
+  width: 4rem;   
+  height: 4rem;
   color: #60a5fa;
+  size: 20;
 }
 
 .iconWrapper {
