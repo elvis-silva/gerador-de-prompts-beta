@@ -1,3 +1,6 @@
+import pt from '@/i18n/pt.json'
+import en from '@/i18n/en.json'
+
 type Dictionary = Record<string, any>
 
 class AppManager {
@@ -17,6 +20,14 @@ class AppManager {
     }
     return this.instance
   }
+
+   
+
+//   useHomeDictionary() {
+//    const  dictionaries = { 'pt': pt, 'en': en };
+//   const { lang } = useParams();
+//   return dictionaries[lang as keyof typeof dictionaries] ?? pt;
+// }
 
   setRole(role: string): string {
     this.role = role

@@ -11,6 +11,12 @@ import { loadDictionary } from '@/lib/i18n'
 import { AppManagerProvider } from '@/core/AppManagerProvider';
 import { PWARegister } from '@/components/PWARegister';
 import { InstallPWAButton } from '@/components/InstallPWAButton';
+import { cookies } from 'next/headers'
+import { redirect } from 'next/navigation'
+import { PersistLang } from '@/components/persistLang';
+import { notFound } from 'next/navigation';
+
+const SUPPORTED_LOCALES = ['pt', 'en'];
 
 export const metadata: Metadata = {
   title: 'AI2You | Gerador de Prompts de Elite',
@@ -70,19 +76,39 @@ export default async function RootLayout({
   params
 }: { 
   children: React.ReactNode, 
-  params: Promise<{ lang: any }>
+  params: { lang: string }
 }) {
   const { lang } = await params;
-  const dict = await loadDictionary(lang, 'prompt-form');
+
+  if (!SUPPORTED_LOCALES.includes(lang)) {
+    notFound();
+  }
+
+  //   const cookieStore = await cookies()
+  //   const savedLang = cookieStore.get('lang')?.value
+
+  // // Apenas leitura
+  //  const lang = params.lang ?? savedLang ?? 'pt'
+
+  // const lang = (await params).lang
+  const dict = loadDictionary(lang, 'prompt-form');
+
+// cookieStore.set('lang', lang, {
+//     path: '/',
+//     maxAge: 60 * 60 * 24 * 365
+//   })
+    // if (lang === 'en') redirect('/en')
+    // redirect('/pt')
 
   return (
-    <html suppressHydrationWarning>
+    <html suppressHydrationWarning lang={lang}>
       <head>
         <link rel="apple-touch-icon" href="/icons/icon-192.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={styles.appBody}>
+        <PersistLang lang={lang}/>
         <PWARegister />
         {/* <InstallPWAButton /> */}
         <AppManagerProvider lang={lang} dict={dict}>

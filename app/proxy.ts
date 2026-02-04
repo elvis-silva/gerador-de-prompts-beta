@@ -1,59 +1,55 @@
-import { NextRequest, NextResponse } from 'next/server'
+import { NextRequest, NextResponse } from 'next/server';
 
-const locales = ['pt', 'en'] as const
-type Locale = typeof locales[number]
-
-const defaultLocale: Locale = 'pt'
+const SUPPORTED_LOCALES = ['pt', 'en'] as const;
+const DEFAULT_LOCALE: 'pt' | 'en' = 'pt';
 
 export function proxy(request: NextRequest) {
-  const { pathname } = request.nextUrl
+  const { pathname } = request.nextUrl;
 
-  // ⛔ Ignorar rotas internas e arquivos
   if (
     pathname.startsWith('/_next') ||
     pathname.startsWith('/api') ||
     pathname.includes('.')
   ) {
-    return NextResponse.next()
+    return NextResponse.next();
   }
 
-  // 🔹 Já tem locale na URL
-  const urlLocale = locales.find(
-    locale => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
-  )
+  const localeInPath = SUPPORTED_LOCALES.find(
+    l => pathname === `/${l}` || pathname.startsWith(`/${l}/`)
+  );
 
-  if (urlLocale) {
-    const response = NextResponse.next()
-    response.cookies.set('lang', urlLocale, {
+  if (localeInPath) {
+    const response = NextResponse.next();
+    response.cookies.set('lang', localeInPath, {
       path: '/',
       maxAge: 60 * 60 * 24 * 365
-    })
-    return response
+    });
+    return response;
   }
 
-  // 🔹 Cookie
-  const cookieLocale = request.cookies.get('lang')?.value as Locale | undefined
-
-  // 🔹 Se está na raiz "/" → redireciona UMA vez
   if (pathname === '/') {
-    const locale =
-      (cookieLocale && locales.includes(cookieLocale))
-        ? cookieLocale
-        : defaultLocale
+    const cookieLang = request.cookies.get('lang')?.value;
 
-    const response = NextResponse.redirect(
-      new URL(`/${locale}`, request.url)
-    )
+    const locale: 'pt' | 'en' =
+      cookieLang === 'pt' || cookieLang === 'en'
+        ? cookieLang
+        : DEFAULT_LOCALE;
 
+    const url = request.nextUrl.clone();
+    url.pathname = `/${locale}`;
+
+    const response = NextResponse.redirect(url);
     response.cookies.set('lang', locale, {
       path: '/',
       maxAge: 60 * 60 * 24 * 365
-    })
+    });
 
-    return response
+    return response;
   }
 
-  console.log('PROXY:', pathname)
-
-  return NextResponse.next()
+  return NextResponse.next();
 }
+
+export const config = {
+  matcher: ['/((?!_next|favicon.ico).*)']
+};

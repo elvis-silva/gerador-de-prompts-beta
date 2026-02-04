@@ -1,12 +1,14 @@
-"use client";
-
 import { Typography, Row, Col, Card, Divider } from 'antd';
 import Link from 'next/link';
 import styles from './Home.module.css';
 import { ShareMenu } from './ShareMenu';
-import { useParams } from 'next/navigation';
 import pt from '@/i18n/pt.json';
 import en from '@/i18n/en.json';
+import { loadDictionary } from '@/lib/i18n';
+// import { useParams } from 'next/navigation';
+// import { cookies } from 'next/headers'
+// import { redirect } from 'next/navigation'
+// import { useHomeDictionary } from '../utils/utils';
 
  import { 
    SparklesIcon,
@@ -32,16 +34,21 @@ const niches = Object.entries(nichesJson).map(([slug, data]) => {
 
 const dictionaries = { 'pt': pt, 'en': en };
 
-export function useHomeDictionary() {
-  const { lang } = useParams();
-  return dictionaries[lang as keyof typeof dictionaries] ?? pt;
-}
+// export function useHomeDictionary() {
+//   const { lang } = useParams();
+//   return dictionaries[lang as keyof typeof dictionaries] ?? pt;
+// }
 
 const { Title, Text, Paragraph } = Typography;
 
-export default function HomePage({ params }: { params: Promise<{ lang: string }> }) {
-  const { lang } = useParams();
-  const dict = useHomeDictionary();
+export default async function HomePage({ params }: { params: Promise<{ lang: string }> }) {
+  const { lang } = await params
+  // const cookieStore = await cookies()
+  // const lang = cookieStore.get('lang')?.value ?? 'pt'
+
+  // if (lang === 'en') redirect('/en')
+  // redirect('/pt')
+  const dict = dictionaries[lang as keyof typeof dictionaries] ?? pt;//useHomeDictionary();
 
   return (
     <main className={styles.container}>
