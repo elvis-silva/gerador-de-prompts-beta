@@ -10,6 +10,7 @@ import { Typography, Row, Col, Card, Divider } from 'antd';
 import pt from '@/i18n/pt.json';
 import en from '@/i18n/en.json';
 import { useParams } from 'next/navigation';
+import '@/styles/globals.css'
 
 type PageProps = {
   params: {
@@ -64,9 +65,9 @@ export default function AiPromptGeneratorPage(params: Promise<{ lang: string }>)
   const dict = useHomeDictionary();
 
   return (
-    <main className={styles.container}>
+    <main className="container">
       <section className={styles.hero}>
-        <div className={styles.heroGradient} />
+        <div className="heroGradient" />
         <div className={styles.heroBadge}>
           <SparklesIcon className={styles.heroIcon} />
           <span>
@@ -154,7 +155,7 @@ export default function AiPromptGeneratorPage(params: Promise<{ lang: string }>)
                   <div className={styles.marginBottom2Rem}>
                     <div className={styles.featureCard}>
                       <div className={styles.nicheContent}>
-                        <div className={`${styles.nicheIcon}`}>
+                        <div className={styles.nicheIcon}>
                           <Icon size={48}/> 
                         </div>
 

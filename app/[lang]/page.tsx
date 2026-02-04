@@ -5,6 +5,7 @@ import { ShareMenu } from './ShareMenu';
 import pt from '@/i18n/pt.json';
 import en from '@/i18n/en.json';
 import { loadDictionary } from '@/lib/i18n';
+import '@/styles/globals.css'
 // import { useParams } from 'next/navigation';
 // import { cookies } from 'next/headers'
 // import { redirect } from 'next/navigation'
@@ -51,24 +52,24 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
   const dict = dictionaries[lang as keyof typeof dictionaries] ?? pt;//useHomeDictionary();
 
   return (
-    <main className={styles.container}>
-      <section className={styles.hero}>    
-        <div className={styles.heroGradient} />
+    <main className="container">
+      <section className="hero">    
+        <div className="heroGradient" />
         
-        <div className={styles.centeredContainer}>
-          <div className={`${styles.badge} ${styles.animateFadeIn}`}>
-            <SparklesIcon className={styles.iconAccent} />
-            <span className={styles.badgeText}>{dict.home.badge}
+        <div className="centeredContainer">
+          <div className="badge animateFadeIn">
+            <SparklesIcon className="iconAccent" />
+            <span className="badgeText">{dict.home.badge}
             </span>
           </div>
           
-          <h1 className={styles.textTitle}>
+          <h1 className="textTitle">
             {dict.home.title}
         <br />
-            <span className={styles.textHighlight}>{dict.home.highlight}</span>
+            <span className="textHighlight">{dict.home.highlight}</span>
           </h1>
 
-          <p className={styles.textSubtitle}>
+          <p className="textSubtitle">
             {dict.home.stop_try_and_start}<strong>{dict.home.doing}</strong>{dict.home.we_transform_text}
           </p>
         </div>
@@ -84,7 +85,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
       <section className={styles.infoSection}>
         <div className={styles.infoGlassCard}>
-          <div className={styles.sectionHeader}>
+          <div className="sectionHeader">
             <h1 className={styles.sectionTitle}>{dict.home.how_does_ai2you_enhence_your_work}</h1>
             <p className={styles.paragraphMutedLarge}>{dict.home.our_platform_acts}</p>
           </div>
@@ -92,7 +93,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           <Row gutter={[32, 32]}>
             <Col xs={24} md={8}>
               <div className={styles.featureCard}>
-                <div className={styles.stepIcon}>1</div>
+                <div className="stepIcon">1</div>
                 <div className={styles.iconWrapper}>
                   <CommandLineIcon className={styles.iconLargeAccent} />
                 </div>
@@ -104,7 +105,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
             <Col xs={24} md={8}>
               <div className={styles.featureCard}>
-                <div className={styles.stepIcon}>2</div>
+                <div className="stepIcon">2</div>
                 <div className={styles.iconWrapper}>
                   <CpuChipIcon className={styles.iconLargeAccent} />
                 </div>
@@ -116,7 +117,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
             <Col xs={24} md={8}>
               <div className={styles.featureCard}>
-                <div className={styles.stepIcon}>3</div>
+                <div className="stepIcon">3</div>
                 <div className={styles.iconWrapper}>
                   <CheckBadgeIcon className={styles.iconLargeAccent} />
                 </div>

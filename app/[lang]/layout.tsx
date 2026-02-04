@@ -16,19 +16,36 @@ import { redirect } from 'next/navigation'
 import { PersistLang } from '@/components/persistLang';
 import { notFound } from 'next/navigation';
 import { ReactNode } from 'react';
+import '@/styles/globals.css'
 
 const SUPPORTED_LOCALES = ['pt', 'en'];
 
-export const metadata: Metadata = {
-  title: 'AI2You | Gerador de Prompts de Elite',
-  description: 'Gerador de Prompts com IA',
-  manifest: '/manifest.json',
+export const viewport = {
+  themeColor: '#0B0F1A'
+};
+
+export const metadata = {
+  applicationName: 'AI Prompt Generator',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
     title: 'AI2You'
+  },
+  formatDetection: {
+    telephone: false
   }
 };
+
+// export const metadata: Metadata = {
+//   title: 'AI2You | Gerador de Prompts de Elite',
+//   description: 'Gerador de Prompts com IA',
+//   manifest: '/manifest.json',
+//   appleWebApp: {
+//     capable: true,
+//     statusBarStyle: 'black-translucent',
+//     title: 'AI2You'
+//   }
+// };
 
 // export async function generateMetadata({ params }: { params: { lang: any } }): Promise<Metadata> {
 //   const dict = await getDictionary( params.lang );

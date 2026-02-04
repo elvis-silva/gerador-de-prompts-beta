@@ -1,12 +1,26 @@
 import { redirect } from 'next/navigation';
-import { cookies } from 'next/headers';
+import { headers } from 'next/headers';
 
 export default async function RootPage() {
-  const cookieStore = await cookies();
-  const lang = cookieStore.get('lang')?.value;
+  const h = await headers();
+  const lang = h.get('accept-language')?.startsWith('pt') ? 'pt' : 'en';
 
-  redirect(lang === 'en' ? '/en' : '/pt');
+  redirect(`/${lang}`);
 }
+
+
+
+
+
+// import { redirect } from 'next/navigation';
+// import { cookies } from 'next/headers';
+
+// export default async function RootPage() {
+//   const cookieStore = await cookies();
+//   const lang = cookieStore.get('lang')?.value;
+
+//   redirect(lang === 'en' ? '/en' : '/pt');
+// }
 
 
 

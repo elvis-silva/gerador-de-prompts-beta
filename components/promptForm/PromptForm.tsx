@@ -2,6 +2,8 @@
 
 import { appManager } from '@/core/AppManager'
 import { useEffect, useState, useRef } from 'react'
+import styles from './PromptForm.module.css'
+import '@/styles/globals.css'
 
 const colors = {
   bg: '#ffffff',
@@ -468,6 +470,7 @@ export default function PromptForm({ data }: PromptFormProps) {
   }
 
   return (
+    <main className="container">
     <section style={sectionStyle}>
       <SelectField
         label={niche?.lang === 'pt' ? 'Função da IA' : "AI Role"}
@@ -557,6 +560,7 @@ export default function PromptForm({ data }: PromptFormProps) {
       <OutputPromptBox value={generatedPrompt} />
 
     </section>
+    </main>
   )
 }
 
