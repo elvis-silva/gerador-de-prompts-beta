@@ -23,7 +23,6 @@ export const metadata: Metadata = {
   title: 'AI2You | Gerador de Prompts de Elite',
   description: 'Gerador de Prompts com IA',
   manifest: '/manifest.json',
-  themeColor: '#0f172a',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
@@ -79,6 +78,8 @@ type LayoutProps = {
   }>;
 };
 
+export const dynamic = 'auto';
+
 export default async function RootLayout({ 
   children, 
   params
@@ -104,24 +105,25 @@ export default async function RootLayout({
 //   })
     // if (lang === 'en') redirect('/en')
     // redirect('/pt')
+  const safeLang = lang === 'en' ? 'en' : 'pt';
 
   return (
-    <html suppressHydrationWarning lang={lang}>
+    <html suppressHydrationWarning lang={safeLang}>
       <head>
         <link rel="apple-touch-icon" href="/icons/icon-192.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={styles.appBody}>
-        <PersistLang lang={lang}/>
-        <PWARegister />
+        {/* <PersistLang lang={lang}/> */}
+        {/* <PWARegister /> */}
         {/* <InstallPWAButton /> */}
         <AppManagerProvider lang={lang} dict={dict}>
         <AntdRegistry>
           
             <App>
               <div className={styles.pageLayout}>
-                <Navbar /> 
+                <Navbar lang={lang}/> 
                 {/* <ConfigProvider
             theme={{
               algorithm: theme.darkAlgorithm,

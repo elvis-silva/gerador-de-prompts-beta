@@ -6,6 +6,7 @@ import { usePathname, useParams } from 'next/navigation';
 import styles from "./navbar.module.css";
 import pt from "@/i18n/pt.json";
 import en from "@/i18n/en.json";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 const dictionaries = { 'pt': pt, 'en': en };
 
@@ -14,7 +15,11 @@ export function useNavDictionary() {
   return dictionaries[lang as keyof typeof dictionaries] ?? pt;
 }
 
-export function Navbar() {
+type HeaderProps = {
+  lang: string;
+};
+
+export function Navbar({ lang }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const dict = useNavDictionary();
@@ -25,9 +30,11 @@ export function Navbar() {
     <header className={styles.navbar}>
       <div className={styles.container}>
         {/* Logo com Identidade Visual */}
-        <Link href="/" className={styles.logo}>
+        <Link href={`/${lang}`} className={styles.logo}>
           <img src="/logo.svg" alt="AI2You"  className={styles.logo}/>
         </Link>
+
+        <LanguageSwitcher />
 
         {/* Navegação Desktop */}
         <nav className={styles.desktopNav}>

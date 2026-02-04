@@ -1,41 +1,94 @@
-import { cookies, headers } from 'next/headers';
 import { redirect } from 'next/navigation';
-
-const SUPPORTED_LANGS = ['pt', 'en'] as const;
-type Lang = (typeof SUPPORTED_LANGS)[number];
-
-function resolveLangFromHeader(
-  acceptLanguage: string | null
-): Lang | null {
-  if (!acceptLanguage) return null;
-
-  const langs = acceptLanguage
-    .split(',')
-    .map(l => l.split(';')[0].trim().slice(0, 2));
-
-  const match = langs.find(l =>
-    SUPPORTED_LANGS.includes(l as Lang)
-  );
-
-  return (match as Lang) ?? null;
-}
+import { cookies } from 'next/headers';
 
 export default async function RootPage() {
   const cookieStore = await cookies();
-  const headerStore = await headers();
+  const lang = cookieStore.get('lang')?.value;
 
-  const cookieLang = cookieStore.get('lang')?.value as Lang | undefined;
-  const headerLang = resolveLangFromHeader(
-    headerStore.get('accept-language')
-  );
-
-  const lang: Lang =
-    cookieLang && SUPPORTED_LANGS.includes(cookieLang)
-      ? cookieLang
-      : headerLang ?? 'pt';
-
-  redirect(`/${lang}`);
+  redirect(lang === 'en' ? '/en' : '/pt');
 }
+
+
+
+// import { redirect } from 'next/navigation';
+// import { cookies } from 'next/headers';
+
+// export default async function RootPage() {
+//   const cookieStore = await cookies();
+//   const lang = cookieStore.get('lang')?.value;
+
+//   // fallback absoluto e seguro
+//   if (lang === 'pt' || lang === 'en') {
+//     redirect(`/${lang}`);
+//   }
+
+//   redirect('/pt');
+// }
+
+
+
+
+
+// import { redirect } from 'next/navigation';
+// import { cookies, headers } from 'next/headers';
+
+// export default async function RootPage() {
+//   const cookieStore = await cookies();
+//   const langCookie = cookieStore.get('lang')?.value;
+
+//   if (langCookie === 'pt' || langCookie === 'en') {
+//     redirect(`/${langCookie}`);
+//   }
+
+//   const acceptLanguage = (await headers()).get('accept-language') ?? '';
+
+//   const prefersPT = acceptLanguage.toLowerCase().startsWith('pt');
+
+//   redirect(prefersPT ? '/pt' : '/en');
+// }
+
+
+
+
+
+// import { cookies, headers } from 'next/headers';
+// import { redirect } from 'next/navigation';
+
+// const SUPPORTED_LANGS = ['pt', 'en'] as const;
+// type Lang = (typeof SUPPORTED_LANGS)[number];
+
+// function resolveLangFromHeader(
+//   acceptLanguage: string | null
+// ): Lang | null {
+//   if (!acceptLanguage) return null;
+
+//   const langs = acceptLanguage
+//     .split(',')
+//     .map(l => l.split(';')[0].trim().slice(0, 2));
+
+//   const match = langs.find(l =>
+//     SUPPORTED_LANGS.includes(l as Lang)
+//   );
+
+//   return (match as Lang) ?? null;
+// }
+
+// export default async function RootPage() {
+//   const cookieStore = await cookies();
+//   const headerStore = await headers();
+
+//   const cookieLang = cookieStore.get('lang')?.value as Lang | undefined;
+//   const headerLang = resolveLangFromHeader(
+//     headerStore.get('accept-language')
+//   );
+
+//   const lang: Lang =
+//     cookieLang && SUPPORTED_LANGS.includes(cookieLang)
+//       ? cookieLang
+//       : headerLang ?? 'pt';
+
+//   redirect(`/${lang}`);
+// }
 
 
 
