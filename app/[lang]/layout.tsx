@@ -15,6 +15,7 @@ import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
 import { PersistLang } from '@/components/persistLang';
 import { notFound } from 'next/navigation';
+import { ReactNode } from 'react';
 
 const SUPPORTED_LOCALES = ['pt', 'en'];
 
@@ -71,13 +72,17 @@ export const metadata: Metadata = {
 //   };
 // }
 
+type LayoutProps = {
+  children: ReactNode;
+  params: Promise<{
+    lang: string;
+  }>;
+};
+
 export default async function RootLayout({ 
   children, 
   params
-}: { 
-  children: React.ReactNode, 
-  params: { lang: string }
-}) {
+}: LayoutProps) {
   const { lang } = await params;
 
   if (!SUPPORTED_LOCALES.includes(lang)) {
