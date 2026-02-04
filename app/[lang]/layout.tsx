@@ -9,10 +9,19 @@ import type { Metadata } from 'next';
 import AntdRegistry from '@/lib/antd-registry';
 import { loadDictionary } from '@/lib/i18n'
 import { AppManagerProvider } from '@/core/AppManagerProvider';
+import { PWARegister } from '@/components/PWARegister';
+import { InstallPWAButton } from '@/components/InstallPWAButton';
 
 export const metadata: Metadata = {
   title: 'AI2You | Gerador de Prompts de Elite',
-  description: 'Gerador de Prompts com IA'
+  description: 'Gerador de Prompts com IA',
+  manifest: '/manifest.json',
+  themeColor: '#0f172a',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'black-translucent',
+    title: 'AI2You'
+  }
 };
 
 // export async function generateMetadata({ params }: { params: { lang: any } }): Promise<Metadata> {
@@ -69,11 +78,13 @@ export default async function RootLayout({
   return (
     <html suppressHydrationWarning>
       <head>
-        {/* Favicon e Metas de Mobile */}
+        <link rel="apple-touch-icon" href="/icons/icon-192.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body className={styles.appBody}>
+        <PWARegister />
+        {/* <InstallPWAButton /> */}
         <AppManagerProvider lang={lang} dict={dict}>
         <AntdRegistry>
           
