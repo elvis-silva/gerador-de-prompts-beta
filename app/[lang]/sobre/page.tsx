@@ -125,7 +125,7 @@ export default function SobreNos() {
             direcionada.
           </p>
 
-          <Link href="/" className="cta__button">
+          <Link href="/pt/gerador-de-prompt" className="cta__button">
             Explorar Geradores de Prompts
           </Link>
 

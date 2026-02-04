@@ -122,7 +122,7 @@ Use linguagem clara, exemplos práticos e estrutura otimizada.`}
             Use o Gerador de Prompts da AI2You e leve seus resultados para o próximo
             nível.
           </p>
-          <a href="/" className={styles.ctaButton}>
+          <a href="/pt/gerador-de-prompt" className={styles.ctaButton}>
             Acessar Gerador de Prompts
           </a>
         </footer>
