@@ -4,9 +4,9 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRightIcon, SparklesIcon } from '@heroicons/react/24/outline';
 import styles from './AiPromptGenerator.module.css';
-import nichesJson from '@/i18n/niches.json';
+import nichesJson from '@/i18n/en/niches.json';
 import { IconName, iconRegistry } from '@/components/iconRegistry';
-import { Typography, Row, Col, Card, Divider } from 'antd';
+import { Typography, Row, Col, Card, Divider, Descriptions } from 'antd';
 import pt from '@/i18n/pt.json';
 import en from '@/i18n/en.json';
 import { useParams } from 'next/navigation';
@@ -24,7 +24,8 @@ const niches = Object.entries(nichesJson).map(([slug, data]) => {
   return {
     slug,
     title: data.title,
-    icon: data.icon
+    icon: data.icon,
+    description: data.description
   };
 });
 
@@ -66,8 +67,8 @@ export default function AiPromptGeneratorPage(params: Promise<{ lang: string }>)
 
   return (
     <main className="container">
-      <section className={styles.hero}>
-        <div className="heroGradient" />
+      <section className="hero">
+        {/* <div className="heroGradient" /> */}
         <div className={styles.heroBadge}>
           <SparklesIcon className={styles.heroIcon} />
           <span>
@@ -136,12 +137,12 @@ export default function AiPromptGeneratorPage(params: Promise<{ lang: string }>)
       </section>
 
       <section className={styles.sectionContainer}>
-        <div className={styles.sectionHeaderRow}>
+        <div className={styles.inlineRow}>
           <h1 className={styles.headingPrimary}>{dict.home.select_your_niche}</h1>
           <div className={styles.desktopFlex}>
             <span className={styles.badgeText}>Role-Based Prompts</span>
             {/* <Divider orientation="vertical" className={styles.dividerSmall} /> */}
-            <span className={styles.badgeText}>Multi-Model Ready</span>
+            <span className={styles.badgeText}> | Multi-Model Ready</span>
           </div>
         </div>
 
@@ -163,8 +164,13 @@ export default function AiPromptGeneratorPage(params: Promise<{ lang: string }>)
                           {niche.title}
                         </h3>
 
-                        <div className={styles.ctaText}>
+                        <p>
+                          {niche.description}
+                        </p>
+
+                        <div className={styles.ctaButton}>
                           {dict.home.generate_engineering}
+                          <ArrowRightIcon className={styles.ctaIcon} />
                         </div>
                       </div>
                     </div>
@@ -176,10 +182,10 @@ export default function AiPromptGeneratorPage(params: Promise<{ lang: string }>)
         </Row>
       </section>
 
-      <footer className={styles.heroContainer}> 
+      <footer className={styles.heroContainer}>
         {/* <Divider className={styles.dividerSmall} /> */}
-        <p className={styles.footerText}>{dict.home.ai2you_structured_prompt_engineering}</p>
-        <p className={styles.helperText}>{dict.home.optimized_for_high_performance}</p>
+        <p className={styles.textCardTitle}>{dict.home.ai2you_structured_prompt_engineering}</p>
+        <p className={styles.textHighlight}>{dict.home.optimized_for_high_performance}</p>
       </footer>
     </main>
   );

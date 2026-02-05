@@ -1,0 +1,122 @@
+{
+  "instagram": {
+    "title": "Marketing para Instagram",
+    "icon": "InstagramIcon",
+    "description": "Ideias de conteúdo, legendas, ganchos e estratégias de crescimento para o Instagram."
+  },
+  "tiktok": {
+    "title": "Conteúdo para TikTok",
+    "icon": "TiktokIcon",
+    "description": "Ideias de vídeos virais, roteiros curtos, tendências e engajamento de audiência."
+  },
+  "youtube": {
+    "title": "Estratégia para YouTube",
+    "icon": "YoutubeIcon",
+    "description": "Roteiros de vídeo, títulos, ideias de thumbnails e estratégias de crescimento de canal."
+  },
+  "blog": {
+    "title": "Blog e Conteúdo SEO",
+    "icon": "BlogIcon",
+    "description": "Artigos otimizados para SEO, estrutura de posts e planejamento de conteúdo."
+  },
+  "digital-marketing": {
+    "title": "Marketing Digital",
+    "icon": "MegaphoneIcon",
+    "description": "Criação de estratégias de tráfego de alta conversão e copy persuasiva."
+  },
+  "software-development": {
+    "title": "Desenvolvimento de Software",
+    "icon": "CodeBracketIcon",
+    "description": "Prompts para refatoração, arquitetura de sistemas e depuração de código."
+  },
+  "content-creation": {
+    "title": "Criação de Conteúdo",
+    "icon": "PencilSquareIcon",
+    "description": "Ideias para vídeos, posts em redes sociais e roteiros virais."
+  },
+  "legal-assistant": {
+    "title": "Assistente Jurídico",
+    "icon": "ScaleIcon",
+    "description": "Análise de contratos e elaboração de documentos jurídicos."
+  },
+  "human-resources": {
+    "title": "Recursos Humanos",
+    "icon": "UserGroupIcon",
+    "description": "Triagem de talentos e criação de descrições de vagas."
+  },
+  "sales-expert": {
+    "title": "Especialista em Vendas",
+    "icon": "CurrencyDollarIcon",
+    "description": "Roteiros de vendas e técnicas para contornar objeções."
+  },
+  "education-tutor": {
+    "title": "Educação e Tutoria",
+    "icon": "AcademicCapIcon",
+    "description": "Planos de aula e explicações simplificadas para temas complexos."
+  },
+  "medical-health": {
+    "title": "Saúde e Bem-Estar",
+    "icon": "HeartIcon",
+    "description": "Apoio na criação de relatórios informativos e rotinas de condicionamento físico."
+  },
+  "real-estate": {
+    "title": "Mercado Imobiliário",
+    "icon": "HomeModernIcon",
+    "description": "Descrições de imóveis de alto padrão e análises de mercado."
+  },
+  "finances": {
+    "title": "Finanças e Investimentos",
+    "icon": "PresentationChartLineIcon",
+    "description": "Análise de portfólios e relatórios do mercado financeiro."
+  },
+  "copywriting": {
+    "title": "Copywriting Profissional",
+    "icon": "SparklesIcon",
+    "description": "Criação de textos persuasivos com foco em conversão e vendas."
+  },
+  "ecommerce": {
+    "title": "E-commerce",
+    "icon": "ShoppingCartIcon",
+    "description": "Descrições de produtos, páginas de vendas e estratégias de conversão."
+  },
+  "data-analysis": {
+    "title": "Análise de Dados",
+    "icon": "ChartBarIcon",
+    "description": "Interpretação de dados, geração de insights e relatórios analíticos."
+  },
+  "artificial-intelligence": {
+    "title": "Inteligência Artificial",
+    "icon": "CpuChipIcon",
+    "description": "Criação avançada de prompts para modelos de IA e automações inteligentes."
+  },
+  "cyber-security": {
+    "title": "Cibersegurança",
+    "icon": "ShieldCheckIcon",
+    "description": "Análise de riscos, boas práticas de segurança e resposta a incidentes."
+  },
+  "graphic-design": {
+    "title": "Design Gráfico",
+    "icon": "PaintBrushIcon",
+    "description": "Briefings criativos, conceitos visuais e orientação de identidade de marca."
+  },
+  "photography": {
+    "title": "Fotografia Profissional",
+    "icon": "CameraIcon",
+    "description": "Planejamento de sessões fotográficas, storytelling visual e direção criativa."
+  },
+  "translation-localization": {
+    "title": "Tradução e Localização",
+    "icon": "LanguageIcon",
+    "description": "Tradução de textos com adaptação cultural e contextual."
+  },
+  "customer-support": {
+    "title": "Atendimento ao Cliente",
+    "icon": "ChatBubbleLeftEllipsisIcon",
+    "description": "Respostas automatizadas, roteiros de suporte e melhoria da experiência do cliente."
+  },
+  "business-strategy": {
+    "title": "Estratégia de Negócios",
+    "icon": "BriefcaseIcon",
+    "description": "Planejamento estratégico, análise de mercado e apoio à tomada de decisões."
+  }
+}

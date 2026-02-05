@@ -19,18 +19,18 @@ import '@/styles/globals.css'
    ArrowRightIcon
  } from '@heroicons/react/24/outline';
 
-import nichesJson from '@/i18n/niches.json';
+// import nichesJson from '@/i18n/niches.json';
 import { IconName, iconRegistry } from '@/components/iconRegistry';
 
-const niches = Object.entries(nichesJson).map(([slug, data]) => {
-  const Icon = iconRegistry[data.icon];
+// const niches = Object.entries(nichesJson).map(([slug, data]) => {
+//   const Icon = iconRegistry[data.icon];
 
-  return {
-    slug,
-    title: data.title,
-    icon: data.icon
-  };
-});
+//   return {
+//     slug,
+//     title: data.title,
+//     icon: data.icon
+//   };
+// });
 
 
 const dictionaries = { 'pt': pt, 'en': en };
@@ -57,7 +57,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         {/* <div className="heroGradient" /> */}
         
         <div className="centeredContainer">
-          <div className={styles.ctaButton}>
+          <div className={styles.heroBadge}>
             <SparklesIcon className="iconAccent" />
             <span className={styles.textSmall}>{dict.home.badge}
             </span>
