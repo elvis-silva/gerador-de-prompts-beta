@@ -54,22 +54,22 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
   return (
     <main className="container">
       <section className="hero">    
-        <div className="heroGradient" />
+        {/* <div className="heroGradient" /> */}
         
         <div className="centeredContainer">
-          <div className="badge animateFadeIn">
+          <div className={styles.ctaButton}>
             <SparklesIcon className="iconAccent" />
-            <span className="badgeText">{dict.home.badge}
+            <span className={styles.textSmall}>{dict.home.badge}
             </span>
           </div>
           
-          <h1 className="textTitle">
+          <h1 className={styles.textTitle}>
             {dict.home.title}
         <br />
-            <span className="textHighlight">{dict.home.highlight}</span>
+            <span className={styles.textHighlight}>{dict.home.highlight}</span>
           </h1>
 
-          <p className="textSubtitle">
+          <p className={styles.textSubtitle}>
             {dict.home.stop_try_and_start}<strong>{dict.home.doing}</strong>{dict.home.we_transform_text}
           </p>
         </div>
@@ -83,53 +83,50 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
         </Link>
       </section>
 
-      <section className={styles.infoSection}>
-        <div className={styles.infoGlassCard}>
-          <div className="sectionHeader">
-            <h1 className={styles.sectionTitle}>{dict.home.how_does_ai2you_enhence_your_work}</h1>
-            <p className={styles.paragraphMutedLarge}>{dict.home.our_platform_acts}</p>
-          </div>
-
-          <Row gutter={[32, 32]}>
-            <Col xs={24} md={8}>
-              <div className={styles.featureCard}>
-                <div className="stepIcon">1</div>
-                <div className={styles.iconWrapper}>
-                  <CommandLineIcon className={styles.iconLargeAccent} />
-                </div>
-                <h1 className={styles.titleWhite}>{dict.home.reverse_engineering}</h1>
-                <h2 className={styles.quoteText}>{dict.home.the_right_command}</h2>
-                <p className={styles.mutedText}>{dict.home.we_structured_roles}</p>
-              </div>
-            </Col>
-
-            <Col xs={24} md={8}>
-              <div className={styles.featureCard}>
-                <div className="stepIcon">2</div>
-                <div className={styles.iconWrapper}>
-                  <CpuChipIcon className={styles.iconLargeAccent} />
-                </div>
-                <h1 className={styles.titleWhite}>{dict.home.specialization}</h1>
-                <h2 className={styles.quoteText}>{dict.home.each_niche_has}</h2>
-                <p className={styles.mutedText}>{dict.home.we_use_frameworks}</p>
-              </div>
-            </Col>
-
-            <Col xs={24} md={8}>
-              <div className={styles.featureCard}>
-                <div className="stepIcon">3</div>
-                <div className={styles.iconWrapper}>
-                  <CheckBadgeIcon className={styles.iconLargeAccent} />
-                </div>
-                <h1 className={styles.titleWhite}>{dict.home.magic_prompt}</h1>
-                <h2 className={styles.quoteText}>{dict.home.copy_and_past}</h2>
-                <p className={styles.mutedText}>{dict.home.optmized_command}</p>
-              </div>
-            </Col>
-          </Row>
+      <section className={styles.glassCard}>
+        <div className="sectionHeader">
+          <h1 className={styles.textCardTitle}>{dict.home.how_does_ai2you_enhence_your_work}</h1>
+          <p className={styles.textSubtitle}>{dict.home.our_platform_acts}</p>
         </div>
       </section>
 
+      <div className={styles.grid}>
+        
+        <div className={styles.featureCard}>
+          {/* <div className={styles.stepIcon}>1</div> */}
+          <div className={styles.iconWrapper}>
+            <CommandLineIcon className={styles.iconPrimary} />
+          </div>
+          <h1 className={styles.textCardTitle}>{dict.home.reverse_engineering}</h1>
+          <h2 className={styles.quoteText}>{dict.home.the_right_command}</h2>
+          <p className={styles.textBody}>{dict.home.we_structured_roles}</p>
+        </div>
+      
+
+    
+        <div className={styles.featureCard}>
+          {/* <div className={styles.stepIcon}>2</div> */}
+          <div className={styles.iconWrapper}>
+            <CpuChipIcon className={styles.iconPrimary} />
+          </div>
+          <h1 className={styles.textCardTitle}>{dict.home.specialization}</h1>
+          <h2 className={styles.quoteText}>{dict.home.each_niche_has}</h2>
+          <p className={styles.textBody}>{dict.home.we_use_frameworks}</p>
+        </div>
+    
+
+    
+        <div className={styles.featureCard}>
+          {/* <div className={styles.stepIcon}>3</div> */}
+          <div className={styles.iconWrapper}>
+            <CheckBadgeIcon className={styles.iconPrimary} />
+          </div>
+          <h1 className={styles.textCardTitle}>{dict.home.magic_prompt}</h1>
+          <h2 className={styles.quoteText}>{dict.home.copy_and_past}</h2>
+          <p className={styles.textBody}>{dict.home.optmized_command}</p>
+        </div>
+      
+      </div>
 {/* 
       <section className={styles.sectionContainer}>
         <div className={styles.sectionHeaderRow}>
@@ -174,8 +171,8 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
       <footer className={styles.heroContainer}>
         {/* <Divider className={styles.dividerSmall} /> */}
-        <p className={styles.footerText}>{dict.home.ai2you_structured_prompt_engineering}</p>
-        <p className={styles.helperText}>{dict.home.optimized_for_high_performance}</p>
+        <p className={styles.textCardTitle}>{dict.home.ai2you_structured_prompt_engineering}</p>
+        <p className={styles.textHighlight}>{dict.home.optimized_for_high_performance}</p>
       </footer>
       <ShareMenu />
     </main>

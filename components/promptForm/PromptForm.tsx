@@ -1,8 +1,6 @@
 'use client'
 
-import { appManager } from '@/core/AppManager'
 import { useEffect, useState, useRef } from 'react'
-import styles from './PromptForm.module.css'
 import '@/styles/globals.css'
 
 const colors = {

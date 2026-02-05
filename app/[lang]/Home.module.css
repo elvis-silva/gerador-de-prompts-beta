@@ -1,306 +1,311 @@
-/* ===============================
-   Global Base
-================================ */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-
-  background-color: #0f172a;
-  background: radial-gradient(
-    circle at 50% 0%,
-    rgba(37, 99, 235, 0.18),
-    rgba(15, 23, 42, 0) 70%
-  );
-
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-}
-
-body {
-  color: #e5e7eb;
-  line-height: 1.6;
-  text-rendering: optimizeLegibility;
-}
-
-/* ===============================
-   Containers
-================================ */
-.container,
-.appBody,
-.pageLayout {
+.main {
   min-height: 100vh;
+  background-color: #020617;
+  padding: 6rem 1.5rem;
+  background-image: radial-gradient(circle at 50% -10%, #1e293b 0%, transparent 40%);
 }
 
-.appBody {
-  padding-bottom: env(safe-area-inset-bottom);
-}
-
-.pageLayout {
-  display: flex;
-  flex-direction: column;
-}
-
-.pageContent {
-  flex: 1 1 auto;
-}
-
-.pageWrapper,
-.centeredContainer,
-.sectionContainer {
-  max-width: 80rem;
-  margin: 0 auto;
-  padding: 0 1rem;
-}
-
-/* ===============================
-   Hero (Mobile First)
-================================ */
-.hero {
-  position: relative;
-  padding: 4rem 1.25rem 3rem;
+.header {
   text-align: center;
-  z-index: 1;
+  margin-bottom: 5rem;
 }
 
-.heroGradient {
-  position: absolute;
-  inset: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 160%;
-  background: radial-gradient(
-    circle at 50% 0%,
-    rgba(37, 99, 235, 0.18),
-    rgba(15, 23, 42, 0) 70%
-  );
-  pointer-events: none;
-  z-index: -1;
-}
+/* =========================================================
+   CTA PRINCIPAL
+   ========================================================= */
 
-.heroContainer {
-  max-width: 56rem;
-  margin: 6rem auto 0;
-  padding-bottom: 3rem;
-  align-self: center;
-}
-
-.heroBadge {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-}
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.45rem 1rem;
-  border-radius: 9999px;
-  background: rgba(59, 130, 246, 0.1);
-  border: 1px solid rgba(59, 130, 246, 0.25);
-  backdrop-filter: blur(8px);
-}
-
-.badgeText {
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #60a5fa;
-}
-
-.textTitle {
-  font-size: clamp(2rem, 7vw, 3.25rem);
-  line-height: 1.15;
-  font-weight: 800;
-  letter-spacing: -0.035em;
-  margin-bottom: 1rem;
-}
-
-.textHighlight {
-  background: linear-gradient(135deg, #60a5fa, #a5b4fc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.textSubtitle {
-  font-size: clamp(0.95rem, 3vw, 1.05rem);
-  line-height: 1.65;
-  color: #94a3b8;
-  max-width: 36rem;
-  margin: 0 auto 2.5rem;
-}
-
-/* ===============================
-   Info / Glass
-================================ */
-.infoSection {
-  max-width: 72rem;
-  margin: 0 auto 4rem;
-  padding: 0 1.25rem;
-}
-
-.infoGlassCard {
-  background: rgba(30, 41, 59, 0.45);
-  backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 2rem;
-  padding: 2.25rem 1.75rem;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
-}
-
-/* ===============================
-   Cards
-================================ */
-.featureCard,
-.nicheCard {
-  background: rgba(15, 23, 42, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 1.75rem;
-  padding: 1rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease,
-    background 0.3s ease,
-    border-color 0.3s ease;
-}
-
-.iconWrapper {
-  width: 3rem;
-  height: 3rem;
-  margin-bottom: 0.75rem;
-  background: #1e293b;
-  border-radius: 1.25rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transition: transform 0.3s ease;
-}
-
-.iconLargeAccent {
-  size: 5rem;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .featureCard:hover,
-  .nicheCard:hover {
-    transform: translateY(-6px);
-    background: rgba(30, 41, 59, 0.7);
-    border-color: rgba(96, 165, 250, 0.45);
-    box-shadow: 0 18px 36px rgba(59, 130, 246, 0.18);
-  }
-
-  .nicheCard:hover .iconWrapper {
-    transform: scale(1.1) rotate(4deg);
-  }
-}
-
-/* ===============================
-   CTA
-================================ */
 .ctaButton {
+  margin-top: 1.5rem;
+
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
 
-  min-height: 44px;
-  padding: 0.85rem 1.5rem;
+  padding: 0.85rem 1.25rem;
 
-  border-radius: 0.9rem;
-  border: none;
-  cursor: pointer;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+
+  color: #0b0d10;
+  font-weight: 600;
+  font-size: 0.95rem;
   text-decoration: none;
 
-  background: linear-gradient(90deg, #112449, #05327a);
-  color: #fff;
-  font-weight: 700;
-  font-size: 0.9rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 
-  box-shadow: 0 14px 36px rgba(69, 124, 243, 0.35);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    filter var(--transition-fast);
 }
 
 .ctaButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 18px 46px rgba(96, 165, 250, 0.45);
+  filter: brightness(1.05);
+}
+
+.ctaButton:active {
+  transform: scale(0.97);
 }
 
 .ctaIcon {
-  width: 1rem;
-  height: 1rem;
+  width: 18px;
+  height: 18px;
 }
 
-.ctaText {
-  margin-top: 0.5rem;
-  font-size: 0.6rem;
-  font-weight: 800;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #60a5fa;
+.stepIcon {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-secondary)
+  );
+
+  color: #0b0d10;
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
-/* ===============================
-   Footer
-================================ */
+/* =========================================================
+   SEÇÃO INFORMATIVA (GLASS)
+   ========================================================= */
+
+.infoSection {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  padding: 2.5rem 1.5rem;
+  border-radius: 1.5rem;
+  margin-bottom: 4rem;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+
+  /* Centralização Total */
+  display: flex;
+  flex-direction: column; /* Empilha os textos */
+  align-items: center;    /* Centraliza horizontalmente */
+  justify-content: center; /* Centraliza verticalmente */
+  text-align: center;      /* Garante o alinhamento das linhas de texto */
+  
+  /* Largura máxima para não esticar demais em telas ultra-wide */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infoGlassCard {
+  padding: 1.5rem 1.25rem;
+
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+
+  background: rgba(22, 63, 161, 0.85);
+  backdrop-filter: blur(12px);
+
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
+}
+
+.iconPrimary {
+  width: 24px;
+  height: 24px;
+  color: #3b82f6;
+  filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.5));
+}
+
+/* =========================================================
+   TIPOGRAFIA
+   ========================================================= */
+
+.sectionTitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 0.75rem;
+}
+
+.paragraphMutedLarge {
+  font-size: 1rem;
+  color: var(--color-muted);
+  max-width: 640px;
+}
+
+/* =========================================================
+   FEATURE CARDS
+   ========================================================= */
+
+.glassCard {
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 3rem;
+  border-radius: 2rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.featureCard {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  transition: transform 0.3s ease;
+  /* position: relative;
+
+  height: 100%;
+  padding: 1.25rem 1rem;
+
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+
+  background-color: var(--color-surface);
+
+  text-align: center;
+
+  transition:
+    transform var(--transition-medium),
+    box-shadow var(--transition-medium); */
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  border-color: #3b82f6;
+  /* transform: translateY(-4px);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.45); */
+}
+/* 
+.iconWrapper {
+  margin-bottom: 0.75rem;
+  display: flex;
+  justify-content: center;
+} */
+
+.iconWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(59, 130, 246, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.appBody {
+
+  background-color: #020617;
+}
+
+.iconLargeAccent {
+  width: 42px;
+  height: 42px;
+  color: var(--color-primary);
+}
+
+.titleWhite {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.35rem;
+}
+
+.quoteText {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  color: #cbd5e1;
+}
+
+.mutedText {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.heroContainer {
+  padding: 3rem 1rem 4rem;
+  text-align: center;
+}
+
 .footerText {
-  font-size: 0.6rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: #64748b;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
 }
 
-/* ===============================
-   Animations
-================================ */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.helperText {
+  font-size: 0.85rem;
+  color: var(--color-muted);
 }
 
-.animateFadeIn {
-  animation: fadeIn 0.6s ease-out both;
-}
+/* =========================================================
+   RESPONSIVE UPGRADES
+   ========================================================= */
 
-/* ===============================
-   Progressive Enhancements
-================================ */
-@media (min-width: 640px) {
-  .hero {
-    padding: 5rem 2rem 4rem;
-  }
-
-  .heroContainer {
-    margin-top: 8rem;
+@media (min-width: 768px) {
+  .infoSection {
+    padding: 4rem 2rem;
   }
 
   .infoGlassCard {
-    padding: 3rem 2.5rem;
+    padding: 2.5rem 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .featureCard {
+    padding: 1.75rem 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .hero {
-    padding: 6rem 2.5rem 5rem;
+  .ctaButton {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
   }
 
-  .infoSection {
-    margin-bottom: 6rem;
+  .iconLargeAccent {
+    width: 48px;
+    height: 48px;
   }
 }
+
+.textTitle { color: #ffffff; font-weight: 900; font-size: clamp(2.5rem, 5vw, 3.5rem); letter-spacing: -0.04em; margin-bottom: 1rem; }
+.textSubtitle { color: #94a3b8; font-size: 1.125rem; max-width: 600px; margin: 0 auto; }
+.textHighlight { color: #3b82f6; font-weight: 600; }
+.textOverline { color: #3b82f6; font-weight: 700; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.2em; display: block; margin-bottom: 0.5rem; }
+.textCardTitle { color: #ffffff; font-weight: 700; font-size: 1.25rem; margin-bottom: 1rem; }
+.textBody { color: #cbd5e1; line-height: 1.7; font-size: 1rem; }
+.textSmall { color: #3b82f6; font-size: 0.75rem; }
