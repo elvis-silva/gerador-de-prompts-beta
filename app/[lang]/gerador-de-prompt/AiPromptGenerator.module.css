@@ -93,6 +93,14 @@
 .ctaIcon {
   width: 1rem;
   height: 1rem;
+  color: #ffffff;
+
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.ctaButton:hover .ctaIcon {
+  transform: translateX(6px);
+  opacity: 0.9;
 }
 
 .features {

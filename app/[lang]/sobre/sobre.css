@@ -232,28 +232,46 @@
   line-height: 1.6;
 }
 
-.cta__icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 1rem;
-  background: rgba(59, 130, 246, 0.25);
-  margin: 0 auto 1.5rem;
-}
-
-.cta__button {
-  display: inline-block;
+.ctaButton {
+  margin-top: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 3rem;
   background: linear-gradient(90deg, #2563eb, #3b82f6);
   color: #ffffff;
-  padding: 0.9rem 2.25rem;
-  border-radius: 999px;
-  font-weight: 800;
+  font-weight: 700;
+  font-size: 0.9rem;
   text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 14px 36px rgba(37, 99, 235, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
 }
 
-.cta__button:hover {
+.ctaButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 18px 45px rgba(37, 99, 235, 0.45);
+  box-shadow: 0 18px 46px rgba(37, 99, 235, 0.45);
+  filter: brightness(1.05);
+}
+
+.ctaButton span {
+  color: #ffffff; /* força o texto */
+}
+
+
+/* Ícone */
+.ctaIcon {
+  width: 1rem;
+  height: 1rem;
+  color: #ffffff;
+
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+/* ✨ Animação no hover */
+.ctaButton:hover .ctaIcon {
+  transform: translateX(6px);
+  opacity: 0.9;
 }
 
 .cta__note {

@@ -292,6 +292,48 @@ button:focus-visible {
   color: #60a5fa;
 }
 
+.ctaButton {
+  margin-top: 2.5rem;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+
+  background: var(--accent);
+  color: #ffffff; /* 🔥 letras brancas */
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ctaButton span {
+  color: #ffffff; /* força o texto */
+}
+
+.ctaButton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Ícone */
+.ctaIcon {
+  width: 1rem;
+  height: 1rem;
+  color: #ffffff;
+
+  transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+/* ✨ Animação no hover */
+.ctaButton:hover .ctaIcon {
+  transform: translateX(6px);
+  opacity: 0.9;
+}
+
 /* ===============================
    Footer
 ================================ */

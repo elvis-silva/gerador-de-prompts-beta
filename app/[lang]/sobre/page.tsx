@@ -9,6 +9,7 @@ import {
   SparklesIcon,
   PuzzlePieceIcon,
   UserGroupIcon,
+  ArrowRightIcon,
 } from '@heroicons/react/24/outline';
 
 interface FeatureCardProps {
@@ -125,8 +126,11 @@ export default function SobreNos() {
             direcionada.
           </p>
 
-          <Link href="/pt/gerador-de-prompt" className="cta__button">
-            Explorar Geradores de Prompts
+          <Link
+            href="/pt/gerador-de-prompt" className="ctaButton"
+          >
+            <span>Acessar Gerador de Prompts</span>
+            <ArrowRightIcon className="ctaIcon" />
           </Link>
 
           <span className="cta__note">

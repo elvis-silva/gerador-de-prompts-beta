@@ -1,6 +1,8 @@
 'use client';
 
 import styles from './Article.module.css';
+import Link from 'next/link';
+import { ArrowRightIcon } from '@heroicons/react/24/outline';
 
 export default function ArticlePage() {
   return (
@@ -122,9 +124,13 @@ Use linguagem clara, exemplos práticos e estrutura otimizada.`}
             Use o Gerador de Prompts da AI2You e leve seus resultados para o próximo
             nível.
           </p>
-          <a href="/pt/gerador-de-prompt" className={styles.ctaButton}>
-            Acessar Gerador de Prompts
-          </a>
+          
+          <Link
+            href="/pt/gerador-de-prompt" className={styles.ctaButton}
+          >
+            <span>Acessar Gerador de Prompts</span>
+            <ArrowRightIcon className={styles.ctaIcon} />
+          </Link>
         </footer>
       </div>
     </article>

@@ -78,7 +78,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
           href={lang === 'pt' ? `/${lang}/gerador-de-prompt/` : `/${lang}/ai-prompt-generator/`}
           className={styles.ctaButton}
         >
-          {lang === 'pt' ? 'Ver Nichos Disponíveis' : 'Browse Niches'}
+          <span>{lang === 'pt' ? 'Ver Nichos Disponíveis' : 'Browse Niches'}</span>
           <ArrowRightIcon className={styles.ctaIcon} />
         </Link>
       </section>
