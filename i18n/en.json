@@ -49,7 +49,7 @@
     "cookies": { "name": "Cookies", "href": "/pt/cookies" },
     "facebook": { "name": "Facebook", "href": "https://www.facebook.com/ai2you.online" },
     "instagram": { "name": "Instagram", "href": "https://www.instagram.com/elvissilva.dev" },
-    "email": { "name": "e-mail", "href": "emailto:ai2you@outlook.com" },
+    "email": { "name": "e-mail", "href": "mailto:ai2you@outlook.com" },
     "we_create_digital_experiences": "We create digital experiences with purpose, clarity, and technical excellence.",
     "well_made_technology": "Well-made technology isn't noise, it's impactful.",
     "institutional": "Institutional",
