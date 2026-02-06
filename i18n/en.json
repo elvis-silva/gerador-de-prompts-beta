@@ -32,7 +32,7 @@
   },
   "navbar": {
     "nav_links": [
-      { "name": "Home", "href": "/" },
+      { "name": "Home", "href": "/en" },
       { "name": "Blog", "href": "/pt/entendendo-ia-engenharia-prompt"},
       { "name": "About", "href": "/pt/sobre" },
       { "name": "Mission", "href": "/pt/mission" },

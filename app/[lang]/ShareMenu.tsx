@@ -154,9 +154,9 @@ export function ShareMenu() {
               <Facebook /> Facebook
             </motion.button>
 
-            <motion.button variants={itemVariants} onClick={copyLink}>
+            {/* <motion.button variants={itemVariants} onClick={copyLink}>
               <Instagram /> Instagram
-            </motion.button>
+            </motion.button> */}
 
             <motion.button variants={itemVariants} onClick={copyLink}>
               <Copy /> Copiar link

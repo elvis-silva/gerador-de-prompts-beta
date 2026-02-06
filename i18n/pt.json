@@ -11,7 +11,7 @@
     "title": "Gerador de Prompt",
     "highlight": "Prompts de Elite",
     "stop_try_and_start": "Pare de \"tentar\" e comece a ",
-    "doing": "doing",
+    "doing": "fazer",
     "we_transform_text": ". Transformamos a complexidade da IA em comandos estruturados para diversos nichos estratégicos.",
     "how_does_ai2you_enhence_your_work": "Como a AI2You potencializa seu trabalho?",
     "our_platform_acts":  "Nossa plataforma atua como uma ponte técnica entre sua necessidade e a resposta da IA.",
@@ -32,7 +32,7 @@
   },
   "navbar": {
     "nav_links": [
-      { "name": "Início", "href": "/" },
+      { "name": "Início", "href": "/pt" },
       { "name": "Blog", "href": "/pt/entendendo-ia-engenharia-prompt"},
       { "name": "Sobre", "href": "/pt/sobre" },
       { "name": "Missão", "href": "/pt/mission" },

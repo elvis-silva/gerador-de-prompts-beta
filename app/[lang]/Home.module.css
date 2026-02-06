@@ -16,7 +16,8 @@
 
 
 .ctaButton {
-  margin-top: 2.5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -30,6 +31,12 @@
   box-shadow: 0 14px 36px rgba(37, 99, 235, 0.35);
   transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
 }
+
+/* @media ((min-width: 768px)) {
+  .ctaButton {
+    margin-bottom: 2.5rem;
+  }
+} */
 
 .ctaButton:hover {
   transform: translateY(-2px);
