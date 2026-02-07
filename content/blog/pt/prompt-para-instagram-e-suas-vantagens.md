@@ -1,6 +1,6 @@
 ---
 title: "Revolucionando o Conteúdo no Instagram com Inteligência Artificial"
-description: "Como as ferramentas de IA da AI2You.Online transformam a geração de conteúdo para Instagram, aumentando engajamento, escala e conversões."
+description: "Como as ferramentas de IA da AI2You transformam a geração de conteúdo para Instagram, aumentando engajamento, escala e conversões."
 date: "2026-01-28"
 author: "Elvis Silva"
 cover: "/images/blog/instagram-ai-content.jpg"
