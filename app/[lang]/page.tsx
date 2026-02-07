@@ -93,7 +93,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
       <div className={styles.grid}>
         
         <div className={styles.featureCard}>
-          {/* <div className={styles.stepIcon}>1</div> */}
+          <div className={styles.stepIcon}>1</div>
           <div className={styles.iconWrapper}>
             <CommandLineIcon className={styles.iconPrimary} />
           </div>
@@ -105,7 +105,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
     
         <div className={styles.featureCard}>
-          {/* <div className={styles.stepIcon}>2</div> */}
+          <div className={styles.stepIcon}>2</div>
           <div className={styles.iconWrapper}>
             <CpuChipIcon className={styles.iconPrimary} />
           </div>
@@ -117,7 +117,7 @@ export default async function HomePage({ params }: { params: Promise<{ lang: str
 
     
         <div className={styles.featureCard}>
-          {/* <div className={styles.stepIcon}>3</div> */}
+          <div className={styles.stepIcon}>3</div>
           <div className={styles.iconWrapper}>
             <CheckBadgeIcon className={styles.iconPrimary} />
           </div>
