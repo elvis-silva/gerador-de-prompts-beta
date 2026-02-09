@@ -20,14 +20,15 @@ export default async function BlogPage({ params }: Props) {
       <div className={styles.backNav}>
         <Link href={`/${lang}`} className={styles.backLink}>
           <ArrowLeftIcon className={styles.backIcon} />
-          <span className={styles.backLink}>Voltar para AI2You</span>
+          <span className={styles.backLink}>{lang === 'pt' ? "Voltar para AI2You" : "Back to AI2You"}</span>
         </Link>
       </div>
 
       <header className={styles.blogHeader}>
-        <h1 className={styles.blogTitle}>Blog AI2You</h1>
+        <h1 className={styles.blogTitle}>{lang === 'pt' ? "Blog AI2You" : "AI2You Blog"}</h1>
         <p className={styles.blogSubtitle}>
-          Estratégias, prompts e inteligência aplicada para criar com clareza
+          {lang === 'pt' ? "Estratégias, prompts e inteligência aplicada para criar com clareza" 
+          : "Strategies, prompts, and applied intelligence for creating with clarity."}
         </p>
       </header>
 
@@ -65,7 +66,7 @@ export default async function BlogPage({ params }: Props) {
           </p>
 
           <span className={styles.readMore}>
-            Ler artigo →
+            {lang === 'pt' ? "Ler artigo" : "Read article" } →
           </span>
         </div>
       </Link>

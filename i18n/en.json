@@ -204,5 +204,149 @@
       "icon": "ChatBubbleLeftEllipsisIcon",
       "description": "Strategic planning, market analysis, and decision-making support."
     }
+  },
+  "about": {
+    "seo": {
+      "title": "About Us | AI2You - Prompt Engineering",
+      "description": "Discover AI2You, the leading platform for structured prompts in marketing, business and technology."
+    },
+    "hero": {
+      "tag": "Technology with Purpose",
+      "title": "About Us:",
+      "highlight": "AI2You",
+      "subtitle": "Transforming the interaction between humans and Artificial Intelligence through precision engineering."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "p1": "At AI2You, we believe Artificial Intelligence is the most powerful tool of our era.",
+      "p2": "Our focus is to remove friction between humans and AI, delivering structured prompts that turn intention into results."
+    },
+    "features": {
+      "mission": {
+        "title": "Our Mission",
+        "description": "Simplify AI complexity so any professional can achieve expert-level results."
+      },
+      "whatWeDo": {
+        "title": "What We Do",
+        "description": "We create niche-based structured prompts, guiding AI with surgical precision.",
+        "extra": "International frameworks and consumer psychology."
+      }
+    },
+    "branding": {
+      "title": "Why “AI2You”?",
+      "description": "AI for you. Every prompt follows Context, Task and Format pillars for predictable and scalable results."
+    },
+    "cta": {
+      "title": "The Future Is Collaborative",
+      "description": "AI does not replace people. It amplifies capabilities when properly guided.",
+      "button": "Access Prompt Generator",
+      "note": "Stop fighting technology. Master the results."
+    }
+  },
+  "mission": {
+    "seo": {
+      "title": "Our Mission | AI2You"
+    },
+    "header": {
+      "overline": "Purpose & Innovation",
+      "title": "Our Mission:",
+      "highlight": "The Future, Now.",
+      "subtitle": "We are not just building tools; we are redesigning the way humans and machines collaborate to solve today’s most complex problems."
+    },
+    "vision": {
+      "title": "Excellence in the Age of Intelligence",
+      "p1": "AI2You was born from the belief that Artificial Intelligence should not be a technical barrier, but an extension of human capability. Our mission is to build modern tools that act as a force multiplier for professionals across any industry.",
+      "p2": "From marketing to medicine, from programming to the legal sector, our prompt architecture and tools are designed to bring clarity where there is noise and efficiency where bureaucracy slows progress."
+    },
+    "pillars": {
+      "problemSolving": {
+        "title": "Problem Solving",
+        "text": "We focus on real-world pain points. Our solutions reduce hours of manual work into seconds of intelligent processing, adapting global frameworks to local needs."
+      },
+      "vanguard": {
+        "title": "Technological Vanguard",
+        "text": "We track future trends in real time. Our platform evolves alongside the most advanced language models, ensuring our users never fall behind."
+      },
+      "accessibility": {
+        "title": "Technical Accessibility",
+        "text": "We democratize access to state-of-the-art AI. Complex commands are transformed into intuitive interfaces, where great technology is quiet, seamless, and powerful."
+      }
+    },
+    "manifesto": {
+      "title": "Impact, Not Noise.",
+      "text": "Our journey is about empowering the next generation of leaders, creators, and thinkers with AI-augmented intelligence, ensuring that technological progress always means human progress."
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy | AI2You"
+    },
+    "header": {
+      "overline": "Data Security",
+      "title": "Privacy",
+      "highlight": "Policy",
+      "subtitle": "Full transparency and absolute protection in the handling of your information."
+    },
+    "sections": {
+      "primary": {
+        "title": "Our Commitment",
+        "description": "At AI2You, privacy is not just a legal obligation, it is a core pillar of our engineering. This policy explains how we collect, protect, and use your data to deliver the best prompt engineering experience."
+      },
+      "grid": [
+        {
+          "title": "Data Collection",
+          "description": "We collect only what is essential for our generators to function, such as niche preferences and technical logs used for performance optimization."
+        },
+        {
+          "title": "Use of Information",
+          "description": "Your data is never sold. It is used exclusively to personalize your prompts and improve the accuracy of our AI models."
+        },
+        {
+          "title": "Your Rights",
+          "description": "You remain in full control. At any time, you may request access to, correction of, or permanent deletion of your data from our systems."
+        }
+      ]
+    },
+    "footer": {
+      "title": "Questions about your security?",
+      "description": "Our Data Protection team is available via email:",
+      "extra": "Last updated: January 2026"
+    }
+  },
+  "contact": {
+    "header": {
+      "overline": "Contact Channels",
+      "title": "Shall we build",
+      "highlight": "tomorrow?",
+      "subtitle": "We are ready to hear your ideas, solve technical challenges, or simply talk about the future of AI."
+    },
+    "sections": {
+      "primary": {
+        "title": "Why contact us?",
+        "description": "At AI2You, we believe that well-crafted technology is born from clarity and purpose. If you are looking for:",
+        "list": [
+          "Partnerships in AI projects",
+          "Specialized support in Prompt Engineering",
+          "Consulting for specific niches"
+        ],
+        "footer": "Our technical team will respond within 24 business hours.",
+        "highlight": "Your innovation cannot wait."
+      },
+      "channels": [
+        {
+          "title": "Official Email",
+          "value": "ai2you@outlook.com"
+        },
+        {
+          "title": "Technical Support",
+          "value": "Dashboard-based support coming soon"
+        },
+        {
+          "title": "Location",
+          "value": "Digital Hub – Innovation Without Borders"
+        }
+      ]
+    }
   }
+
 }

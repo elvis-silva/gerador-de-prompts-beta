@@ -204,5 +204,149 @@
       "icon": "ChatBubbleLeftEllipsisIcon",
       "description": "Planejamento estratégico, análise de mercado e tomada de decisão."
     }
+  },
+  "about": {
+    "seo": {
+      "title": "Sobre Nós | AI2You - Engenharia de Prompts",
+      "description": "Conheça a AI2You, a plataforma líder em prompts estruturados para marketing, negócios e tecnologia."
+    },
+    "hero": {
+      "tag": "Tecnologia com Propósito",
+      "title": "Sobre Nós:",
+      "highlight": "AI2You",
+      "subtitle": "Transformando a interação entre humanos e Inteligência Artificial através da engenharia de precisão."
+    },
+    "vision": {
+      "title": "Nossa Visão",
+      "p1": "No AI2You, acreditamos que a Inteligência Artificial é a ferramenta mais poderosa da nossa era.",
+      "p2": "Nosso foco é eliminar a fricção entre humanos e IA, entregando prompts estruturados que convertem intenção em resultado."
+    },
+    "features": {
+      "mission": {
+        "title": "Nossa Missão",
+        "description": "Simplificar a complexidade da IA para que qualquer profissional alcance resultados de nível especialista."
+      },
+      "whatWeDo": {
+        "title": "O Que Fazemos",
+        "description": "Criamos prompts estruturados por nicho, guiando a IA com precisão cirúrgica.",
+        "extra": "Frameworks internacionais e psicologia do consumidor."
+      }
+    },
+    "branding": {
+      "title": "Por Que “AI2You”?",
+      "description": "AI para você. Cada prompt segue os pilares de Contexto, Tarefa e Formato para resultados previsíveis e escaláveis."
+    },
+    "cta": {
+      "title": "O Futuro é Colaborativo",
+      "description": "A IA não substitui pessoas. Ela amplia capacidades quando bem direcionada.",
+      "button": "Acessar Gerador de Prompts",
+      "note": "Pare de lutar com a tecnologia. Domine os resultados."
+    }
+  },
+  "mission": {
+    "seo": {
+      "title": "Nossa Missão | AI2You"
+    },
+    "header": {
+      "overline": "Propósito & Inovação",
+      "title": "Nossa Missão:",
+      "highlight": "O Futuro, Agora.",
+      "subtitle": "Não estamos apenas criando ferramentas; estamos redesenhando a forma como humanos e máquinas colaboram para resolver os problemas mais complexos da atualidade."
+    },
+    "vision": {
+      "title": "Excelência na Era da Inteligência",
+      "p1": "A AI2You nasceu da convicção de que a Inteligência Artificial não deve ser uma barreira técnica, mas uma extensão da capacidade humana. Nossa missão é desenvolver ferramentas modernas que atuem como um multiplicador de força para profissionais em qualquer nicho.",
+      "p2": "Do marketing à medicina, da programação ao setor jurídico, nossa arquitetura de prompts e ferramentas é desenhada para entregar clareza onde há ruído e eficiência onde há burocracia."
+    },
+    "pillars": {
+      "problemSolving": {
+        "title": "Resolução de Problemas",
+        "text": "Focamos em dores reais. Criamos soluções que reduzem horas de trabalho manual em segundos de processamento inteligente, adaptando frameworks globais para necessidades locais."
+      },
+      "vanguard": {
+        "title": "Vanguarda Tecnológica",
+        "text": "Monitoramos tendências futuras em tempo real. Nossa plataforma evolui com os modelos de linguagem mais avançados, garantindo que nossos usuários nunca fiquem obsoletos."
+      },
+      "accessibility": {
+        "title": "Acessibilidade Técnica",
+        "text": "Democratizamos o acesso ao state-of-the-art da IA. Transformamos comandos complexos em interfaces intuitivas, onde a tecnologia bem feita é silenciosa e impactante."
+      }
+    },
+    "manifesto": {
+      "title": "Impacto, não Barulho.",
+      "text": "Nossa jornada é sobre equipar a próxima geração de líderes, criadores e pensadores com o intelecto aumentado pela IA, garantindo que o progresso tecnológico seja sinônimo de progresso humano."
+    }
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacidade | AI2You"
+    },
+    "header": {
+      "overline": "Segurança de Dados",
+      "title": "Política de",
+      "highlight": "Privacidade",
+      "subtitle": "Transparência e proteção absoluta no tratamento das suas informações."
+    },
+    "sections": {
+      "primary": {
+        "title": "Nosso Compromisso",
+        "description": "Na AI2You, a privacidade não é apenas uma obrigação legal, é um pilar da nossa engenharia. Esta política detalha como coletamos, protegemos e utilizamos seus dados para oferecer a melhor experiência em engenharia de prompts."
+      },
+      "grid": [
+        {
+          "title": "Coleta de Dados",
+          "description": "Coletamos apenas o essencial para o funcionamento dos nossos geradores, como preferências de nicho e logs técnicos para otimização de performance."
+        },
+        {
+          "title": "Uso das Informações",
+          "description": "Seus dados nunca são vendidos. Eles são utilizados exclusivamente para personalizar seus prompts e melhorar a precisão dos nossos modelos de IA."
+        },
+        {
+          "title": "Seus Direitos",
+          "description": "Você possui controle total. A qualquer momento, pode solicitar o acesso, retificação ou exclusão definitiva dos seus dados de nossa base."
+        }
+      ]
+    },
+    "footer": {
+      "title": "Dúvidas sobre sua segurança?",
+      "description": "Nossa equipe de Proteção de Dados está disponível através do e-mail:",
+      "extra": "Última atualização: Janeiro de 2026"
+    }
+  },
+  "contact": {
+    "header": {
+      "overline": "Canais de Atendimento",
+      "title": "Vamos construir o",
+      "highlight": "amanhã?",
+      "subtitle": "Estamos prontos para ouvir suas ideias, resolver seus problemas técnicos ou simplesmente bater um papo sobre o futuro da IA."
+    },
+    "sections": {
+      "primary": {
+        "title": "Por que nos contatar?",
+        "description": "Na AI2You, acreditamos que a tecnologia bem feita é fruto de clareza e propósito. Se você busca:",
+        "list": [
+          "Parcerias em projetos de IA",
+          "Suporte especializado em Engenharia de Prompt",
+          "Consultoria para nichos específicos"
+        ],
+        "footer": "Nossa equipe técnica responderá em menos de 24 horas úteis.",
+        "highlight": "Sua inovação não pode esperar."
+      },
+      "channels": [
+        {
+          "title": "E-mail Oficial",
+          "value": "ai2you@outlook.com"
+        },
+        {
+          "title": "Suporte Técnico",
+          "value": "Atendimento via Dashboard em breve"
+        },
+        {
+          "title": "Localização",
+          "value": "Hub Digital - Inovação Sem Fronteiras"
+        }
+      ]
+    }
   }
+
 }

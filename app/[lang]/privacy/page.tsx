@@ -7,46 +7,68 @@ import {
   DocumentTextIcon 
 } from '@heroicons/react/24/outline';
 import styles from './Privacy.module.css';
+import { useI18n } from '@/hooks/useI18n';
 
-export default function Privacidade() {
+interface PageProps {
+  params: Promise<{ lang: string }>;
+}
+
+export default async function Privacidade({ params }: PageProps) {
+  const { lang } = await params;
+  const t = useI18n(lang).privacy;
   return (
-    <main className={styles.main}>
+     <main className={styles.main}>
       <Head>
-        <title>Privacidade | AI2You</title>
+        <title>{t.meta.title}</title>
       </Head>
 
       <div className={styles.container}>
-        {/* Header no padrão da página Sobre */}
+        {/* Header */}
         <header className={styles.header}>
-          <span className={styles.textOverline}>Segurança de Dados</span>
+          <span className={styles.textOverline}>
+            {t.header.overline}
+          </span>
+
           <h1 className={styles.textTitle}>
-            Política de <span className={styles.textHighlight}>Privacidade</span>
+            {t.header.title}{' '}
+            <span className={styles.textHighlight}>
+              {t.header.highlight}
+            </span>
           </h1>
+
           <p className={styles.textSubtitle}>
-            Transparência e proteção absoluta no tratamento das suas informações.
+            {t.header.subtitle}
           </p>
         </header>
 
-        {/* Card Principal: Compromisso */}
+        {/* Main Card */}
         <section className={styles.glassCard}>
           <div className={styles.iconWrapper}>
             <ShieldCheckIcon className={styles.iconPrimary} />
           </div>
-          <h2 className={styles.textCardTitle}>Nosso Compromisso</h2>
+
+          <h2 className={styles.textCardTitle}>
+            {t.sections.primary.title}
+          </h2>
+
           <p className={styles.textBody}>
-            Na <span className={styles.textHighlight}>AI2You</span>, a privacidade não é apenas uma obrigação legal, é um pilar da nossa engenharia. Esta política detalha como coletamos, protegemos e utilizamos seus dados para oferecer a melhor experiência em engenharia de prompts.
+            {t.sections.primary.description}
           </p>
         </section>
 
-        {/* Grid de Detalhes Técnicos */}
+        {/* Grid */}
         <div className={styles.grid}>
           <div className={styles.pillCard}>
             <div className={styles.iconWrapper}>
               <LockClosedIcon className={styles.iconPrimary} />
             </div>
-            <h3 className={styles.textCardTitle}>Coleta de Dados</h3>
+
+            <h3 className={styles.textCardTitle}>
+              {t.sections.grid[0].title}
+            </h3>
+
             <p className={styles.textBody}>
-              Coletamos apenas o essencial para o funcionamento dos nossos geradores, como preferências de nicho e logs técnicos para otimização de performance.
+              {t.sections.grid[0].description}
             </p>
           </div>
 
@@ -54,9 +76,13 @@ export default function Privacidade() {
             <div className={styles.iconWrapper}>
               <EyeIcon className={styles.iconPrimary} />
             </div>
-            <h3 className={styles.textCardTitle}>Uso das Informações</h3>
+
+            <h3 className={styles.textCardTitle}>
+              {t.sections.grid[1].title}
+            </h3>
+
             <p className={styles.textBody}>
-              Seus dados nunca são vendidos. Eles são utilizados exclusivamente para personalizar seus prompts e melhorar a precisão dos nossos modelos de IA.
+              {t.sections.grid[1].description}
             </p>
           </div>
 
@@ -64,21 +90,33 @@ export default function Privacidade() {
             <div className={styles.iconWrapper}>
               <DocumentTextIcon className={styles.iconPrimary} />
             </div>
-            <h3 className={styles.textCardTitle}>Seus Direitos</h3>
+
+            <h3 className={styles.textCardTitle}>
+              {t.sections.grid[2].title}
+            </h3>
+
             <p className={styles.textBody}>
-              Você possui controle total. A qualquer momento, pode solicitar o acesso, retificação ou exclusão definitiva dos seus dados de nossa base.
+              {t.sections.grid[2].description}
             </p>
           </div>
         </div>
 
-        {/* Rodapé Interno de Contato */}
+        {/* Footer */}
         <footer className={styles.privacyFooter}>
-          <h2 className={styles.textCardTitle}>Dúvidas sobre sua segurança?</h2>
+          <h2 className={styles.textCardTitle}>
+            {t.footer.title}
+          </h2>
+
           <p className={styles.textBody}>
-            Nossa equipe de Proteção de Dados está disponível através do e-mail: 
-            <span className={styles.textHighlight}> ai2you@outlook.com</span>
+            {t.footer.description}
+            <span className={styles.textHighlight}>
+              {' '}ai2you@outlook.com
+            </span>
           </p>
-          <p className={styles.textSmall}>Última atualização: Janeiro de 2026</p>
+
+          <p className={styles.textSmall}>
+            {t.footer.extra}
+          </p>
         </footer>
       </div>
     </main>
