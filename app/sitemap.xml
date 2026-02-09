@@ -93,6 +93,14 @@
   </url>
 
   <url>
+    <loc>https://www.ai2you.online/pt/blog/ia-prompts-eficiencia-ai2you</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/blog/ia-prompts-eficiencia-ai2you" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/glog/ia-prompts-eficiencia-ai2you" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
     <loc>https://www.ai2you.online/pt/gerador-de-prompt</loc>
     <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/gerador-de-prompt" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generator" />
