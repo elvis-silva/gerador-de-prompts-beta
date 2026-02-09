@@ -20,11 +20,13 @@ type HeaderProps = {
 };
 
 export function Navbar({ lang }: HeaderProps) {
+
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const dict = useNavDictionary();
 
   const navLinks = dict.navbar.nav_links;
+  
   
   return (
     <header className={styles.navbar}>
@@ -40,8 +42,8 @@ export function Navbar({ lang }: HeaderProps) {
         <nav className={styles.desktopNav}>
           {navLinks.map((link) => (
             <Link 
-              key={link.href} 
-              href={link.href}
+              key={`/${lang}${link.href}`} 
+              href={`/${lang}${link.href}`}
               className={`${styles.navLink} ${pathname === link.href ? styles.active : ""}`}
             >
               {link.name}
@@ -76,8 +78,8 @@ export function Navbar({ lang }: HeaderProps) {
         <nav className={styles.mobileMenu}>
           {navLinks.map((link) => (
             <Link 
-              key={link.href} 
-              href={link.href} 
+              key={`/${lang}${link.href}`} 
+              href={`/${lang}${link.href}`} 
               onClick={() => setIsOpen(false)}
               className={styles.mobileLink}
             >

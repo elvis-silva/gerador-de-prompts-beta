@@ -1,5 +1,5 @@
 import { App, ConfigProvider, theme } from 'antd';
-import Footer from '@/components/footer/Footer';
+import { Footer } from '@/components/footer/Footer';
 import { Navbar } from '@/components/navbar/Navbar';
 import { PageTransition } from '@/components/PageTransition';
 import { GoogleAnalytics } from '@next/third-parties/google';
@@ -157,7 +157,7 @@ export default async function RootLayout({
                   </main>
                 </PageTransition>
                 {/* </ConfigProvider> */}
-                <Footer />
+                <Footer lang={lang}/>
               </div>
             </App>
         </AntdRegistry>

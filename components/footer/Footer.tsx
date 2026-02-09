@@ -19,7 +19,11 @@ export function useFooterDicitionary() {
   return dictionaries[lang as keyof typeof dictionaries] ?? pt;
 }
 
-export default function Footer() {
+type FooterProps = {
+  lang: string;
+};
+
+export function Footer({ lang } : FooterProps) {
   const currentYear = new Date().getFullYear();
   const pathname = usePathname();
   const dict = useFooterDicitionary();
@@ -45,9 +49,9 @@ export default function Footer() {
           <div className='footerColumn'>
             <h3 className="columnTitle">{dict.footer.institutional}</h3>
             <ul className="linkList">
-              <li><Link href={dict.footer.about.href} className="navLink">{dict.footer.about.name}</Link></li>
-              <li><Link href={dict.footer.privacy.href} className="navLink">{dict.footer.privacy.name}</Link></li>
-              <li><Link href={dict.footer.lgpd.href} className="navLink">{dict.footer.lgpd.name}</Link></li>
+              <li><Link href={`/${lang}${dict.footer.about.href}`} className="navLink">{dict.footer.about.name}</Link></li>
+              <li><Link href={`/${lang}${dict.footer.privacy.href}`} className="navLink">{dict.footer.privacy.name}</Link></li>
+              <li><Link href={`/${lang}${dict.footer.lgpd.href}`} className="navLink">{dict.footer.lgpd.name}</Link></li>
             </ul>
           </div>
 
@@ -55,9 +59,9 @@ export default function Footer() {
           <div className='footerColumn'>
             <h3 className="columnTitle">{dict.footer.the_company}</h3>
             <ul className="linkList">
-              <li><Link href={dict.footer.mission.href} className="navLink">{dict.footer.mission.name}</Link></li>
-              <li><Link href={dict.footer.terms.href} className="navLink">{dict.footer.terms.name}</Link></li>
-              <li><Link href={dict.footer.cookies.href} className="navLink">{dict.footer.cookies.name}</Link></li>
+              <li><Link href={`/${lang}${dict.footer.mission.href}`} className="navLink">{dict.footer.mission.name}</Link></li>
+              <li><Link href={`/${lang}${dict.footer.terms.href}`} className="navLink">{dict.footer.terms.name}</Link></li>
+              <li><Link href={`/${lang}${dict.footer.cookies.href}`} className="navLink">{dict.footer.cookies.name}</Link></li>
             </ul>
           </div>
 

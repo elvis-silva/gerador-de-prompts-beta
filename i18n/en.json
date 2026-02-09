@@ -32,21 +32,21 @@
   },
   "navbar": {
     "nav_links": [
-      { "name": "Home", "href": "/en" },
-      { "name": "Blog", "href": "/en/blog"},
-      { "name": "About", "href": "/pt/sobre" },
-      { "name": "Mission", "href": "/pt/mission" },
-      { "name": "Privacy", "href": "/pt/privacy" },
-      { "name": "Contact", "href": "/pt/contact" }
+      { "name": "Home", "href": "/" },
+      { "name": "Blog", "href": "/blog"},
+      { "name": "About", "href": "/sobre" },
+      { "name": "Mission", "href": "/mission" },
+      { "name": "Privacy", "href": "/privacy" },
+      { "name": "Contact", "href": "/contact" }
     ]
   },
   "footer": {
-    "about": { "name": "About", "href": "/pt/sobre" },
-    "privacy": { "name": "Privacy Policy", "href": "/pt/privacy" },
-    "lgpd": { "name": "LGPD - Brazil", "href": "/pt/lgpd" },
-    "mission": { "name": "Mission", "href": "/pt/mission" },
-    "terms": { "name": "Terms of Use", "href": "/pt/terms" },
-    "cookies": { "name": "Cookies", "href": "/pt/cookies" },
+    "about": { "name": "About", "href": "/sobre" },
+    "privacy": { "name": "Privacy Policy", "href": "/privacy" },
+    "lgpd": { "name": "LGPD - Brazil", "href": "/lgpd" },
+    "mission": { "name": "Mission", "href": "/mission" },
+    "terms": { "name": "Terms of Use", "href": "/terms" },
+    "cookies": { "name": "Cookies", "href": "/cookies" },
     "facebook": { "name": "Facebook", "href": "https://www.facebook.com/ai2you.online" },
     "instagram": { "name": "Instagram", "href": "https://www.instagram.com/elvissilva.dev" },
     "email": { "name": "e-mail", "href": "mailto:ai2you@outlook.com" },
@@ -347,6 +347,115 @@
         }
       ]
     }
+  },
+  "lgpd": {
+    "meta": {
+      "title": "LGPD Compliance | AI2You"
+    },
+    "header": {
+      "overline": "National Compliance",
+      "title": "LGPD",
+      "highlight": "Commitment",
+      "subtitle": "How AI2You complies with Brazil’s General Data Protection Law 13.709/2018 and safeguards your digital sovereignty."
+    },
+    "sections": {
+      "primary": {
+        "title": "Privacy by Design: Zero Data Storage",
+        "description": "AI2You’s technical differentiator lies in its ephemeral flow architecture.",
+        "strong": "We do not collect, process on our servers, or store any personal data from users who interact with our prompt generators."
+      },
+      "grid": [
+        {
+          "title": "Single Purpose",
+          "description": "Data entered into prompt configuration fields is used exclusively to assemble commands at runtime within your browser."
+        },
+        {
+          "title": "Free Access",
+          "description": "Since we do not maintain user databases, you retain full control over all information entered into our local interface."
+        },
+        {
+          "title": "Technical Security",
+          "description": "We use state-of-the-art HTTPS protocols to ensure your connection remains protected against interception while browsing."
+        }
+      ]
+    },
+    "footer": {
+      "title": "Controller Responsibility",
+      "description": "AI2You acts solely as a technological facilitator. We operate under the principle of",
+      "highlight": " data minimization",
+      "contact": {
+        "label": "Data Protection Officer (DPO):",
+        "value": "ai2you@outlook.com"
+      }
+    }
+  },
+  "terms": {
+    "meta": {
+      "title": "Terms of Use | AI2You"
+    },
+    "header": {
+      "overline": "Legal Agreement",
+      "title": "Terms of",
+      "highlight": "Use",
+      "subtitle": "The guidelines that govern our relationship and ensure the integrity of our prompt engineering."
+    },
+    "acceptance": {
+      "title": "Acceptance of Terms",
+      "description": {
+        "prefix": "By accessing",
+        "suffix": ", you agree to comply with these terms of service, all applicable laws and regulations. Our tools are designed to enhance human work through AI, and their use implies awareness of these conditions."
+      }
+    },
+    "license": {
+      "title": "Usage License",
+      "description": "Permission is granted to generate and use prompts for personal or commercial purposes. However, attempting to decompile or reverse engineer the platform’s software is strictly prohibited."
+    },
+    "responsibility": {
+      "title": "Responsibility",
+      "description": "AI is an assistive tool. AI2You is not responsible for decisions made based on generated prompts; final content review always lies with the human user."
+    },
+    "limitations": {
+      "title": "Limitations",
+      "description": "In no event shall AI2You be liable for damages arising from the use or inability to use the materials on our website, even if advised of the possibility."
+    },
+    "footer": {
+      "title": "Modifications",
+      "description": "AI2You may revise these terms of service at any time without prior notice. By using this site, you agree to be bound by the current version of these terms.",
+      "validity": "Effective as of: January 23, 2026"
+    }
+  },
+  "cookies": {
+    "meta": {
+      "title": "Cookie Policy | AI2You"
+    },
+    "header": {
+      "overline": "Personalized Experience",
+      "title": "Use of",
+      "highlight": "Cookies",
+      "subtitle": "Learn how we use storage technologies to optimize your interaction with our AI generators."
+    },
+    "intro": {
+      "title": "What are Cookies?",
+      "description": "Cookies are small text files sent from our server to your browser. They allow us to recognize your device and remember your niche preferences (such as Marketing or Programming), so you don’t have to configure everything from scratch on every visit."
+    },
+    "categories": {
+      "essential": {
+        "title": "Essential",
+        "description": "Necessary for the basic operation of the site, such as authentication and security. Without them, the AI2You platform would not function properly."
+      },
+      "analytics": {
+        "title": "Analytics",
+        "description": "They help us understand which prompt niches are most accessed, allowing our engineering team to focus on relevant improvements."
+      },
+      "functional": {
+        "title": "Functional",
+        "description": "Used to remember choices you make, such as selected language or visual themes applied to the dashboard."
+      }
+    },
+    "management": {
+      "title": "How can you manage your preferences?",
+      "description": "You can disable cookies in your browser settings at any time. However, please note that this may affect the accuracy of our AI’s personalized suggestions.",
+      "support": "For privacy-related technical support, contact"
+    }
   }
-
 }
