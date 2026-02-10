@@ -3,7 +3,7 @@ title: "Revolutionizing Instagram Content with Artificial Intelligence"
 description: "How AI2You AI tools are transforming content creation for Instagram, increasing engagement, scale, and conversions."
 date: "2026-02-07"
 author: "Elvis Silva"
-cover: "/images/blog/instagram-ai-content.jpg"
+cover: "/images/blog/instagram-ai-content-en.jpg"
 tags: [
   "Instagram",
   "AI in Marketing",

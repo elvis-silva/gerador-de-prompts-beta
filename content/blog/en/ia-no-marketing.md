@@ -3,7 +3,7 @@ title: "Revolutionizing Marketing with Artificial Intelligence"
 description: "How Artificial Intelligence is transforming marketing by increasing ROI, engagement, and operational efficiency with practical examples and advanced prompts."
 date: "2026-02-06"
 author: "Elvis Silva"
-cover: "/images/blog/ai-marketing.jpg"
+cover: "/images/blog/ai-marketing-en.jpg"
 tags: ["AI", "Marketing", "AI Marketing", "Performance", "Prompt Engineering"]
 ---
 
