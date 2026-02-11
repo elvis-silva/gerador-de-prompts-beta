@@ -3,7 +3,7 @@ title: "What Is Workflow Engineering? Complete Guide with Harness Engineering, E
 description: "Understand what Workflow Engineering is, how Harness Engineering works, and how to apply these concepts in process automation, DevOps, and digital marketing to scale with governance and efficiency."
 date: "2026-02-11"
 author: "Elvis Silva"
-cover: "/images/blog/workflow-engineering-harness-engineering-guia-completo-pt.jpg"
+cover: "/images/blog/workflow-engineering-harness-engineering-guia-completo-en.jpg"
 tags: [
   "Workflow Engineering",
   "Harness Engineering",
