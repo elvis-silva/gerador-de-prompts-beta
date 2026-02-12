@@ -117,6 +117,14 @@
   </url>
 
   <url>
+    <loc>https://www.ai2you.online/pt/blog/governanca-de-ia-compliance-monitoramento-e-estrategia</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/blog/governanca-de-ia-compliance-monitoramento-e-estrategia" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/glog/governanca-de-ia-compliance-monitoramento-e-estrategia" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
     <loc>https://www.ai2you.online/pt/gerador-de-prompt</loc>
     <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/gerador-de-prompt" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/ai-prompt-generator" />
