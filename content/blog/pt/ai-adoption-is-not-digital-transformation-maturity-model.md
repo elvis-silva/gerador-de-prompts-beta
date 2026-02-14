@@ -101,19 +101,19 @@ A organização melhora o que já existe, sem alterar sua arquitetura fundamenta
 
 A transformação exige mudanças simultâneas em quatro dimensões:
 
-### 4.1 Dimensão Estratégica
+### 4.1 [Dimensão Estratégica](https://www.ai2you.online/pt/blog/what-is-ai-first-operating-model)
 
 IA integrada ao planejamento corporativo e à formulação de vantagem competitiva.
 
-### 4.2 Dimensão Processual
+### 4.2 [Dimensão Processual](https://www.ai2you.online/pt/blog/o-que-e-workflow-engineering-harness-engineering-guia-completo)
 
 Redesenho completo de workflows e integração com sistemas centrais.
 
-### 4.3 Dimensão Cultural
+### 4.3 [Dimensão Cultural]((https://www.ai2you.online/pt/blog/context-engineering))
 
 Mudança na lógica decisória, incorporando análise algorítmica como parte do processo deliberativo.
 
-### 4.4 Dimensão de Governança
+### 4.4 [Dimensão de Governança](https://www.ai2you.online/pt/blog/governanca-de-ia-compliance-monitoramento-e-estrategia)
 
 Estrutura formal de políticas, accountability, ética e gestão de riscos associados à IA.
 
@@ -141,7 +141,7 @@ Integração com sistemas corporativos e definição de métricas estruturadas.
 
 IA influencia decisões corporativas e planejamento organizacional.
 
-### Nível 5 – Arquitetural
+### Nível 5 – [Arquitetural](https://www.ai2you.online/pt/blog/ia-prompts-eficiencia-ai2you)
 
 IA torna-se infraestrutura cognitiva da organização, sustentando modelo de negócio, governança e tomada de decisão.
 

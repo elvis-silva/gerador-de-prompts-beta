@@ -101,19 +101,19 @@ The organization improves what already exists, without altering its fundamental 
 
 Transformation requires simultaneous changes across four dimensions:
 
-### 4.1 Strategic Dimension
+### 4.1 [Strategic Dimension](https://www.ai2you.online/en/blog/what-is-ai-first-operating-model)
 
 AI integrated into corporate planning and competitive advantage formulation.
 
-### 4.2 Process Dimension
+### 4.2 [Process Dimension](https://www.ai2you.online/en/blog/o-que-e-workflow-engineering-harness-engineering-guia-completo)
 
 Complete workflow redesign and integration with core systems.
 
-### 4.3 Cultural Dimension
+### 4.3 [Cultural Dimension](https://www.ai2you.online/en/blog/context-engineering)
 
 Change in decision-making logic, incorporating algorithmic analysis as part of the deliberative process.
 
-### 4.4 Governance Dimension
+### 4.4 [Governance Dimension](https://www.ai2you.online/en/blog/governanca-de-ia-compliance-monitoramento-e-estrategia)
 
 Formal structure of policies, accountability, ethics, and risk management associated with AI.
 
@@ -141,7 +141,7 @@ Integration with corporate systems and definition of structured metrics.
 
 AI influences corporate decisions and organizational planning.
 
-### Level 5 – Architectural
+### Level 5 – [Architectural](https://www.ai2you.online/en/blog/ia-prompts-eficiencia-ai2you)
 
 AI becomes the organization's cognitive infrastructure, sustaining business model, governance, and decision-making.
 
