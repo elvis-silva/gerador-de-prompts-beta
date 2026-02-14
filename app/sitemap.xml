@@ -117,6 +117,14 @@
   </url>
 
   <url>
+    <loc>https://www.ai2you.online/pt/blog/context-engineering-framework</loc>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/blog/context-engineering-framework" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/glog/context-engineering-framework" />
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
     <loc>https://www.ai2you.online/pt/blog/ai-adoption-is-not-digital-transformation-maturity-model</loc>
     <xhtml:link rel="alternate" hreflang="pt" href="https://www.ai2you.online/pt/blog/ai-adoption-is-not-digital-transformation-maturity-model" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.ai2you.online/en/glog/ai-adoption-is-not-digital-transformation-maturity-model" />
