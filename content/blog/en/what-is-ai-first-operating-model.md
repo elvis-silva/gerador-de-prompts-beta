@@ -22,7 +22,7 @@ They're merely **decorating** their existing operating model with it.
 They have ChatGPT accounts, Zapier flows, AI-generated LinkedIn posts, but CAC keeps rising, pipeline forecasts remain guesswork, and marketing and revenue teams still waste hours reconciling spreadsheets.
 
 The uncomfortable truth:  
-**AI Adoption ≠ Transformation**  
+**[AI Adoption ≠ Transformation](https://www.ai2you.online/en/blog/ai-adoption-is-not-digital-transformation-maturity-model)**  
 **AI as a tool increases productivity**  
 **AI as a framework restructures the organization**
 

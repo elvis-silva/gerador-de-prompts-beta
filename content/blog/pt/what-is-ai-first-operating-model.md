@@ -24,7 +24,7 @@ Elas estão apenas **enfeitando** o modelo operacional existente com ela.
 Elas têm contas no ChatGPT, fluxos no Zapier, posts de LinkedIn gerados por IA, mas o CAC continua subindo, as previsões de pipeline seguem sendo achismo e os times de marketing e receita ainda perdem horas reconciliando planilhas.
 
 A verdade desconfortável:  
-**Adoção de IA ≠ Transformação**  
+**[Adoção de IA ≠ Transformação](https://www.ai2you.online/pt/blog/ai-adoption-is-not-digital-transformation-maturity-model)**  
 **IA como ferramenta aumenta produtividade**  
 **IA como framework reestrutura a organização**
 
