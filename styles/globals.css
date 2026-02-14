@@ -4,10 +4,17 @@
 /* ===============================
    Global Reset & Base
 ================================ */
+@import "tailwindcss";
+@import "./variables.css";
+
 
 *,
 *::before,
 *::after {
+  /* box-sizing: border-box; */
+
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -18,14 +25,14 @@ body {
   padding: 0;
   overflow-x: hidden;
 
-  
+  background-image: radial-gradient(circle at 50% -10%, #040128 0%, transparent 40%);
 
-  
+   
    background: radial-gradient(
     circle at 50% 0%,
     rgba(37, 99, 235, 0.18),
     rgba(15, 23, 42, 0) 70%
-  ); 
+  );  
 
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
@@ -37,8 +44,12 @@ body {
 ================================ */
 
 body {
-  color: #e5e7eb;
+  /* color: #e5e7eb; */
   line-height: 1.6;
+
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   
 }
 
@@ -54,6 +65,12 @@ body {
     transition: none !important;
     scroll-behavior: auto !important;
   }
+}
+
+.section-container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--spacing-section) 24px;
 }
 
 /* ===============================

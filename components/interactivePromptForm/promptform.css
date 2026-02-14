@@ -1,0 +1,62 @@
+.promptform {
+  padding: 96px 24px; /* py-24 px-6 */
+  background-color: #18181b; /* bg-zinc-900 */
+}
+
+.promptform-container {
+  max-width: 896px; /* max-w-4xl */
+  margin: 0 auto;
+}
+
+.promptform-title {
+  font-size: 30px; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  text-align: center;
+  margin-bottom: 48px; /* mb-12 */
+}
+
+.promptform-form {
+  display: grid;
+  gap: 24px; /* gap-6 */
+  background-color: #09090b; /* bg-zinc-950 */
+  padding: 32px; /* p-8 */
+  border-radius: 16px; /* rounded-2xl */
+  border: 1px solid #27272a; /* border-zinc-800 */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); /* shadow-xl */
+}
+
+.promptform-input {
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #27272a;
+  background-color: #18181b;
+  color: #ffffff;
+  font-size: 16px;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.promptform-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  background-color: #1f1f23;
+}
+
+.promptform-button {
+  margin-top: 16px; /* mt-4 */
+  padding: 16px; /* py-4 */
+  background-color: #2563eb; /* bg-blue-600 */
+  border: none;
+  border-radius: 12px; /* rounded-xl */
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.promptform-button:hover {
+  background-color: #3b82f6; /* hover:bg-blue-500 */
+}
+
+.promptform-button:active {
+  transform: scale(0.98);
+}

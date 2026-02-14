@@ -1,0 +1,30 @@
+.hero {
+  background-color: var(--color-bg-primary);
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  margin-top: 24px;
+  color: var(--color-text-secondary);
+  font-size: 20px;
+}
+
+.hero-button {
+  margin-top: 40px;
+  padding: 14px 28px;
+  background-color: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-default);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: var(--color-accent-hover);
+}

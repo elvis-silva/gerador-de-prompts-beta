@@ -6,6 +6,7 @@ import {
   PencilSquareIcon
 } from '@heroicons/react/24/outline';
 import Image from 'next/image';
+import '@/styles/globals.css'
 
 interface Props {
   params: Promise<{ lang: string }>;
@@ -14,6 +15,10 @@ interface Props {
 export default async function BlogPage({ params }: Props) {
   const { lang } = await params;
   const posts = getAllPosts(lang);
+
+  const sortedPosts = [...posts].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
 
   return (
     <section className={styles.blogList}>
@@ -33,7 +38,7 @@ export default async function BlogPage({ params }: Props) {
       </header>
 
       <div className={styles.blogGrid}>
-        {posts.map((post) => (
+        {sortedPosts.map((post) => (
           <article key={post.slug} className={styles.blogCard}>
             <Link
         href={`/${lang}/blog/${post.slug}`}

@@ -8,6 +8,7 @@ import {
   ArrowRightIcon, 
   UserGroupIcon 
 } from '@heroicons/react/24/outline';
+import '@/styles/globals.css'
 
 interface Props {
   params: Promise<{

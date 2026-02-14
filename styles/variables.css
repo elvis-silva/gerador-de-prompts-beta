@@ -1,0 +1,13 @@
+:root {
+  --color-bg-primary: #09090b;
+  --color-bg-secondary: #18181b;
+  --color-accent: #2563eb;
+  --color-accent-hover: #1e40af;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a1a1aa;
+
+  --container-width: 1200px;
+
+  --spacing-section: 80px;
+  --radius-default: 12px;
+}

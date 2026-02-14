@@ -1,0 +1,14 @@
+.context {
+  background-color: var(--color-bg-secondary);
+}
+
+.context-title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.context-text {
+  margin-top: 16px;
+  color: var(--color-text-secondary);
+  font-size: 18px;
+}

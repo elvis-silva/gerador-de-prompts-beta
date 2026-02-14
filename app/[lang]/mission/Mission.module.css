@@ -129,7 +129,8 @@
   font-weight: 900;
   letter-spacing: -0.04em;
   line-height: 1.1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.75rem;
+  font-size: 2.75rem;
 }
 
 /* --- Subtítulos e Descrições de Apoio --- */
@@ -166,9 +167,9 @@
 .textOverline {
   color: #3b82f6;
   font-weight: 700;
-  font-size: 0.75rem;
+  font-size: 1rem;
+  letter-spacing: 0.15rem;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.75rem;
 }

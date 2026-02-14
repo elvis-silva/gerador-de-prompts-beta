@@ -28,6 +28,7 @@ export async function getPost(lang: string, slug: string) {
     description: data.description ?? '',
     cover: data.cover ?? '/og-default.png',
     contentHtml: marked.parse(content),
+    date: data.date ?? ''
   };
 }
 
@@ -60,6 +61,7 @@ export function getAllPosts(lang: string) {
       title: data.title ?? slug,
       description: data.description ?? '',
       cover: data.cover ?? '/og-default.png',
+      date: data.date ?? ''
     };
   });
 }

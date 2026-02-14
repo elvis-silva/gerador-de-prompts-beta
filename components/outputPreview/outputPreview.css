@@ -1,0 +1,75 @@
+.output-preview {
+  margin-top: 64px; /* mt-16 */
+  background-color: #09090b; /* bg-zinc-950 */
+  border: 1px solid #27272a; /* border-zinc-800 */
+  padding: 32px; /* p-8 */
+  border-radius: 16px; /* rounded-2xl */
+}
+
+.output-preview-title {
+  font-size: 24px; /* text-2xl */
+  font-weight: 700;
+  margin-bottom: 24px; /* mb-6 */
+  color: #3b82f6; /* text-blue-500 */
+}
+
+.output-preview-grid {
+  display: grid;
+  gap: 12px; /* gap-3 */
+  color: #d4d4d8; /* text-zinc-300 */
+}
+
+.output-preview-architecture {
+  margin-top: 32px; /* mt-8 */
+}
+
+.output-preview-subtitle {
+  font-weight: 600;
+  margin-bottom: 16px; /* mb-4 */
+}
+
+.output-preview-list {
+  list-style-type: disc;
+  padding-left: 20px; /* list-inside */
+  color: #a1a1aa; /* text-zinc-400 */
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* space-y-2 */
+}
+
+.output-preview-actions {
+  margin-top: 32px; /* mt-8 */
+  display: flex;
+  gap: 16px; /* gap-4 */
+  flex-wrap: wrap;
+}
+
+/* Botões */
+
+.btn-secondary {
+  padding: 12px 24px; /* px-6 py-3 */
+  background-color: #27272a; /* bg-zinc-800 */
+  border: none;
+  border-radius: 12px; /* rounded-xl */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #3f3f46; /* hover:bg-zinc-700 */
+}
+
+.btn-primary {
+  padding: 12px 24px;
+  background-color: #2563eb; /* bg-blue-600 */
+  border: none;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3b82f6; /* hover:bg-blue-500 */
+}

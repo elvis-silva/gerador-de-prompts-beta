@@ -1,8 +1,8 @@
 .main {
   min-height: 100vh;
-  background-color: #020617;
+  background-color: #040128;/*#020617;*/
   padding: 6rem 1.5rem;
-  background-image: radial-gradient(circle at 50% -10%, #1e293b 0%, transparent 40%);
+  background-image: radial-gradient(circle at 50% -10%, #040128 0%, transparent 40%);
 }
 
 .header {

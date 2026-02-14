@@ -5,7 +5,7 @@ import { ShareMenu } from './ShareMenu';
 import pt from '@/i18n/pt.json';
 import en from '@/i18n/en.json';
 import { loadDictionary } from '@/lib/i18n';
-import '@/styles/globals.css'
+// import '@/styles/globals.css'
 // import { useParams } from 'next/navigation';
 // import { cookies } from 'next/headers'
 // import { redirect } from 'next/navigation'

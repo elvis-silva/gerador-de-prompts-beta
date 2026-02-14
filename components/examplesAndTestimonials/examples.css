@@ -1,0 +1,27 @@
+.examples {
+  padding: 96px 24px; /* py-24 px-6 */
+  background-color: #18181b; /* bg-zinc-900 */
+}
+
+.examples-container {
+  max-width: 896px; /* max-w-4xl */
+  margin: 0 auto; /* mx-auto */
+  text-align: center;
+}
+
+.examples-title {
+  font-size: 30px; /* text-3xl */
+  font-weight: 700; /* font-bold */
+  margin-bottom: 40px; /* mb-10 */
+}
+
+.examples-quote {
+  background-color: #09090b; /* bg-zinc-950 */
+  padding: 32px; /* p-8 */
+  border-radius: 16px; /* rounded-2xl */
+  border: 1px solid #27272a; /* border-zinc-800 */
+  color: #d4d4d8; /* text-zinc-300 */
+  font-size: 18px;
+  line-height: 1.7;
+  font-style: italic;
+}
